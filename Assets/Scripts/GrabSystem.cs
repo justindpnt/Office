@@ -32,31 +32,48 @@ public class GrabSystem : MonoBehaviour
         {
             updateItemPosition();
             processRotation();
-        }
+            defaultCursor.enabled = false;
+            enabledCursor.enabled = false;
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            // If there is already an item picked up, do not pick up another item
-            if (pickedItem)
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 DropItem(pickedItem);
+                defaultCursor.enabled = true;
+                enabledCursor.enabled = false;
             }
-            else
+        }
+        else
+        {
+            var rayPickup = characterCamera.ViewportPointToRay(Vector3.one * .5f);
+            RaycastHit hitPickup;
+
+            //if hit
+            if (Physics.Raycast(rayPickup, out hitPickup, pickupDistance))
             {
-                var ray = characterCamera.ViewportPointToRay(Vector3.one * .5f);
-                RaycastHit hit;
+                var canPickUp = hitPickup.transform.GetComponent<PickableItem>();
 
-                //if hit
-                if(Physics.Raycast(ray, out hit, pickupDistance))
+                //if the item can be picked up
+                if (canPickUp)
                 {
-                    var canPickUp = hit.transform.GetComponent<PickableItem>();
-
-                    //if the item can be picked up
-                    if (canPickUp)
+                    defaultCursor.enabled = false;
+                    enabledCursor.enabled = true;
+                    if (Input.GetKeyDown(KeyCode.E))
                     {
+                        defaultCursor.enabled = false;
+                        enabledCursor.enabled = false;
                         pickUpItem(canPickUp);
                     }
                 }
+                else
+                {
+                    defaultCursor.enabled = true;
+                    enabledCursor.enabled = false;
+                }
+            }
+            else
+            {
+                defaultCursor.enabled = true;
+                enabledCursor.enabled = false;
             }
         }
     }
