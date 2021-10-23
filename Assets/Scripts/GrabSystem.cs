@@ -12,16 +12,25 @@ public class GrabSystem : MonoBehaviour
     [SerializeField] public float throwSpeed = 1f;
     [SerializeField] public float itemSpeed = 1f;
     [SerializeField] public float rotationSpeed = 1f;
+    [SerializeField] public float powerFillSpeed = 1f;
+    [SerializeField] public float powerDivisor = 1f;
 
     private PickableItem pickedItem;
     private PlayerController controller;
 
     public Image defaultCursor;
     public Image enabledCursor;
+    public Image powerBar;
+    public bool canThrow = false;
+
+    public float power, maxPower = 100f;
+    
 
     private void Start()
     {
         controller = GetComponent<PlayerController>();
+        power = 0f;
+        powerBar.fillAmount = 0f;
     }
 
 
@@ -35,12 +44,35 @@ public class GrabSystem : MonoBehaviour
             defaultCursor.enabled = false;
             enabledCursor.enabled = false;
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E) && canThrow)
             {
-                DropItem(pickedItem);
+                powerBar.enabled = true;
+                if(power < maxPower)
+                {
+                    power += Time.deltaTime * powerFillSpeed;
+                }
+                else
+                {
+                    power = maxPower;
+                }
+                powerBar.fillAmount = power / maxPower;
+            }
+
+            if (Input.GetKeyUp(KeyCode.E) && canThrow)
+            {
+                DropItem(pickedItem, power);
+                powerBar.enabled = false;
+                canThrow = false;
+                power = 0f;
                 defaultCursor.enabled = true;
                 enabledCursor.enabled = false;
             }
+
+            else if (Input.GetKeyUp(KeyCode.E))
+            {
+                canThrow = true;
+            }
+
         }
         else
         {
@@ -125,12 +157,12 @@ public class GrabSystem : MonoBehaviour
         item.transform.SetParent(transform);
     }
 
-    private void DropItem(PickableItem item)
+    private void DropItem(PickableItem item, float power)
     {
         pickedItem = null;
         item.transform.SetParent(null);
         item.Rb.useGravity = true;
 
-        item.Rb.AddForce(characterCamera.transform.forward * throwSpeed, ForceMode.VelocityChange);
+        item.Rb.AddForce(characterCamera.transform.forward * power / powerDivisor, ForceMode.Impulse);
     }
 }
