@@ -7,10 +7,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform playerCamera = null;
     [SerializeField] float mouseSensitivity = 1f;
     [SerializeField] float walkSpeed = 6f;
+    [SerializeField] float crouchSpeed = 3f;
+    float moveSpeed;
     [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = .3f;
     [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = .03f;
-
     [SerializeField] bool lockCursor = true;
+    float crouchTimeCounter;
+    [SerializeField] float crouchTime = 1f;
+    [SerializeField] float crouchHieght = .5f;
+
+    float storedCrouchedScale;
+    float storedStandingScale;
 
     float cameraPitch = 0.0f;
     CharacterController controller = null;
@@ -25,11 +32,11 @@ public class PlayerController : MonoBehaviour
     public float groundDistance = .4f;
     public LayerMask groundMask;
 
-    bool isGrounded;
+    public bool isCrouched = false;
+    public bool isGrounded;
     Vector3 verticalVelocity;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
-
     private bool canLook = true;
 
     // Start is called before the first frame update
@@ -85,12 +92,14 @@ public class PlayerController : MonoBehaviour
             verticalVelocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
+        HandleCrouch();
+
         Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         targetDir.Normalize();
 
         currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
 
-        Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * walkSpeed;
+        Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * moveSpeed;
 
         controller.Move(velocity * Time.deltaTime);
 
@@ -98,13 +107,53 @@ public class PlayerController : MonoBehaviour
         controller.Move(verticalVelocity * Time.deltaTime);
     }
 
-    public void setLookBool(bool state)
+    private void HandleCrouch()
     {
-        canLook = state;
+        if (isCrouched)
+        {
+            moveSpeed = crouchSpeed;
+
+            if (transform.localScale.y > crouchHieght)
+            {
+                if (crouchTimeCounter < crouchTime)
+                {
+                    transform.localScale = new Vector3(1f, Mathf.Lerp(storedStandingScale, crouchHieght, crouchTimeCounter / crouchTime), 1f);
+                    crouchTimeCounter += Time.deltaTime;
+                }
+            }
+        }
+        else
+        {
+            moveSpeed = walkSpeed;
+
+            if (transform.localScale.y < Vector3.one.y)
+            {
+                if (crouchTimeCounter < crouchTime)
+                {
+                    transform.localScale = new Vector3(1f, Mathf.Lerp(storedCrouchedScale, 1f, crouchTimeCounter / crouchTime), 1f);
+                    crouchTimeCounter += Time.deltaTime;
+                    controller.center = Vector3.up * controller.height / 2f;
+                }
+            }
+            else
+            {
+                controller.center = new Vector3(0f, 1f, 0f);
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftControl)){
+            isCrouched = true;
+            crouchTimeCounter = 0;
+            storedStandingScale = transform.localScale.y;
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftControl)){
+            isCrouched = false;
+            crouchTimeCounter = 0;
+            storedCrouchedScale = transform.localScale.y;
+        }
     }
 
-    public bool getLookBool()
-    {
-        return canLook;
-    }
+    public void setLookBool(bool state){canLook = state;}
+    public bool getLookBool(){return canLook;}
 }

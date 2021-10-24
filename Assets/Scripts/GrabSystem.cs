@@ -14,6 +14,7 @@ public class GrabSystem : MonoBehaviour
     [SerializeField] public float rotationSpeed = 1f;
     [SerializeField] public float powerFillSpeed = 1f;
     [SerializeField] public float powerDivisor = 1f;
+    [SerializeField] public float spinSpeed = 10f;
 
     private PickableItem pickedItem;
     private PlayerController controller;
@@ -164,5 +165,6 @@ public class GrabSystem : MonoBehaviour
         item.Rb.useGravity = true;
 
         item.Rb.AddForce(characterCamera.transform.forward * power / powerDivisor, ForceMode.Impulse);
+        item.Rb.AddTorque(spinSpeed, 0f, 0f, ForceMode.Force);
     }
 }
