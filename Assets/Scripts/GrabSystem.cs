@@ -181,7 +181,7 @@ public class GrabSystem : MonoBehaviour
 
         //Set parent to character
         //item.transform.SetParent(characterCamera.transform);
-        //item.transform.SetParent(transform);
+        item.transform.SetParent(transform);
     }
 
     private void DropItem(PickableItem item, float power)
