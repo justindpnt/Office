@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] bool lockCursor = true;
     float crouchTimeCounter;
     [SerializeField] float crouchTime = 1f;
-    [SerializeField] float crouchHieght = .5f;
+    [SerializeField] float crouchHieght = 1f;
 
     float storedCrouchedScale;
     float storedStandingScale;
@@ -41,9 +41,12 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight = 3f;
     private bool canLook = true;
 
+    GrabSystem grabSystem;
+
     // Start is called before the first frame update
     void Start()
     {
+        grabSystem = GetComponent<GrabSystem>();
         controller = GetComponent<CharacterController>();
         if (lockCursor)
         {
@@ -80,6 +83,9 @@ public class PlayerController : MonoBehaviour
 
         playerCamera.localEulerAngles = Vector3.right * cameraPitch;
         transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
+        //playerCamera.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
+
+        
     }
 
     void UpdateMovement()
@@ -143,13 +149,15 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftControl)){
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
             isCrouched = true;
             crouchTimeCounter = 0;
             storedStandingScale = transform.localScale.y;
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftControl)){
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
             isCrouched = false;
             crouchTimeCounter = 0;
             storedCrouchedScale = transform.localScale.y;

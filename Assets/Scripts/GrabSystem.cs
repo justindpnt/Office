@@ -27,7 +27,14 @@ public class GrabSystem : MonoBehaviour
     public LayerMask playerMask;
 
     public float power, maxPower = 100f;
-    
+
+    bool moveMe;
+
+    public PickableItem getHeldItem()
+    {
+        return pickedItem;
+    }
+
 
     private void Start()
     {
@@ -42,7 +49,8 @@ public class GrabSystem : MonoBehaviour
     {
         if(pickedItem)
         {
-            updateItemPosition();
+            moveMe = true;
+            
             processRotation();
             defaultCursor.enabled = false;
             enabledCursor.enabled = false;
@@ -79,10 +87,10 @@ public class GrabSystem : MonoBehaviour
         }
         else
         {
+            moveMe = false;
             var rayPickup = characterCamera.ViewportPointToRay(Vector3.one * .5f);
             RaycastHit hitPickup;
 
-            Debug.DrawRay(characterCamera.transform.position, rayPickup.direction);
             //if hit
             if (Physics.Raycast(rayPickup, out hitPickup, pickupDistance, ~playerMask))
             {
@@ -91,7 +99,6 @@ public class GrabSystem : MonoBehaviour
                 //if the item can be picked up
                 if (canPickUp)
                 {
-                    Debug.Log("Found");
                     defaultCursor.enabled = false;
                     enabledCursor.enabled = true;
                     if (Input.GetKeyDown(KeyCode.E))
@@ -112,6 +119,14 @@ public class GrabSystem : MonoBehaviour
                 defaultCursor.enabled = true;
                 enabledCursor.enabled = false;
             }
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (moveMe)
+        {
+            updateItemPosition();
         }
     }
 
@@ -157,9 +172,16 @@ public class GrabSystem : MonoBehaviour
         item.Rb.useGravity = false;
         item.Rb.velocity = Vector3.zero;
         item.Rb.angularVelocity = Vector3.zero;
+        
+        item.gameObject.layer = LayerMask.NameToLayer("PickedUp");
+        foreach(Transform child in item.transform)
+        {
+            child.gameObject.layer = LayerMask.NameToLayer("PickedUp");
+        }
 
         //Set parent to character
-        item.transform.SetParent(transform);
+        //item.transform.SetParent(characterCamera.transform);
+        //item.transform.SetParent(transform);
     }
 
     private void DropItem(PickableItem item, float power)
@@ -167,6 +189,7 @@ public class GrabSystem : MonoBehaviour
         pickedItem = null;
         item.transform.SetParent(null);
         item.Rb.useGravity = true;
+        item.gameObject.layer = LayerMask.NameToLayer("Item");
 
         item.Rb.AddForce(characterCamera.transform.forward * power / powerDivisor, ForceMode.Impulse);
         item.Rb.AddTorque(spinSpeed, 0f, 0f, ForceMode.Force);
