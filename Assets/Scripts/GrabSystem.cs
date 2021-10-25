@@ -28,8 +28,6 @@ public class GrabSystem : MonoBehaviour
 
     public float power, maxPower = 100f;
 
-    bool moveMe;
-
     public PickableItem getHeldItem()
     {
         return pickedItem;
@@ -49,8 +47,7 @@ public class GrabSystem : MonoBehaviour
     {
         if(pickedItem)
         {
-            moveMe = true;
-            
+            updateItemPosition();
             processRotation();
             defaultCursor.enabled = false;
             enabledCursor.enabled = false;
@@ -87,7 +84,6 @@ public class GrabSystem : MonoBehaviour
         }
         else
         {
-            moveMe = false;
             var rayPickup = characterCamera.ViewportPointToRay(Vector3.one * .5f);
             RaycastHit hitPickup;
 
@@ -119,14 +115,6 @@ public class GrabSystem : MonoBehaviour
                 defaultCursor.enabled = true;
                 enabledCursor.enabled = false;
             }
-        }
-    }
-
-    private void FixedUpdate()
-    {
-        if (moveMe)
-        {
-            updateItemPosition();
         }
     }
 
