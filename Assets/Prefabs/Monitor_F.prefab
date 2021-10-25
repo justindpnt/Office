@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1923126256154380061}
   - component: {fileID: 520825098709569489}
   - component: {fileID: 6874798212397583741}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 3629022361731780986}
   - component: {fileID: 8581078523391100100}
   - component: {fileID: 6874798212325996990}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BackOfScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 347220284050962743}
   - component: {fileID: 3802522831769977448}
   - component: {fileID: 3871001283839059845}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 6404833290879296179}
   - component: {fileID: 6874798211628481624}
   - component: {fileID: 6874798211628481627}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Monitor_F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 1269654648072873289}
   - component: {fileID: 6789836888096548322}
   - component: {fileID: 6874798212278200686}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DiagonalStand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +447,7 @@ GameObject:
   - component: {fileID: 4377658815746000140}
   - component: {fileID: 2005037080286071857}
   - component: {fileID: 6874798211549118878}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MonitorConnector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -543,7 +543,7 @@ GameObject:
   - component: {fileID: 5226396664662138550}
   - component: {fileID: 1855023507682621474}
   - component: {fileID: 6874798211556867466}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HIghStand
   m_TagString: Untagged
   m_Icon: {fileID: 0}

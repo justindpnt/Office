@@ -14,5 +14,4 @@ public class PickableItem : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
-
 }
