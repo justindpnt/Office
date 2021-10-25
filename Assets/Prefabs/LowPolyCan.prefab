@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1971107981787438022}
   - component: {fileID: 5280453481524522821}
   - component: {fileID: 1011369169930957384}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 3555774315736511858}
   - component: {fileID: 1788865627280473064}
   - component: {fileID: 8872311674964856117}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 8983116688139070172}
   - component: {fileID: 8872311674705795196}
   - component: {fileID: 8872311674705795074}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: LowPolyCan
   m_TagString: Untagged
   m_Icon: {fileID: 0}

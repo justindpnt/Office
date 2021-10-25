@@ -6,12 +6,10 @@ public class ObstaclePush : MonoBehaviour
 {
     [SerializeField] private float forceMagnitude;
     PlayerController controller;
-    GrabSystem grabSystem;
 
     void Start()
     {
         controller = GetComponent<PlayerController>();
-        grabSystem = GetComponent<GrabSystem>();
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
