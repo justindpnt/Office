@@ -5,12 +5,18 @@ using UnityEngine;
 public class ObstaclePush : MonoBehaviour
 {
     [SerializeField] private float forceMagnitude;
+    PlayerController controller;
+
+    void Start()
+    {
+        controller = GetComponent<PlayerController>();
+    }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         Rigidbody rigidbody = hit.collider.attachedRigidbody;
 
-        if (rigidbody != null)
+        if (rigidbody != null && !controller.isOnItem())
         {
             Vector3 forceDirection = hit.gameObject.transform.position - transform.position;
             forceDirection.y = 0;

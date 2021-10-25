@@ -30,7 +30,9 @@ public class PlayerController : MonoBehaviour
 
     public Transform groundCheck;
     public float groundDistance = .4f;
+    public float itemStandDistance = .1f;
     public LayerMask groundMask;
+    public LayerMask itemMask;
 
     public bool isCrouched = false;
     public bool isGrounded;
@@ -87,7 +89,7 @@ public class PlayerController : MonoBehaviour
             verticalVelocity.y = -2f;
         }
 
-        if (Input.GetKeyDown("space") && isGrounded)
+        if (Input.GetKeyDown("space") && (isGrounded||isOnItem()))
         {
             verticalVelocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
@@ -152,6 +154,16 @@ public class PlayerController : MonoBehaviour
             crouchTimeCounter = 0;
             storedCrouchedScale = transform.localScale.y;
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawSphere(groundCheck.position, itemStandDistance);
+    }
+
+    public bool isOnItem()
+    {
+        return Physics.CheckSphere(groundCheck.position, itemStandDistance, itemMask);
     }
 
     public void setLookBool(bool state){canLook = state;}

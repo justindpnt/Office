@@ -24,6 +24,8 @@ public class GrabSystem : MonoBehaviour
     public Image powerBar;
     public bool canThrow = false;
 
+    public LayerMask playerMask;
+
     public float power, maxPower = 100f;
     
 
@@ -80,14 +82,16 @@ public class GrabSystem : MonoBehaviour
             var rayPickup = characterCamera.ViewportPointToRay(Vector3.one * .5f);
             RaycastHit hitPickup;
 
+            Debug.DrawRay(characterCamera.transform.position, rayPickup.direction);
             //if hit
-            if (Physics.Raycast(rayPickup, out hitPickup, pickupDistance))
+            if (Physics.Raycast(rayPickup, out hitPickup, pickupDistance, ~playerMask))
             {
                 var canPickUp = hitPickup.transform.GetComponent<PickableItem>();
 
                 //if the item can be picked up
                 if (canPickUp)
                 {
+                    Debug.Log("Found");
                     defaultCursor.enabled = false;
                     enabledCursor.enabled = true;
                     if (Input.GetKeyDown(KeyCode.E))
