@@ -154,6 +154,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Standalone: com.DefaultCompany.Office
+    iPhone: com.DefaultCompany.Office
   buildNumber:
     Standalone: 0
     iPhone: 0

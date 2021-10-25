@@ -82,10 +82,7 @@ public class PlayerController : MonoBehaviour
         cameraPitch = Mathf.Clamp(cameraPitch, -90.0f, 90.0f);
 
         playerCamera.localEulerAngles = Vector3.right * cameraPitch;
-        transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
-        //playerCamera.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
-
-        
+        transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);       
     }
 
     void UpdateMovement()
@@ -121,23 +118,16 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed = crouchSpeed;
 
-            if (transform.localScale.y > crouchHieght)
+            if (controller.height > crouchHieght)
             {
                 if (crouchTimeCounter < crouchTime)
                 {
-                    grabSystem.getHeldItem().transform.SetParent(null);
-                    transform.localScale = new Vector3(1f, Mathf.Lerp(storedStandingScale, crouchHieght, crouchTimeCounter / crouchTime), 1f);
+                    controller.height = Mathf.Lerp(storedStandingScale, crouchHieght, crouchTimeCounter / crouchTime);
+                    playerCamera.localPosition = new Vector3(0f, Mathf.Lerp(storedStandingScale, crouchHieght, crouchTimeCounter / crouchTime), 0f);
                     crouchTimeCounter += Time.deltaTime;
-                    grabSystem.getHeldItem().transform.SetParent(transform);
+                    controller.center = Vector3.up * controller.height / 2f;
 
-                    //float FixeScale = grabSystem.getHeldItemScale();
 
-                    //grabSystem.getHeldItem().transform.localScale = new Vector3(grabSystem.getHeldItemScale(), grabSystem.getHeldItemScale(), grabSystem.getHeldItemScale());
-
-                   //grabSystem.getHeldItem().transform.localScale =
-                         //new Vector3(FixeScale,
-                            //FixeScale / transform.localScale.y,
-                            //FixeScale);
                 }
             }
         }
@@ -145,28 +135,15 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed = walkSpeed;
 
-            if (transform.localScale.y < Vector3.one.y)
+            if (controller.height < 2f)
             {
                 if (crouchTimeCounter < crouchTime)
                 {
-                    grabSystem.getHeldItem().transform.SetParent(null);
-                    transform.localScale = new Vector3(1f, Mathf.Lerp(storedCrouchedScale, 1f, crouchTimeCounter / crouchTime), 1f);
+                    playerCamera.localPosition = new Vector3(0f, Mathf.Lerp(storedCrouchedScale, 2f, crouchTimeCounter / crouchTime), 0f);
+                    controller.height = Mathf.Lerp(storedCrouchedScale, 2f, crouchTimeCounter / crouchTime);
                     crouchTimeCounter += Time.deltaTime;
                     controller.center = Vector3.up * controller.height / 2f;
-
-                    grabSystem.getHeldItem().transform.SetParent(transform);
-
-                    //float FixeScale = grabSystem.getHeldItemScale();
-
-                    //grabSystem.getHeldItem().transform.localScale =
-                    //new Vector3(FixeScale / transform.localScale.x,
-                    //FixeScale / transform.localScale.y,
-                    //FixeScale / transform.localScale.z);
                 }
-            }
-            else
-            {
-                controller.center = new Vector3(0f, 1f, 0f);
             }
         }
 
@@ -174,14 +151,14 @@ public class PlayerController : MonoBehaviour
         {
             isCrouched = true;
             crouchTimeCounter = 0;
-            storedStandingScale = transform.localScale.y;
+            storedStandingScale = controller.height;
         }
 
         if (Input.GetKeyUp(KeyCode.LeftControl))
         {
             isCrouched = false;
             crouchTimeCounter = 0;
-            storedCrouchedScale = transform.localScale.y;
+            storedCrouchedScale = controller.height;
         }
     }
 

@@ -142,24 +142,30 @@ public class GrabSystem : MonoBehaviour
 
     private void updateItemPosition()
     {
-       pickedItem.Rb.freezeRotation = true;
+        pickedItem.Rb.freezeRotation = true;
 
-       Vector3 moveDirection = (characterCamera.transform.forward * itemOffset) + characterCamera.transform.position - pickedItem.transform.position;
-       pickedItem.Rb.velocity = moveDirection * itemSpeed;
+        Vector3 moveDirection = (characterCamera.transform.forward * itemOffset) + characterCamera.transform.position - pickedItem.transform.position;
+        pickedItem.Rb.velocity = moveDirection * itemSpeed;
 
-       pickedItem.Rb.freezeRotation = false;
+        pickedItem.Rb.freezeRotation = false;
+
+        //if ((characterCamera.transform.forward * itemOffset) != pickedItem.transform.position){
+        //    pickedItem.Rb.freezeRotation = true;
+        //    Vector3 moveDirection = (characterCamera.transform.forward * itemOffset) + characterCamera.transform.localPosition - pickedItem.transform.localPosition;
+        //    //pickedItem.Rb.AddForce(0, moveDirection.y * itemSpeed, 0);
+        //    pickedItem.Rb.velocity = moveDirection * itemSpeed;
+        //     pickedItem.Rb.freezeRotation = false;
+        //
+        //
+        //}
+
+
     }
 
     private void updateItemRotation()
     {
-        pickedItem.transform.SetParent(null);
-
         pickedItem.transform.Rotate(transform.up, -Input.GetAxis("Mouse X") * rotationSpeed, Space.World);
         pickedItem.transform.Rotate(characterCamera.transform.right, Input.GetAxis("Mouse Y") * rotationSpeed, Space.World);
-
-        Debug.Log(characterCamera.transform.right);
-
-        pickedItem.transform.SetParent(transform);
     }
 
     //Pick up item
