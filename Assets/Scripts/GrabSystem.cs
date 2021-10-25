@@ -137,6 +137,7 @@ public class GrabSystem : MonoBehaviour
 
        Vector3 moveDirection = (characterCamera.transform.forward * itemOffset) + characterCamera.transform.position - pickedItem.transform.position;
        pickedItem.Rb.velocity = moveDirection * itemSpeed;
+       //pickedItem.Rb.AddForce(moveDirection * itemSpeed);
 
        pickedItem.Rb.freezeRotation = false;
     }
@@ -159,6 +160,13 @@ public class GrabSystem : MonoBehaviour
         item.Rb.angularVelocity = Vector3.zero;
 
         //Set parent to character
+        item.gameObject.layer = 11;
+
+        foreach(Transform child in item.transform)
+        {
+            child.gameObject.layer = 11;
+        }
+
         item.transform.SetParent(transform);
     }
 
@@ -167,6 +175,13 @@ public class GrabSystem : MonoBehaviour
         pickedItem = null;
         item.transform.SetParent(null);
         item.Rb.useGravity = true;
+
+        item.gameObject.layer = 10;
+
+        foreach (Transform child in item.transform)
+        {
+            item.gameObject.layer = 10;
+        }
 
         item.Rb.AddForce(characterCamera.transform.forward * power / powerDivisor, ForceMode.Impulse);
         item.Rb.AddTorque(spinSpeed, 0f, 0f, ForceMode.Force);
