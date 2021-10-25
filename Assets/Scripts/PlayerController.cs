@@ -125,8 +125,10 @@ public class PlayerController : MonoBehaviour
             {
                 if (crouchTimeCounter < crouchTime)
                 {
+                    grabSystem.getHeldItem().transform.SetParent(null);
                     transform.localScale = new Vector3(1f, Mathf.Lerp(storedStandingScale, crouchHieght, crouchTimeCounter / crouchTime), 1f);
                     crouchTimeCounter += Time.deltaTime;
+                    grabSystem.getHeldItem().transform.SetParent(transform);
                 }
             }
         }
@@ -138,9 +140,11 @@ public class PlayerController : MonoBehaviour
             {
                 if (crouchTimeCounter < crouchTime)
                 {
+                    grabSystem.getHeldItem().transform.SetParent(null);
                     transform.localScale = new Vector3(1f, Mathf.Lerp(storedCrouchedScale, 1f, crouchTimeCounter / crouchTime), 1f);
                     crouchTimeCounter += Time.deltaTime;
                     controller.center = Vector3.up * controller.height / 2f;
+                    grabSystem.getHeldItem().transform.SetParent(transform);
                 }
             }
             else
