@@ -129,6 +129,15 @@ public class PlayerController : MonoBehaviour
                     transform.localScale = new Vector3(1f, Mathf.Lerp(storedStandingScale, crouchHieght, crouchTimeCounter / crouchTime), 1f);
                     crouchTimeCounter += Time.deltaTime;
                     grabSystem.getHeldItem().transform.SetParent(transform);
+
+                    //float FixeScale = grabSystem.getHeldItemScale();
+
+                    //grabSystem.getHeldItem().transform.localScale = new Vector3(grabSystem.getHeldItemScale(), grabSystem.getHeldItemScale(), grabSystem.getHeldItemScale());
+
+                   //grabSystem.getHeldItem().transform.localScale =
+                         //new Vector3(FixeScale,
+                            //FixeScale / transform.localScale.y,
+                            //FixeScale);
                 }
             }
         }
@@ -144,7 +153,15 @@ public class PlayerController : MonoBehaviour
                     transform.localScale = new Vector3(1f, Mathf.Lerp(storedCrouchedScale, 1f, crouchTimeCounter / crouchTime), 1f);
                     crouchTimeCounter += Time.deltaTime;
                     controller.center = Vector3.up * controller.height / 2f;
+
                     grabSystem.getHeldItem().transform.SetParent(transform);
+
+                    //float FixeScale = grabSystem.getHeldItemScale();
+
+                    //grabSystem.getHeldItem().transform.localScale =
+                    //new Vector3(FixeScale / transform.localScale.x,
+                    //FixeScale / transform.localScale.y,
+                    //FixeScale / transform.localScale.z);
                 }
             }
             else

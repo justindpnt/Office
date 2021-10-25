@@ -17,6 +17,7 @@ public class GrabSystem : MonoBehaviour
     [SerializeField] public float spinSpeed = 10f;
 
     private PickableItem pickedItem;
+    private float pickedItemScale;
     private PlayerController controller;
 
     public Image defaultCursor;
@@ -31,6 +32,11 @@ public class GrabSystem : MonoBehaviour
     public PickableItem getHeldItem()
     {
         return pickedItem;
+    }
+
+    public float getHeldItemScale()
+    {
+        return pickedItemScale;
     }
 
 
@@ -146,15 +152,23 @@ public class GrabSystem : MonoBehaviour
 
     private void updateItemRotation()
     {
+        pickedItem.transform.SetParent(null);
+
         pickedItem.transform.Rotate(transform.up, -Input.GetAxis("Mouse X") * rotationSpeed, Space.World);
         pickedItem.transform.Rotate(characterCamera.transform.right, Input.GetAxis("Mouse Y") * rotationSpeed, Space.World);
+
+        Debug.Log(characterCamera.transform.right);
+
+        pickedItem.transform.SetParent(transform);
     }
 
     //Pick up item
     private void pickUpItem(PickableItem item)
     {
+
         // Tie item to player
         pickedItem = item;
+        pickedItemScale = pickedItem.transform.localScale.y;
 
         // Turn off physics on rigidbody
         item.Rb.useGravity = false;
@@ -169,12 +183,17 @@ public class GrabSystem : MonoBehaviour
 
         //Set parent to character
         //item.transform.SetParent(characterCamera.transform);
+
+        //item.transform.SetParent(transform);
+
         item.transform.SetParent(transform);
+
     }
 
     private void DropItem(PickableItem item, float power)
     {
         pickedItem = null;
+        pickedItemScale = 1f;
         item.transform.SetParent(null);
         item.Rb.useGravity = true;
         item.gameObject.layer = LayerMask.NameToLayer("Item");
