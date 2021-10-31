@@ -43,6 +43,9 @@ public class PlayerController : MonoBehaviour
 
     GrabSystem grabSystem;
 
+    Vector2 targetMouseDelta;
+    Vector2 targetDir;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,12 +61,26 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (canLook)
+        {
+            targetMouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+            currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMouseDeltaVelocity, mouseSmoothTime);
+        }
+
+        targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        targetDir.Normalize();
+    }
+
+    private void FixedUpdate()
+    {
+
         UpdateGroundStatus();
+
+        UpdateMovement();
         if (canLook)
         {
             UpdateMouseLook();
         }
-        UpdateMovement();
     }
 
     void UpdateGroundStatus()
@@ -74,9 +91,6 @@ public class PlayerController : MonoBehaviour
     
     void UpdateMouseLook()
     {
-        Vector2 targetMouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-
-        currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMouseDeltaVelocity, mouseSmoothTime);
 
         cameraPitch -= currentMouseDelta.y * mouseSensitivity;
         cameraPitch = Mathf.Clamp(cameraPitch, -90.0f, 90.0f);
@@ -98,9 +112,6 @@ public class PlayerController : MonoBehaviour
         }
 
         HandleCrouch();
-
-        Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        targetDir.Normalize();
 
         currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
 

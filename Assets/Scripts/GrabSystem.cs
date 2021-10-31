@@ -16,7 +16,7 @@ public class GrabSystem : MonoBehaviour
     [SerializeField] public float powerDivisor = 1f;
     [SerializeField] public float spinSpeed = 10f;
 
-    private PickableItem pickedItem;
+    public PickableItem pickedItem;
     private float pickedItemScale;
     private PlayerController controller;
 
@@ -53,7 +53,7 @@ public class GrabSystem : MonoBehaviour
     {
         if(pickedItem)
         {
-            updateItemPosition();
+            //updateItemPosition();
             processRotation();
             defaultCursor.enabled = false;
             enabledCursor.enabled = false;
@@ -124,6 +124,14 @@ public class GrabSystem : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        if (pickedItem)
+        {
+            updateItemPosition();
+        }   
+    }
+
     private void processRotation()
     {
         if (Input.GetMouseButtonDown(1))
@@ -144,7 +152,10 @@ public class GrabSystem : MonoBehaviour
     {
         pickedItem.Rb.freezeRotation = true;
 
-        Vector3 moveDirection = (characterCamera.transform.forward * itemOffset) + characterCamera.transform.position - pickedItem.transform.position;
+        Debug.Log((characterCamera.transform.forward * itemOffset) + characterCamera.transform.position - pickedItem.transform.position);
+
+        Vector3 moveDirection = ((characterCamera.transform.forward * itemOffset) + characterCamera.transform.position) - pickedItem.transform.position;
+        //Debug.DrawLine(pickedItem.transform.position, pickedItem.transform.position + (characterCamera.transform.forward * itemOffset) + characterCamera.transform.position - pickedItem.transform.position);
         pickedItem.Rb.velocity = moveDirection * itemSpeed;
 
         pickedItem.Rb.freezeRotation = false;
@@ -192,7 +203,7 @@ public class GrabSystem : MonoBehaviour
 
         //item.transform.SetParent(transform);
 
-        item.transform.SetParent(transform);
+        //item.transform.SetParent(transform);
 
     }
 

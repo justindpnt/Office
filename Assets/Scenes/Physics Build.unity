@@ -8940,6 +8940,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6874798211628481624, guid: 7dc0842642017cb43b92edb295edee80,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dc0842642017cb43b92edb295edee80, type: 3}
 --- !u!4 &1680864701 stripped
@@ -9844,11 +9849,12 @@ MonoBehaviour:
   itemOffset: 1
   smooth: 10
   throwSpeed: 50
-  itemSpeed: 10
+  itemSpeed: 20
   rotationSpeed: 1
   powerFillSpeed: 100
   powerDivisor: 3
   spinSpeed: 10
+  pickedItem: {fileID: 0}
   defaultCursor: {fileID: 1044865099}
   enabledCursor: {fileID: 697405864}
   powerBar: {fileID: 758041365}
@@ -11320,7 +11326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 2860446320069987808}
-  mouseSensitivity: 1
+  mouseSensitivity: 6
   walkSpeed: 6
   crouchSpeed: 3
   moveSmoothTime: 0.1
