@@ -13,7 +13,7 @@ public class GrabSystem : MonoBehaviour
     [SerializeField] public float itemSpeed = 1f;
     [SerializeField] public float rotationSpeed = 1f;
     [SerializeField] public float powerFillSpeed = 1f;
-    [SerializeField] public float powerDivisor = 1f;
+    [SerializeField] public float powerMultiplier = 1f;
     [SerializeField] public float spinSpeed = 10f;
 
     public PickableItem pickedItem;
@@ -155,21 +155,9 @@ public class GrabSystem : MonoBehaviour
         Debug.Log((characterCamera.transform.forward * itemOffset) + characterCamera.transform.position - pickedItem.transform.position);
 
         Vector3 moveDirection = ((characterCamera.transform.forward * itemOffset) + characterCamera.transform.position) - pickedItem.transform.position;
-        //Debug.DrawLine(pickedItem.transform.position, pickedItem.transform.position + (characterCamera.transform.forward * itemOffset) + characterCamera.transform.position - pickedItem.transform.position);
         pickedItem.Rb.velocity = moveDirection * itemSpeed;
 
         pickedItem.Rb.freezeRotation = false;
-
-        //if ((characterCamera.transform.forward * itemOffset) != pickedItem.transform.position){
-        //    pickedItem.Rb.freezeRotation = true;
-        //    Vector3 moveDirection = (characterCamera.transform.forward * itemOffset) + characterCamera.transform.localPosition - pickedItem.transform.localPosition;
-        //    //pickedItem.Rb.AddForce(0, moveDirection.y * itemSpeed, 0);
-        //    pickedItem.Rb.velocity = moveDirection * itemSpeed;
-        //     pickedItem.Rb.freezeRotation = false;
-        //
-        //
-        //}
-
 
     }
 
@@ -199,10 +187,6 @@ public class GrabSystem : MonoBehaviour
         }
 
         //Set parent to character
-        //item.transform.SetParent(characterCamera.transform);
-
-        //item.transform.SetParent(transform);
-
         //item.transform.SetParent(transform);
 
     }
@@ -215,7 +199,7 @@ public class GrabSystem : MonoBehaviour
         item.Rb.useGravity = true;
         item.gameObject.layer = LayerMask.NameToLayer("Item");
 
-        item.Rb.AddForce(characterCamera.transform.forward * power / powerDivisor, ForceMode.Impulse);
+        item.Rb.AddForce(characterCamera.transform.forward * power * powerMultiplier, ForceMode.VelocityChange);
         item.Rb.AddTorque(spinSpeed, 0f, 0f, ForceMode.Force);
     }
 }
