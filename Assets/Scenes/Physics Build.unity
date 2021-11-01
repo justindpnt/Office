@@ -9849,12 +9849,11 @@ MonoBehaviour:
   itemOffset: 1
   smooth: 10
   throwSpeed: 50
-  itemSpeed: 20
+  itemSpeed: 30
   rotationSpeed: 1
   powerFillSpeed: 100
   powerMultiplier: 0.666
   spinSpeed: 50
-  pickedItem: {fileID: 0}
   defaultCursor: {fileID: 1044865099}
   enabledCursor: {fileID: 697405864}
   powerBar: {fileID: 758041365}
@@ -11326,7 +11325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 2860446320069987808}
-  mouseSensitivity: 4
+  mouseSensitivity: 6
   walkSpeed: 6
   crouchSpeed: 3
   moveSmoothTime: 0.1

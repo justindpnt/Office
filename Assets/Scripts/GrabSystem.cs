@@ -16,7 +16,7 @@ public class GrabSystem : MonoBehaviour
     [SerializeField] public float powerMultiplier = 1f;
     [SerializeField] public float spinSpeed = 10f;
 
-    public PickableItem pickedItem;
+    private PickableItem pickedItem;
     private float pickedItemScale;
     private PlayerController controller;
 
@@ -136,11 +136,11 @@ public class GrabSystem : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            controller.setLookBool(false);
+            controller.canLook = false;
         }
         if (Input.GetMouseButtonUp(1))
         {
-            controller.setLookBool(true);
+            controller.canLook = true;
         }
         if (Input.GetMouseButton(1))
         {
@@ -170,7 +170,6 @@ public class GrabSystem : MonoBehaviour
     //Pick up item
     private void pickUpItem(PickableItem item)
     {
-
         // Tie item to player
         pickedItem = item;
         pickedItemScale = pickedItem.transform.localScale.y;
@@ -180,22 +179,19 @@ public class GrabSystem : MonoBehaviour
         item.Rb.velocity = Vector3.zero;
         item.Rb.angularVelocity = Vector3.zero;
         
+        // Set object and all children parts to being the status of picked up
         item.gameObject.layer = LayerMask.NameToLayer("PickedUp");
         foreach(Transform child in item.transform)
         {
             child.gameObject.layer = LayerMask.NameToLayer("PickedUp");
         }
-
-        //Set parent to character
-        //item.transform.SetParent(transform);
-
     }
 
+    //Drop item
     private void DropItem(PickableItem item, float power)
     {
         pickedItem = null;
         pickedItemScale = 1f;
-        item.transform.SetParent(null);
         item.Rb.useGravity = true;
         item.gameObject.layer = LayerMask.NameToLayer("Item");
 

@@ -39,7 +39,10 @@ public class PlayerController : MonoBehaviour
     Vector3 verticalVelocity;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
-    private bool canLook = true;
+    public bool canLook { get; set; }
+    private bool spacePressed = false;
+    private bool crouchPressed = false;
+    private bool crouchReleased = false;
 
     GrabSystem grabSystem;
 
@@ -56,10 +59,27 @@ public class PlayerController : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
+        canLook = true;
     }
 
-    // Update is called once per frame
+    // Update things that don't involve rigidbodies
     void Update()
+    {
+        UpdateGroundStatus();
+        collectInput();
+    }
+
+    // Update things that do involve rigidodies
+    private void FixedUpdate()
+    {
+        UpdateMovement();
+        if (canLook)
+        {
+            UpdateMouseLook();
+        }
+    }
+
+    private void collectInput()
     {
         if (canLook)
         {
@@ -69,17 +89,20 @@ public class PlayerController : MonoBehaviour
 
         targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         targetDir.Normalize();
-    }
 
-    private void FixedUpdate()
-    {
-
-        UpdateGroundStatus();
-
-        UpdateMovement();
-        if (canLook)
+        if (Input.GetKeyDown("space"))
         {
-            UpdateMouseLook();
+            spacePressed = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            crouchPressed = true;
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            crouchReleased = true;
         }
     }
 
@@ -91,7 +114,6 @@ public class PlayerController : MonoBehaviour
     
     void UpdateMouseLook()
     {
-
         cameraPitch -= currentMouseDelta.y * mouseSensitivity;
         cameraPitch = Mathf.Clamp(cameraPitch, -90.0f, 90.0f);
 
@@ -99,25 +121,36 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);       
     }
 
+    // Update the movement of the character
     void UpdateMovement()
+    {
+        HandleCrouch();
+        HandleVerticalMovement();
+        HandleHorizontalMovement();
+    }
+
+    // Handle the left and right movement of the character
+    private void HandleHorizontalMovement()
+    {
+        currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
+        Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * moveSpeed;
+        controller.Move(velocity * Time.deltaTime);
+    }
+
+    // Handle the up and down movement of the character
+    private void HandleVerticalMovement()
     {
         if (isGrounded && verticalVelocity.y < 0)
         {
             verticalVelocity.y = -2f;
         }
 
-        if (Input.GetKeyDown("space") && (isGrounded||isOnItem()))
+        if (spacePressed && (isGrounded || isOnItem()))
         {
+            spacePressed = false;
             verticalVelocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            //verticalVelocity.y = 10f;
         }
-
-        HandleCrouch();
-
-        currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
-
-        Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * moveSpeed;
-
-        controller.Move(velocity * Time.deltaTime);
 
         verticalVelocity.y += gravity * Time.deltaTime;
         controller.Move(verticalVelocity * Time.deltaTime);
@@ -137,8 +170,6 @@ public class PlayerController : MonoBehaviour
                     playerCamera.localPosition = new Vector3(0f, Mathf.Lerp(storedStandingScale, crouchHieght, crouchTimeCounter / crouchTime), 0f);
                     crouchTimeCounter += Time.deltaTime;
                     controller.center = Vector3.up * controller.height / 2f;
-
-
                 }
             }
         }
@@ -158,21 +189,24 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (crouchPressed)
         {
+            crouchPressed = false;
             isCrouched = true;
             crouchTimeCounter = 0;
             storedStandingScale = controller.height;
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftControl))
+        if (crouchReleased)
         {
+            crouchReleased = false;
             isCrouched = false;
             crouchTimeCounter = 0;
             storedCrouchedScale = controller.height;
         }
     }
 
+    // Draw 
     private void OnDrawGizmos()
     {
         Gizmos.DrawSphere(groundCheck.position, itemStandDistance);
@@ -182,7 +216,4 @@ public class PlayerController : MonoBehaviour
     {
         return Physics.CheckSphere(groundCheck.position, itemStandDistance, itemMask);
     }
-
-    public void setLookBool(bool state){canLook = state;}
-    public bool getLookBool(){return canLook;}
 }
