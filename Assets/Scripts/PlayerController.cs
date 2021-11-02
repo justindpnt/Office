@@ -30,9 +30,8 @@ public class PlayerController : MonoBehaviour
 
     public Transform groundCheck;
     public float groundDistance = .4f;
-    public float itemStandDistance = .1f;
-    public LayerMask groundMask;
-    public LayerMask itemMask;
+    LayerMask groundMask;
+    LayerMask itemMask;
 
     public bool isCrouched = false;
     public bool isGrounded;
@@ -60,6 +59,14 @@ public class PlayerController : MonoBehaviour
             Cursor.visible = false;
         }
         canLook = true;
+
+
+        groundMask = 1 << LayerMask.NameToLayer("Ground");
+        itemMask = 1 << LayerMask.NameToLayer("Item");
+
+        //Ground is if the player is on an object or the ground
+        groundMask |= itemMask;
+        
     }
 
     // Update things that don't involve rigidbodies
@@ -90,7 +97,7 @@ public class PlayerController : MonoBehaviour
         targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         targetDir.Normalize();
 
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space") && (isGrounded))
         {
             spacePressed = true;
         }
@@ -118,7 +125,10 @@ public class PlayerController : MonoBehaviour
         cameraPitch = Mathf.Clamp(cameraPitch, -90.0f, 90.0f);
 
         playerCamera.localEulerAngles = Vector3.right * cameraPitch;
-        transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);       
+        transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
+
+        //pass rotation to grab system, neccesary to keep the item facing the player
+        grabSystem.makeItemFacePlayer(Vector3.up * currentMouseDelta.x * mouseSensitivity);
     }
 
     // Update the movement of the character
@@ -145,7 +155,7 @@ public class PlayerController : MonoBehaviour
             verticalVelocity.y = -2f;
         }
 
-        if (spacePressed && (isGrounded || isOnItem()))
+        if (spacePressed)
         {
             spacePressed = false;
             verticalVelocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
@@ -156,6 +166,7 @@ public class PlayerController : MonoBehaviour
         controller.Move(verticalVelocity * Time.deltaTime);
     }
 
+    // Handle crouched movement of the character
     private void HandleCrouch()
     {
         if (isCrouched)
@@ -206,14 +217,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Draw 
+    // Draw ground check sphere
     private void OnDrawGizmos()
     {
-        Gizmos.DrawSphere(groundCheck.position, itemStandDistance);
+        Gizmos.DrawSphere(groundCheck.position, groundDistance);
     }
 
-    public bool isOnItem()
+    public Collider[] isOnItem()
     {
-        return Physics.CheckSphere(groundCheck.position, itemStandDistance, itemMask);
+        return Physics.OverlapSphere(groundCheck.position, groundDistance, itemMask);
+
+        //return Physics.CheckSphere(groundCheck.position, groundDistance, itemMask);
     }
 }

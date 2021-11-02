@@ -20,12 +20,16 @@ public class GrabSystem : MonoBehaviour
     private float pickedItemScale;
     private PlayerController controller;
 
+    private bool rotateObjectView = false;
+
     public Image defaultCursor;
     public Image enabledCursor;
     public Image powerBar;
     public bool canThrow = false;
 
     public LayerMask playerMask;
+
+    public float multiplier = 1f;
 
     public float power, maxPower = 100f;
 
@@ -128,6 +132,10 @@ public class GrabSystem : MonoBehaviour
     {
         if (pickedItem)
         {
+            if (rotateObjectView)
+            {
+                updateItemRotation();
+            }
             updateItemPosition();
         }   
     }
@@ -144,7 +152,27 @@ public class GrabSystem : MonoBehaviour
         }
         if (Input.GetMouseButton(1))
         {
-            updateItemRotation();
+            rotateObjectView = true;
+        }
+        else
+        {
+            rotateObjectView = false;
+        }
+
+    }
+
+    public void makeItemFacePlayer(Vector3 angle)
+    {
+        if (!rotateObjectView) 
+        {
+            if (pickedItem)
+            {
+                // Alternate, but not as good, way to rotate the object
+                //pickedItem.transform.Rotate(transform.up, angle.y, Space.World);
+
+                // Rotate the object around the player
+                pickedItem.transform.RotateAround(transform.position, transform.up, angle.y);
+            }
         }
     }
 
@@ -152,13 +180,10 @@ public class GrabSystem : MonoBehaviour
     {
         pickedItem.Rb.freezeRotation = true;
 
-        Debug.Log((characterCamera.transform.forward * itemOffset) + characterCamera.transform.position - pickedItem.transform.position);
-
         Vector3 moveDirection = ((characterCamera.transform.forward * itemOffset) + characterCamera.transform.position) - pickedItem.transform.position;
         pickedItem.Rb.velocity = moveDirection * itemSpeed;
 
         pickedItem.Rb.freezeRotation = false;
-
     }
 
     private void updateItemRotation()
@@ -194,6 +219,10 @@ public class GrabSystem : MonoBehaviour
         pickedItemScale = 1f;
         item.Rb.useGravity = true;
         item.gameObject.layer = LayerMask.NameToLayer("Item");
+        foreach (Transform child in item.transform)
+        {
+            child.gameObject.layer = LayerMask.NameToLayer("Item");
+        }
 
         item.Rb.AddForce(characterCamera.transform.forward * power * powerMultiplier, ForceMode.VelocityChange);
         item.Rb.AddTorque(spinSpeed, 0f, 0f, ForceMode.Force);

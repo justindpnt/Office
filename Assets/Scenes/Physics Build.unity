@@ -9849,8 +9849,8 @@ MonoBehaviour:
   itemOffset: 1
   smooth: 10
   throwSpeed: 50
-  itemSpeed: 30
-  rotationSpeed: 1
+  itemSpeed: 25
+  rotationSpeed: 2
   powerFillSpeed: 100
   powerMultiplier: 0.666
   spinSpeed: 50
@@ -9861,6 +9861,7 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 256
+  multiplier: 1
   power: 0
   maxPower: 100
 --- !u!4 &1845641792 stripped
@@ -11325,7 +11326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 2860446320069987808}
-  mouseSensitivity: 6
+  mouseSensitivity: 5
   walkSpeed: 6
   crouchSpeed: 3
   moveSmoothTime: 0.1
@@ -11334,14 +11335,7 @@ MonoBehaviour:
   crouchTime: 0.2
   crouchHieght: 1
   groundCheck: {fileID: 687040043}
-  groundDistance: 0.4
-  itemStandDistance: 0.35
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 512
-  itemMask:
-    serializedVersion: 2
-    m_Bits: 1024
+  groundDistance: 0.3
   isCrouched: 0
   isGrounded: 0
   gravity: -10
