@@ -14,10 +14,12 @@ public class ObstaclePush : MonoBehaviour
         grabSystem = GetComponent<GrabSystem>();
     }
 
+    // Apply a kick force on anything that interacts with the player
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         Rigidbody rigidbody = hit.collider.attachedRigidbody;
         
+        // If the player is standing on something, don't apply a kick force to that object
         if(rigidbody != null)
         {
             foreach (Collider item in controller.isOnItem())
@@ -32,12 +34,5 @@ public class ObstaclePush : MonoBehaviour
                 }
             }
         }
-
-        /*
-        if (rigidbody != null && !controller.isOnItem())
-        {
-
-        }
-        */
     }
 }

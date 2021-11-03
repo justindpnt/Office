@@ -9850,7 +9850,7 @@ MonoBehaviour:
   smooth: 10
   throwSpeed: 50
   itemSpeed: 25
-  rotationSpeed: 2
+  rotationSpeed: 4
   powerFillSpeed: 100
   powerMultiplier: 0.666
   spinSpeed: 50
