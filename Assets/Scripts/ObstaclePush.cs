@@ -6,12 +6,10 @@ public class ObstaclePush : MonoBehaviour
 {
     [SerializeField] private float forceMagnitude;
     PlayerController controller;
-    GrabSystem grabSystem;
 
     void Start()
     {
         controller = GetComponent<PlayerController>();
-        grabSystem = GetComponent<GrabSystem>();
     }
 
     // Apply a kick force on anything that interacts with the player
@@ -24,6 +22,7 @@ public class ObstaclePush : MonoBehaviour
         {
             foreach (Collider item in controller.isOnItem())
             {
+                //Don't add a force to anything you are currently on top of
                 if (rigidbody.gameObject.GetInstanceID() != item.gameObject.GetInstanceID())
                 {
                     Vector3 forceDirection = hit.gameObject.transform.position - transform.position;

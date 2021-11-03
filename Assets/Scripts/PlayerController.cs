@@ -4,49 +4,50 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //Mouse variables
     [SerializeField] Transform playerCamera = null;
     [SerializeField] float mouseSensitivity = 1f;
-    [SerializeField] float walkSpeed = 6f;
-    [SerializeField] float crouchSpeed = 3f;
-    float moveSpeed;
-    [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = .3f;
     [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = .03f;
     [SerializeField] bool lockCursor = true;
-    float crouchTimeCounter;
-    [SerializeField] float crouchTime = 1f;
-    [SerializeField] float crouchHieght = 1f;
-
-    float storedCrouchedScale;
-    float storedStandingScale;
-
+    Vector2 currentMouseDelta = Vector2.zero;
+    Vector2 currentMouseDeltaVelocity = Vector2.zero;
+    Vector2 targetMouseDelta;
+    Vector2 targetDir;
     float cameraPitch = 0.0f;
-    CharacterController controller = null;
+    public bool canLook { get; set; }
 
+    //Movement variables
+    [SerializeField] float walkSpeed = 6f;
+    [SerializeField] float crouchSpeed = 3f;
+    [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = .3f;
+    float moveSpeed;
     Vector2 currentDir = Vector2.zero;
     Vector2 currentDirVelocity = Vector2.zero;
 
-    Vector2 currentMouseDelta = Vector2.zero;
-    Vector2 currentMouseDeltaVelocity = Vector2.zero;
+    //Crouch variables
+    [SerializeField] float crouchTime = 1f;
+    [SerializeField] float crouchHieght = 1f;
+    private bool crouchPressed = false;
+    private bool crouchReleased = false;
+    float crouchTimeCounter;
+    float storedCrouchedHeight;
+    float storedStandingHeight;
+    public bool isCrouched = false;
 
+    //Jump variables
+    public bool isGrounded;
+    private bool spacePressed = false;
+    Vector3 verticalVelocity;
+    public float gravity = -9.81f;
+    public float jumpHeight = 3f;
+
+    //Character controller info
+    CharacterController controller = null;
     public Transform groundCheck;
     public float groundDistance = .4f;
     LayerMask groundMask;
     LayerMask itemMask;
-
-    public bool isCrouched = false;
-    public bool isGrounded;
-    Vector3 verticalVelocity;
-    public float gravity = -9.81f;
-    public float jumpHeight = 3f;
-    public bool canLook { get; set; }
-    private bool spacePressed = false;
-    private bool crouchPressed = false;
-    private bool crouchReleased = false;
-
     GrabSystem grabSystem;
-
-    Vector2 targetMouseDelta;
-    Vector2 targetDir;
 
     // Start is called before the first frame update
     void Start()
@@ -86,6 +87,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Only collect input from user during update, don't move any rigidbodies
     private void collectInput()
     {
         if (canLook)
@@ -159,7 +161,6 @@ public class PlayerController : MonoBehaviour
         {
             spacePressed = false;
             verticalVelocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-            //verticalVelocity.y = 10f;
         }
 
         verticalVelocity.y += gravity * Time.deltaTime;
@@ -177,8 +178,8 @@ public class PlayerController : MonoBehaviour
             {
                 if (crouchTimeCounter < crouchTime)
                 {
-                    controller.height = Mathf.Lerp(storedStandingScale, crouchHieght, crouchTimeCounter / crouchTime);
-                    playerCamera.localPosition = new Vector3(0f, Mathf.Lerp(storedStandingScale, crouchHieght, crouchTimeCounter / crouchTime), 0f);
+                    controller.height = Mathf.Lerp(storedStandingHeight, crouchHieght, crouchTimeCounter / crouchTime);
+                    playerCamera.localPosition = new Vector3(0f, Mathf.Lerp(storedStandingHeight, crouchHieght, crouchTimeCounter / crouchTime), 0f);
                     crouchTimeCounter += Time.deltaTime;
                     controller.center = Vector3.up * controller.height / 2f;
                 }
@@ -192,8 +193,8 @@ public class PlayerController : MonoBehaviour
             {
                 if (crouchTimeCounter < crouchTime)
                 {
-                    playerCamera.localPosition = new Vector3(0f, Mathf.Lerp(storedCrouchedScale, 2f, crouchTimeCounter / crouchTime), 0f);
-                    controller.height = Mathf.Lerp(storedCrouchedScale, 2f, crouchTimeCounter / crouchTime);
+                    playerCamera.localPosition = new Vector3(0f, Mathf.Lerp(storedCrouchedHeight, 2f, crouchTimeCounter / crouchTime), 0f);
+                    controller.height = Mathf.Lerp(storedCrouchedHeight, 2f, crouchTimeCounter / crouchTime);
                     crouchTimeCounter += Time.deltaTime;
                     controller.center = Vector3.up * controller.height / 2f;
                 }
@@ -205,7 +206,7 @@ public class PlayerController : MonoBehaviour
             crouchPressed = false;
             isCrouched = true;
             crouchTimeCounter = 0;
-            storedStandingScale = controller.height;
+            storedStandingHeight = controller.height;
         }
 
         if (crouchReleased)
@@ -213,7 +214,7 @@ public class PlayerController : MonoBehaviour
             crouchReleased = false;
             isCrouched = false;
             crouchTimeCounter = 0;
-            storedCrouchedScale = controller.height;
+            storedCrouchedHeight = controller.height;
         }
     }
 
@@ -226,7 +227,5 @@ public class PlayerController : MonoBehaviour
     public Collider[] isOnItem()
     {
         return Physics.OverlapSphere(groundCheck.position, groundDistance, itemMask);
-
-        //return Physics.CheckSphere(groundCheck.position, groundDistance, itemMask);
     }
 }

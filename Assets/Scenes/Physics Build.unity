@@ -4644,7 +4644,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 866839942}
-  - component: {fileID: 866839943}
   m_Layer: 11
   m_Name: Follow Camera
   m_TagString: Untagged
@@ -4666,19 +4665,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &866839943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866839941}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca5020083f3fe9d409fc7f1c76fb2c51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraSpot: {fileID: 0}
 --- !u!4 &882758028 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6404833290879296179, guid: 7dc0842642017cb43b92edb295edee80,
@@ -9845,25 +9831,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterCamera: {fileID: 7550650970981249157}
-  pickupDistance: 1.8
-  itemOffset: 1
-  smooth: 10
-  throwSpeed: 50
-  itemSpeed: 25
-  rotationSpeed: 4
-  powerFillSpeed: 100
-  powerMultiplier: 0.666
-  spinSpeed: 50
-  defaultCursor: {fileID: 1044865099}
-  enabledCursor: {fileID: 697405864}
-  powerBar: {fileID: 758041365}
-  canThrow: 0
   playerMask:
     serializedVersion: 2
     m_Bits: 256
-  multiplier: 1
+  pickupDistance: 1.8
+  itemOffsetFromPlayer: 1
+  itemMoveSpeed: 15
+  itemRotationSpeed: 4
+  powerBarFillSpeed: 120
+  powerMultiplier: 0.666
+  itemThrowSpinSpeed: 10
+  canThrow: 0
   power: 0
   maxPower: 100
+  defaultCursor: {fileID: 1044865099}
+  enabledCursor: {fileID: 697405864}
+  powerBar: {fileID: 758041365}
 --- !u!4 &1845641792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6404833290879296179, guid: 7dc0842642017cb43b92edb295edee80,
@@ -11326,20 +11309,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 2860446320069987808}
-  mouseSensitivity: 5
+  mouseSensitivity: 6
+  mouseSmoothTime: 0.03
+  lockCursor: 1
   walkSpeed: 6
   crouchSpeed: 3
   moveSmoothTime: 0.1
-  mouseSmoothTime: 0.03
-  lockCursor: 1
   crouchTime: 0.2
   crouchHieght: 1
-  groundCheck: {fileID: 687040043}
-  groundDistance: 0.3
   isCrouched: 0
   isGrounded: 0
   gravity: -10
   jumpHeight: 1
+  groundCheck: {fileID: 687040043}
+  groundDistance: 0.3
 --- !u!114 &1673824058353684288
 MonoBehaviour:
   m_ObjectHideFlags: 0
