@@ -2,10 +2,7 @@ fileFormatVersion: 2
 guid: cc71661ecf960d84887116a757b30b88
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable:
-  - first:
-      74: 6997882522552206460
-    second: Circle|CircleAction
+  internalIDToNameTable: []
   externalObjects:
   - first:
       type: UnityEngine:Material
