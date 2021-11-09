@@ -17,25 +17,19 @@ public class ObstaclePush : MonoBehaviour
     {
         Rigidbody rigidbody = hit.collider.attachedRigidbody;
 
-       // Debug.Log("Kick" + rigidbody.gameObject.name);
-
         if(rigidbody != null)
         {
-            // Get objects player is on top of
-            Collider[] itemsCurrentlyOn = controller.itemsStandingOn();
-
-            Debug.Log(itemsCurrentlyOn.Length);
-
             // If on top of any items, don't add a force to it
-            if (itemsCurrentlyOn.Length > 0)
+            if (controller.isStandingOn())
             {
+                // Get objects player is on top of
+                Collider[] itemsCurrentlyOn = controller.itemsStandingOn();
+
                 foreach (Collider item in itemsCurrentlyOn)
                 {
-                    Debug.Log(item.gameObject.name);
                     //Don't add a force to anything you are currently on top of
-                    if (rigidbody.gameObject.GetInstanceID() != item.gameObject.GetInstanceID())
+                    if (rigidbody.gameObject.GetInstanceID() != item.transform.parent.GetInstanceID())
                     {
-                        //Debug.Log("You are on top of:" + item.gameObject.name);
                         Vector3 forceDirection = hit.gameObject.transform.position - transform.position;
                         forceDirection.y = 0;
                         forceDirection.Normalize();
@@ -51,8 +45,6 @@ public class ObstaclePush : MonoBehaviour
                 Vector3 forceDirection = hit.gameObject.transform.position - transform.position;
                 forceDirection.y = 0;
                 forceDirection.Normalize();
-
-                Debug.Log(forceDirection);
 
                 rigidbody.AddForceAtPosition(forceDirection * forceMagnitude, transform.position, ForceMode.Impulse);
             }

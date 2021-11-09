@@ -224,6 +224,13 @@ public class PlayerController : MonoBehaviour
         Gizmos.DrawSphere(groundCheck.position, groundDistance);
     }
 
+    public bool isStandingOn()
+    {
+        return Physics.CheckSphere(groundCheck.position, groundDistance, itemMask);
+    }
+
+
+
     public Collider[] itemsStandingOn()
     {
         return Physics.OverlapSphere(groundCheck.position, groundDistance, itemMask);
