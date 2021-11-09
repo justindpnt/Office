@@ -4,18 +4,12 @@ using UnityEngine;
 
 public class CenterOfMass : MonoBehaviour
 {
-    public float offset = .2f;
+    public float centerOfMassY = .2f;
 
-    // Start is called before the first frame update
+    // Set the chair center of mass so it reacts to physics properly
     void Start()
     {
-        GetComponent<Rigidbody>().centerOfMass = new Vector3(0, offset, 0);
+        GetComponent<Rigidbody>().centerOfMass = new Vector3(0, centerOfMassY, 0);
         GetComponent<Rigidbody>().inertiaTensorRotation = Quaternion.identity;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
