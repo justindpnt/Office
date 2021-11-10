@@ -1158,7 +1158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7f173d22a3e784c944fb35ff0ebef3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minRequiredBreakMagnitude: 8
+  minRequiredBreakMagnitude: 12
   brokenWindowObject: {fileID: 8967446053019891532}
   windowObject: {fileID: 8967446051108591001}
 --- !u!54 &8933028197838317745

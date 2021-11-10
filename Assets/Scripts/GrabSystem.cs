@@ -23,6 +23,7 @@ public class GrabSystem : MonoBehaviour
     public bool canThrow = false;
     private bool rotateObjectView = false;
     public float power, maxPower = 100f;
+    public float stall, stallTime = 5f;
 
     //UI cache
     public Image defaultCursor;
@@ -39,6 +40,7 @@ public class GrabSystem : MonoBehaviour
         controller = GetComponent<PlayerController>();
         power = 0f;
         powerBar.fillAmount = 0f;
+        stall = 0f;
     }
 
 
@@ -100,13 +102,17 @@ public class GrabSystem : MonoBehaviour
         if (Input.GetKey(KeyCode.E) && canThrow)
         {
             powerBar.enabled = true;
-            if (power < maxPower)
+            if ((power < maxPower) && (stall > stallTime))
             {
                 power += Time.deltaTime * powerBarFillSpeed;
             }
-            else
+            else if((stall > stallTime))
             {
                 power = maxPower;
+            }
+            else
+            {
+                stall += Time.deltaTime * powerBarFillSpeed;
             }
             powerBar.fillAmount = power / maxPower;
         }
@@ -117,6 +123,7 @@ public class GrabSystem : MonoBehaviour
             powerBar.enabled = false;
             canThrow = false;
             power = 0f;
+            stall = 0f;
             defaultCursor.enabled = true;
             enabledCursor.enabled = false;
         }
@@ -184,8 +191,8 @@ public class GrabSystem : MonoBehaviour
     //Right click is held down
     private void rotateHeldItem()
     {
-        pickedItem.transform.Rotate(transform.up, -Input.GetAxis("Mouse X") * itemRotationSpeed, Space.World);
-        pickedItem.transform.Rotate(characterCamera.transform.right, Input.GetAxis("Mouse Y") * itemRotationSpeed, Space.World);
+        pickedItem.transform.Rotate(transform.up, -Input.GetAxis("Mouse X") * itemRotationSpeed * controller.mouseSensitivityMultiplier * 2, Space.World);
+        pickedItem.transform.Rotate(characterCamera.transform.right, Input.GetAxis("Mouse Y") * itemRotationSpeed * controller.mouseSensitivityMultiplier * 2, Space.World);
     }
 
     private void pickUpItem(PickableItem item)
@@ -224,6 +231,11 @@ public class GrabSystem : MonoBehaviour
 
         // Add a throw force to the object
         item.Rb.AddForce(characterCamera.transform.forward * power * powerMultiplier, ForceMode.VelocityChange);
-        item.Rb.AddTorque(itemThrowSpinSpeed, 0f, 0f, ForceMode.Force);
+
+        // Add torque if there is a throw force
+        if (power != 0)
+        {     
+            item.Rb.AddTorque(itemThrowSpinSpeed, 0f, 0f, ForceMode.Force);
+        }
     }
 }

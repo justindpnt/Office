@@ -10,9 +10,6 @@ public class GlassBreakCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        
-        Debug.Log(collision.relativeVelocity.magnitude);
-
         if (collision.relativeVelocity.magnitude > minRequiredBreakMagnitude)
         {
             windowObject.gameObject.SetActive(false);

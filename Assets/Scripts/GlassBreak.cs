@@ -9,17 +9,20 @@ public class GlassBreak : MonoBehaviour
     public Transform windowObject;
 
     private void OnTriggerEnter(Collider collider)
-    {
+    {        
         if(collider.attachedRigidbody != null)
         {
-            Debug.Log(collider.attachedRigidbody.velocity.magnitude);
+            if(collider.attachedRigidbody.velocity.magnitude > 1f)
+            {
+                //Debug.Log(collider.attachedRigidbody.name);
+               // Debug.Log(collider.attachedRigidbody.velocity.magnitude);
+            }
+            
             if (collider.attachedRigidbody.velocity.magnitude > minRequiredBreakMagnitude)
             {
                 windowObject.gameObject.SetActive(false);
                 brokenWindowObject.gameObject.SetActive(true);
             }
         }
-
-
     }
 }

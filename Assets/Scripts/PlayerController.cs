@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     //Mouse variables
     [SerializeField] Transform playerCamera = null;
     [SerializeField] float mouseSensitivity = 1f;
+    public float mouseSensitivityMultiplier = .5f;
     [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = .03f;
     [SerializeField] bool lockCursor = true;
     Vector2 currentMouseDelta = Vector2.zero;
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour
     float moveSpeed;
     Vector2 currentDir = Vector2.zero;
     Vector2 currentDirVelocity = Vector2.zero;
+    public bool canMove { get; set; }
 
     //Crouch variables
     [SerializeField] float crouchTime = 1f;
@@ -60,7 +62,7 @@ public class PlayerController : MonoBehaviour
             Cursor.visible = false;
         }
         canLook = true;
-
+        canMove = true;
 
         groundMask = 1 << LayerMask.NameToLayer("Ground");
         itemMask = 1 << LayerMask.NameToLayer("Item");
@@ -80,7 +82,10 @@ public class PlayerController : MonoBehaviour
     // Update things that do involve rigidodies
     private void FixedUpdate()
     {
-        UpdateMovement();
+        if (canMove)
+        {
+            UpdateMovement();
+        }
         if (canLook)
         {
             UpdateMouseLook();
@@ -99,19 +104,22 @@ public class PlayerController : MonoBehaviour
         targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         targetDir.Normalize();
 
-        if (Input.GetKeyDown("space") && (isGrounded))
+        if (canMove)
         {
-            spacePressed = true;
-        }
+            if (Input.GetKeyDown("space") && (isGrounded))
+            {
+                spacePressed = true;
+            }
 
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            crouchPressed = true;
-        }
+            if (Input.GetKeyDown(KeyCode.LeftControl))
+            {
+                crouchPressed = true;
+            }
 
-        if (Input.GetKeyUp(KeyCode.LeftControl))
-        {
-            crouchReleased = true;
+            if (Input.GetKeyUp(KeyCode.LeftControl))
+            {
+                crouchReleased = true;
+            }
         }
     }
 
@@ -123,22 +131,22 @@ public class PlayerController : MonoBehaviour
     
     void UpdateMouseLook()
     {
-        cameraPitch -= currentMouseDelta.y * mouseSensitivity;
+        cameraPitch -= currentMouseDelta.y * mouseSensitivity * mouseSensitivityMultiplier * 2;
         cameraPitch = Mathf.Clamp(cameraPitch, -90.0f, 90.0f);
 
         playerCamera.localEulerAngles = Vector3.right * cameraPitch;
-        transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
+        transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity * mouseSensitivityMultiplier * 2);
 
         //pass rotation to grab system, neccesary to keep the item facing the player
-        grabSystem.makeItemFacePlayer(Vector3.up * currentMouseDelta.x * mouseSensitivity);
+        grabSystem.makeItemFacePlayer(Vector3.up * currentMouseDelta.x * mouseSensitivity * mouseSensitivityMultiplier * 2);
     }
 
     // Update the movement of the character
     void UpdateMovement()
     {
-        HandleCrouch();
-        HandleVerticalMovement();
-        HandleHorizontalMovement();
+         HandleCrouch();
+         HandleVerticalMovement();
+         HandleHorizontalMovement();
     }
 
     // Handle the left and right movement of the character
@@ -229,7 +237,10 @@ public class PlayerController : MonoBehaviour
         return Physics.CheckSphere(groundCheck.position, groundDistance, itemMask);
     }
 
-
+    public void updateMouseSensMultiplier(float newSense)
+    {
+        mouseSensitivityMultiplier = newSense;
+    }
 
     public Collider[] itemsStandingOn()
     {
