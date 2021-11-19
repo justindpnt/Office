@@ -4,12 +4,30 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
+    public static PauseMenu instance;
+
+    //Player settings pointer
+    public PlayerSettings settings;
+
     //Menu State
     bool menuOpen = false;
 
     // Cache
     public GameObject menu;
     public PlayerController controller;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        DontDestroyOnLoad(gameObject);
+    }
 
     // Update is called once per frame
     void Update()
@@ -50,5 +68,6 @@ public class PauseMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         controller.canLook = true;
         controller.canMove = true;
+        controller.updateMouseSensMultiplier(settings.mouseSensetivity);
     }
 }

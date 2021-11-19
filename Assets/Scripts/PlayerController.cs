@@ -51,6 +51,12 @@ public class PlayerController : MonoBehaviour
     LayerMask itemMask;
     GrabSystem grabSystem;
 
+    private void Awake()
+    {
+        //make this slider sensitivity on awake so it is saved, also have to change slider function
+        mouseSensitivityMultiplier = 
+    }
+
     // Start is called before the first frame update
     void Start()
     {
