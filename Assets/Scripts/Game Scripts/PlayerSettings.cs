@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class PlayerSettings : MonoBehaviour
 {
-    public static PlayerSettings instance;
-    public float mouseSensetivity = 1f;
+    public static PlayerSettings instanceOfThis;
+    public float mouseSensetivity = .5f;
 
+    //Create singleton for playersettings
     private void Awake()
     {
-        if(instance == null)
+        if(instanceOfThis == null)
         {
-            instance = this;
+            instanceOfThis = this;
         }
         else
         {
@@ -20,6 +21,7 @@ public class PlayerSettings : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    //Method called from UX menu from slider
     public void updateMouseSensitivity(float newMouseSense)
     {
         mouseSensetivity = newMouseSense;

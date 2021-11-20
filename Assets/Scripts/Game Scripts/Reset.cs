@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Reset : MonoBehaviour
 {    
+    //Mainly for demo, resets current scene
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))

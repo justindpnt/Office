@@ -8,16 +8,11 @@ public class GlassBreak : MonoBehaviour
     public Transform brokenWindowObject;
     public Transform windowObject;
 
+    //This is placed on a barrier around the windows, and if it detects an object moving fast enough, breaks a window
     private void OnTriggerEnter(Collider collider)
     {        
         if(collider.attachedRigidbody != null)
-        {
-            if(collider.attachedRigidbody.velocity.magnitude > 1f)
-            {
-                //Debug.Log(collider.attachedRigidbody.name);
-               // Debug.Log(collider.attachedRigidbody.velocity.magnitude);
-            }
-            
+        {         
             if (collider.attachedRigidbody.velocity.magnitude > minRequiredBreakMagnitude)
             {
                 windowObject.gameObject.SetActive(false);

@@ -1,35 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static PauseMenu instance;
-
     //Player settings pointer
-    public PlayerSettings settings;
+    PlayerSettings settings;
 
     //Menu State
     bool menuOpen = false;
 
-    // Cache
+    // Caches objects
     public GameObject menu;
     public PlayerController controller;
 
+    //Slider
+    public Slider slider;
+
+    //Always have a fresh pointer to the one active game settings
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-        DontDestroyOnLoad(gameObject);
+        settings = FindObjectOfType<PlayerSettings>() as PlayerSettings;
+        slider.value = settings.mouseSensetivity;
+        slider.onValueChanged.AddListener(delegate { settings.updateMouseSensitivity(slider.value); });
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.M))
@@ -47,11 +43,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void SetMouseSens(float sensitivity)
-    {
-        controller.updateMouseSensMultiplier(sensitivity);
-    }
-
+    //Disable cursor and turn on menu UX
     private void openMenu()
     {
         menu.SetActive(true);
@@ -61,13 +53,21 @@ public class PauseMenu : MonoBehaviour
         controller.canMove = false;
     }
 
+    //Endable cursor, turn on menu UX, and writeback settings changes
     private void closeMenu()
     {
+        updateGameValues();
+
         menu.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         controller.canLook = true;
         controller.canMove = true;
+    }
+
+    //Writeback settings changes
+    private void updateGameValues()
+    {
         controller.updateMouseSensMultiplier(settings.mouseSensetivity);
     }
 }

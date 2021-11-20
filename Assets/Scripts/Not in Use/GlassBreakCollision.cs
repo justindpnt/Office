@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//This script is not used as of right now. When using a collision, the velocity of the object is always stopped and the collision don't look realistic.
 public class GlassBreakCollision : MonoBehaviour
 {
     public float minRequiredBreakMagnitude = 1f;

@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     //Mouse variables
     [SerializeField] Transform playerCamera = null;
     [SerializeField] float mouseSensitivity = 1f;
-    public float mouseSensitivityMultiplier = .5f;
+    public float mouseSensitivityMultiplier;
     [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = .03f;
     [SerializeField] bool lockCursor = true;
     Vector2 currentMouseDelta = Vector2.zero;
@@ -51,10 +51,14 @@ public class PlayerController : MonoBehaviour
     LayerMask itemMask;
     GrabSystem grabSystem;
 
+    //Game Settings cache
+    PlayerSettings settings;
+
+    //Always have a fresh pointer to the one active game settings
     private void Awake()
     {
-        //make this slider sensitivity on awake so it is saved, also have to change slider function
-        mouseSensitivityMultiplier = 
+        settings = FindObjectOfType<PlayerSettings>() as PlayerSettings;
+        mouseSensitivityMultiplier = settings.mouseSensetivity;
     }
 
     // Start is called before the first frame update
@@ -133,7 +137,6 @@ public class PlayerController : MonoBehaviour
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
     }
-    
     
     void UpdateMouseLook()
     {
@@ -243,13 +246,13 @@ public class PlayerController : MonoBehaviour
         return Physics.CheckSphere(groundCheck.position, groundDistance, itemMask);
     }
 
-    public void updateMouseSensMultiplier(float newSense)
-    {
-        mouseSensitivityMultiplier = newSense;
-    }
-
     public Collider[] itemsStandingOn()
     {
         return Physics.OverlapSphere(groundCheck.position, groundDistance, itemMask);
+    }
+
+    public void updateMouseSensMultiplier(float newSense)
+    {
+        mouseSensitivityMultiplier = newSense;
     }
 }
