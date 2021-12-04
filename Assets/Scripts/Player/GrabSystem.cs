@@ -9,7 +9,7 @@ public class GrabSystem : MonoBehaviour
     //Character controller cache
     [SerializeField] private Camera characterCamera;
     public LayerMask playerMask;
-    private PlayerController controller;
+    private Movement playerMovement;
 
     //Item variables
     [SerializeField] public float pickupDistance = 1.5f;
@@ -37,7 +37,7 @@ public class GrabSystem : MonoBehaviour
 
     private void Start()
     {
-        controller = GetComponent<PlayerController>();
+        playerMovement = GetComponent<Movement>();
         power = 0f;
         powerBar.fillAmount = 0f;
         stall = 0f;
@@ -152,13 +152,13 @@ public class GrabSystem : MonoBehaviour
         // Right click inspect
         if (Input.GetMouseButtonDown(1))
         {
-            controller.canLook = false;
+            playerMovement.canLook = false;
             rotateObjectView = true;
         }
         if (Input.GetMouseButtonUp(1))
         {
             rotateObjectView = false;
-            controller.canLook = true;
+            playerMovement.canLook = true;
         }
     }
 
@@ -191,8 +191,8 @@ public class GrabSystem : MonoBehaviour
     //Right click is held down
     private void rotateHeldItem()
     {
-        pickedItem.transform.Rotate(transform.up, -Input.GetAxis("Mouse X") * itemRotationSpeed * controller.mouseSensitivityMultiplier * 2, Space.World);
-        pickedItem.transform.Rotate(characterCamera.transform.right, Input.GetAxis("Mouse Y") * itemRotationSpeed * controller.mouseSensitivityMultiplier * 2, Space.World);
+        pickedItem.transform.Rotate(transform.up, -Input.GetAxis("Mouse X") * itemRotationSpeed * playerMovement.mouseSensitivityMultiplier * 2, Space.World);
+        pickedItem.transform.Rotate(characterCamera.transform.right, Input.GetAxis("Mouse Y") * itemRotationSpeed * playerMovement.mouseSensitivityMultiplier * 2, Space.World);
     }
 
     private void pickUpItem(PickableItem item)

@@ -5,11 +5,11 @@ using UnityEngine;
 public class ObstaclePush : MonoBehaviour
 {
     [SerializeField] private float forceMagnitude;
-    PlayerController controller;
+    Movement playerMovement;
 
     void Start()
     {
-        controller = GetComponent<PlayerController>();
+        playerMovement = GetComponent<Movement>();
     }
 
     // Apply a kick force on anything that interacts with the player
@@ -20,10 +20,10 @@ public class ObstaclePush : MonoBehaviour
         if(rigidbody != null)
         {
             // If on top of any items, don't add a force to it
-            if (controller.isStandingOn())
+            if (playerMovement.isStandingOn())
             {
                 // Get objects player is on top of
-                Collider[] itemsCurrentlyOn = controller.itemsStandingOn();
+                Collider[] itemsCurrentlyOn = playerMovement.itemsStandingOn();
 
                 foreach (Collider item in itemsCurrentlyOn)
                 {
