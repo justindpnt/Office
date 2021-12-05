@@ -13559,6 +13559,7 @@ GameObject:
   - component: {fileID: 1843516333}
   - component: {fileID: 1843516334}
   - component: {fileID: 1843516335}
+  - component: {fileID: 1843516330}
   m_Layer: 8
   m_Name: First Person Player
   m_TagString: Untagged
@@ -13566,6 +13567,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &1843516330
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843516329}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 0.2, z: 0.7}
+  m_Center: {x: 0, y: 0.09, z: 0}
 --- !u!4 &1843516331
 Transform:
   m_ObjectHideFlags: 0
@@ -13633,6 +13647,8 @@ MonoBehaviour:
   walkSpeed: 8
   crouchSpeed: 3
   moveSmoothTime: 0.1
+  acceleration: 6
+  smoothSpeed: 0
   crouchTime: 0.2
   crouchHieght: 1
   isCrouched: 0

@@ -22,8 +22,11 @@ public class Movement : MonoBehaviour
     [SerializeField] float crouchSpeed = 3f;
     [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = .3f;
     float moveSpeed;
+    float speed;
+    public float acceleration = 1f;
     Vector2 currentDir = Vector2.zero;
     Vector2 currentDirVelocity = Vector2.zero;
+    public float smoothSpeed;
     public bool canMove { get; set; }
 
     //Crouch variables
@@ -163,13 +166,37 @@ public class Movement : MonoBehaviour
     // Handle the left and right movement of the character
     private void HandleHorizontalMovement()
     {
-        moveSpeed = walkSpeed;
+        
         //currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
+       
+        float normalizedAMov;
+        float normalizedDMov;
+        float normalizedSMov;
+        float normalizedWMov;
 
-        rb.velocity = transform.rotation * new Vector3(targetDir.x * moveSpeed, rb.velocity.y, targetDir.y * moveSpeed);
+        float normalizedMaxSpeed = .707f * moveSpeed;
 
-        //Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * moveSpeed;
-        //controller.Move(velocity * Time.deltaTime);
+        if (targetDir.x < 0){ normalizedAMov = targetDir.x; }
+        else { normalizedAMov = 0; }
+
+        if(targetDir.x > 0){ normalizedDMov = targetDir.x; }
+        else { normalizedDMov = 0; }
+
+        if(targetDir.y < 0){ normalizedSMov = targetDir.y; }
+        else { normalizedSMov = 0; }
+
+        if (targetDir.y > 0){ normalizedWMov = targetDir.y; }
+        else { normalizedWMov = 0; }
+
+        if (targetDir.magnitude > 0)
+        {
+            rb.velocity += transform.rotation * new Vector3(targetDir.x * moveSpeed, rb.velocity.y, targetDir.y * moveSpeed);
+        }
+        else
+        {
+            rb.velocity -= transform.rotation * new Vector3(targetDir.x * moveSpeed, rb.velocity.y, targetDir.y * moveSpeed);
+        }
+
     }
 
     // Handle the up and down movement of the character
