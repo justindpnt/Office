@@ -166,8 +166,6 @@ public class Movement : MonoBehaviour
 
         rb.velocity = transform.rotation * new Vector3(targetDir.x * moveSpeed, rb.velocity.y, targetDir.y * moveSpeed);
 
-        Debug.Log(rb.velocity);
-
         //Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * moveSpeed;
         //controller.Move(velocity * Time.deltaTime);
     }
@@ -244,6 +242,7 @@ public class Movement : MonoBehaviour
         }
     }
     */
+    
 
     // Draw ground check sphere
     private void OnDrawGizmos()

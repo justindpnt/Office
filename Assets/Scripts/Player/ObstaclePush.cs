@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObstaclePush : MonoBehaviour
 {
-    [SerializeField] private float forceMagnitude;
+    [SerializeField] private float forceMultiplier;
     Movement playerMovement;
 
     void Start()
@@ -13,7 +13,7 @@ public class ObstaclePush : MonoBehaviour
     }
 
     // Apply a kick force on anything that interacts with the player
-    private void OnControllerColliderHit(ControllerColliderHit hit)
+    private void OnCollisionEnter(Collision hit)
     {
         Rigidbody rigidbody = hit.collider.attachedRigidbody;
 
@@ -34,7 +34,8 @@ public class ObstaclePush : MonoBehaviour
                         forceDirection.y = 0;
                         forceDirection.Normalize();
 
-                        rigidbody.AddForceAtPosition(forceDirection * forceMagnitude, transform.position, ForceMode.Impulse);
+                        //Add a force relative to how fast you are moving compared to the object
+                        rigidbody.AddForceAtPosition(forceDirection * forceMultiplier * hit.relativeVelocity.magnitude, transform.position, ForceMode.Impulse);
                     }
                 }
             }
@@ -46,7 +47,7 @@ public class ObstaclePush : MonoBehaviour
                 forceDirection.y = 0;
                 forceDirection.Normalize();
 
-                rigidbody.AddForceAtPosition(forceDirection * forceMagnitude, transform.position, ForceMode.Impulse);
+                rigidbody.AddForceAtPosition(forceDirection * forceMultiplier, transform.position, ForceMode.Impulse);
             }
         }
     }
