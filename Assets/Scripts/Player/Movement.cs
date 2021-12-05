@@ -45,6 +45,7 @@ public class Movement : MonoBehaviour
 
     //Character controller info
     Rigidbody rb;
+    CapsuleCollider capCollider;
     public Transform groundCheck;
     public float groundDistance = .4f;
     LayerMask groundMask;
@@ -66,6 +67,7 @@ public class Movement : MonoBehaviour
     {
         grabSystem = GetComponent<GrabSystem>();
         rb = GetComponent<Rigidbody>();
+        capCollider = GetComponent<CapsuleCollider>();
         if (lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
@@ -153,7 +155,7 @@ public class Movement : MonoBehaviour
     // Update the movement of the character
     void UpdateMovement()
     {
-         //HandleCrouch();
+         HandleCrouch();
          HandleVerticalMovement();
          HandleHorizontalMovement();
     }
@@ -190,7 +192,7 @@ public class Movement : MonoBehaviour
         //controller.Move(verticalVelocity * Time.deltaTime);
     }
 
-    /*
+    
     // Handle crouched movement of the character
     private void HandleCrouch()
     {
@@ -198,14 +200,14 @@ public class Movement : MonoBehaviour
         {
             moveSpeed = crouchSpeed;
 
-            if (controller.height > crouchHieght)
+            if (capCollider.height > crouchHieght)
             {
                 if (crouchTimeCounter < crouchTime)
                 {
-                    controller.height = Mathf.Lerp(storedStandingHeight, crouchHieght, crouchTimeCounter / crouchTime);
+                    capCollider.height = Mathf.Lerp(storedStandingHeight, crouchHieght, crouchTimeCounter / crouchTime);
                     playerCamera.localPosition = new Vector3(0f, Mathf.Lerp(storedStandingHeight, crouchHieght, crouchTimeCounter / crouchTime), 0f);
                     crouchTimeCounter += Time.deltaTime;
-                    controller.center = Vector3.up * controller.height / 2f;
+                    capCollider.center = Vector3.up * capCollider.height / 2f;
                 }
             }
         }
@@ -213,14 +215,14 @@ public class Movement : MonoBehaviour
         {
             moveSpeed = walkSpeed;
 
-            if (controller.height < 2f)
+            if (capCollider.height < 2f)
             {
                 if (crouchTimeCounter < crouchTime)
                 {
                     playerCamera.localPosition = new Vector3(0f, Mathf.Lerp(storedCrouchedHeight, 2f, crouchTimeCounter / crouchTime), 0f);
-                    controller.height = Mathf.Lerp(storedCrouchedHeight, 2f, crouchTimeCounter / crouchTime);
+                    capCollider.height = Mathf.Lerp(storedCrouchedHeight, 2f, crouchTimeCounter / crouchTime);
                     crouchTimeCounter += Time.deltaTime;
-                    controller.center = Vector3.up * controller.height / 2f;
+                    capCollider.center = Vector3.up * capCollider.height / 2f;
                 }
             }
         }
@@ -230,7 +232,7 @@ public class Movement : MonoBehaviour
             crouchPressed = false;
             isCrouched = true;
             crouchTimeCounter = 0;
-            storedStandingHeight = controller.height;
+            storedStandingHeight = capCollider.height;
         }
 
         if (crouchReleased)
@@ -238,10 +240,10 @@ public class Movement : MonoBehaviour
             crouchReleased = false;
             isCrouched = false;
             crouchTimeCounter = 0;
-            storedCrouchedHeight = controller.height;
+            storedCrouchedHeight = capCollider.height;
         }
     }
-    */
+    
     
 
     // Draw ground check sphere

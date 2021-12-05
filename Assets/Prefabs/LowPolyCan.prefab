@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8365333743828902521}
   - component: {fileID: 1527789256732787717}
   - component: {fileID: 751892761674457805}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 8785307335100288259}
   - component: {fileID: 9106585229954300561}
   - component: {fileID: 9106585229954300574}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LowPolyCan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 7388229387248296672}
   - component: {fileID: 2771513521399142576}
   - component: {fileID: 9106585231731734985}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Can
   m_TagString: Untagged
   m_Icon: {fileID: 0}
