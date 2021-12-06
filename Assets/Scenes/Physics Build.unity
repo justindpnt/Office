@@ -13644,7 +13644,7 @@ MonoBehaviour:
   mouseSensitivityMultiplier: 0.5
   mouseSmoothTime: 0.03
   lockCursor: 1
-  walkSpeed: 8
+  walkSpeed: 8.5
   crouchSpeed: 3
   moveSmoothTime: 0.1
   acceleration: 6

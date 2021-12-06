@@ -166,37 +166,14 @@ public class Movement : MonoBehaviour
     // Handle the left and right movement of the character
     private void HandleHorizontalMovement()
     {
-        
-        //currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
-       
-        float normalizedAMov;
-        float normalizedDMov;
-        float normalizedSMov;
-        float normalizedWMov;
-
-        float normalizedMaxSpeed = .707f * moveSpeed;
-
-        if (targetDir.x < 0){ normalizedAMov = targetDir.x; }
-        else { normalizedAMov = 0; }
-
-        if(targetDir.x > 0){ normalizedDMov = targetDir.x; }
-        else { normalizedDMov = 0; }
-
-        if(targetDir.y < 0){ normalizedSMov = targetDir.y; }
-        else { normalizedSMov = 0; }
-
-        if (targetDir.y > 0){ normalizedWMov = targetDir.y; }
-        else { normalizedWMov = 0; }
-
         if (targetDir.magnitude > 0)
         {
-            rb.velocity += transform.rotation * new Vector3(targetDir.x * moveSpeed, rb.velocity.y, targetDir.y * moveSpeed);
+            rb.velocity = transform.rotation * new Vector3(targetDir.x * moveSpeed, rb.velocity.y, targetDir.y * moveSpeed);
         }
         else
         {
-            rb.velocity -= transform.rotation * new Vector3(targetDir.x * moveSpeed, rb.velocity.y, targetDir.y * moveSpeed);
+            rb.velocity = new Vector3(0, rb.velocity.y, 0);
         }
-
     }
 
     // Handle the up and down movement of the character
