@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-//This script is not used as of right now. When using a collision, the velocity of the object is always stopped and the collision don't look realistic.
+// Back up technique. If the object isn't moving fast enough to trigger the collider,
+// then trigger this, which will at least still break the glass
 public class GlassBreakCollision : MonoBehaviour
 {
     public float minRequiredBreakMagnitude = 1f;

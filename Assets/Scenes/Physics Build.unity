@@ -15143,6 +15143,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
@@ -15244,6 +15245,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1327163841}
     m_Modifications:
+    - target: {fileID: 7247761202055526675, guid: c8e8071302a04d543953bc77427f7f9a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8590919758412180982, guid: c8e8071302a04d543953bc77427f7f9a,
         type: 3}
       propertyPath: m_IsActive
