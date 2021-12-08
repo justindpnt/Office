@@ -20,7 +20,7 @@ public class Movement : MonoBehaviour
     //Movement variables
     [SerializeField] float walkSpeed = 6f;
     [SerializeField] float crouchSpeed = 3f;
-    [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = .3f;
+    //[SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = .3f;
     float moveSpeed;
     float speed;
     public float acceleration = 1f;
