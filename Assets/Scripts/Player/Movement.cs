@@ -163,15 +163,40 @@ public class Movement : MonoBehaviour
          HandleHorizontalMovement();
     }
 
+    //don't touch
+    public float speedTimer = 0;
+    //increase for overall faster fill speed
+    public float speedTimerFillSpeed = 1f;
+    public float firstZoneTimeBoundary;
+    public float secondZoneTimeBoundary;
+    public float firstZoneDivisorFactor;
+    public float secondZoneDivisorFactor;
+
     // Handle the left and right movement of the character
     private void HandleHorizontalMovement()
     {
         if (targetDir.magnitude > 0)
         {
-            rb.velocity = transform.rotation * new Vector3(targetDir.x * moveSpeed, rb.velocity.y, targetDir.y * moveSpeed);
+            speedTimer += Time.deltaTime * speedTimerFillSpeed;
+
+            if(speedTimer < firstZoneTimeBoundary)
+            {
+                rb.velocity = transform.rotation * 
+                    new Vector3(targetDir.x * moveSpeed/firstZoneDivisorFactor, rb.velocity.y, targetDir.y * moveSpeed/firstZoneDivisorFactor);
+            }
+            else if (firstZoneTimeBoundary < speedTimer && speedTimer < secondZoneTimeBoundary)
+            {
+                rb.velocity = transform.rotation *
+                    new Vector3(targetDir.x * moveSpeed / secondZoneDivisorFactor, rb.velocity.y, targetDir.y * moveSpeed / secondZoneDivisorFactor);
+            }
+            else if (speedTimer > secondZoneTimeBoundary)
+            {
+                rb.velocity = transform.rotation * new Vector3(targetDir.x * moveSpeed, rb.velocity.y, targetDir.y * moveSpeed);
+            }  
         }
         else
         {
+            speedTimer = 0;
             rb.velocity = new Vector3(0, rb.velocity.y, 0);
         }
     }
@@ -187,13 +212,11 @@ public class Movement : MonoBehaviour
         if (spacePressed)
         {
             spacePressed = false;
-            //rb.AddForce(0, jumpMultiplier, 0, ForceMode.Impulse);
             verticalVelocity.y = Mathf.Sqrt(jumpMultiplier * -2f * gravity);
         }
 
         verticalVelocity.y += gravity * Time.deltaTime;
         rb.velocity = (new Vector3(rb.velocity.x, verticalVelocity.y, rb.velocity.z));
-        //controller.Move(verticalVelocity * Time.deltaTime);
     }
 
     

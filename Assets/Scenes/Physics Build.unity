@@ -13543,6 +13543,12 @@ MonoBehaviour:
   jumpMultiplier: 1.25
   groundCheck: {fileID: 687040043}
   groundDistance: 0.3
+  speedTimer: 0
+  speedTimerFillSpeed: 10
+  firstZoneTimeBoundary: 0
+  secondZoneTimeBoundary: 0
+  firstZoneDivisorFactor: 0
+  secondZoneDivisorFactor: 0
 --- !u!54 &1843516334
 Rigidbody:
   m_ObjectHideFlags: 0
