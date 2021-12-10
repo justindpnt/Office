@@ -13501,7 +13501,7 @@ MonoBehaviour:
     m_Bits: 256
   pickupDistance: 1.8
   itemOffsetFromPlayer: 1
-  itemMoveSpeed: 15
+  itemMoveSpeed: 20
   itemRotationSpeed: 4
   powerBarFillSpeed: 120
   powerMultiplier: 0.666
@@ -13532,7 +13532,7 @@ MonoBehaviour:
   mouseSmoothTime: 0.03
   lockCursor: 1
   walkSpeed: 8.5
-  crouchSpeed: 3
+  crouchSpeed: 4.25
   acceleration: 6
   smoothSpeed: 0
   crouchTime: 0.2
