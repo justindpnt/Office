@@ -13527,14 +13527,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 2860446320069987808}
-  mouseSensitivity: 6
+  mouseSensitivity: 8
   mouseSensitivityMultiplier: 0.5
   mouseSmoothTime: 0.03
   lockCursor: 1
   walkSpeed: 8.5
   crouchSpeed: 4.25
-  acceleration: 6
-  smoothSpeed: 0
   crouchTime: 0.2
   crouchHieght: 1
   isCrouched: 0
@@ -13543,12 +13541,11 @@ MonoBehaviour:
   jumpMultiplier: 1.25
   groundCheck: {fileID: 687040043}
   groundDistance: 0.3
-  speedTimer: 0
-  speedTimerFillSpeed: 10
-  firstZoneTimeBoundary: 0
-  secondZoneTimeBoundary: 0
-  firstZoneDivisorFactor: 0
-  secondZoneDivisorFactor: 0
+  speedTimerFillSpeed: 25
+  firstZoneTimeBoundary: 1
+  secondZoneTimeBoundary: 2
+  firstZoneDivisorFactor: 2.5
+  secondZoneDivisorFactor: 1.5
 --- !u!54 &1843516334
 Rigidbody:
   m_ObjectHideFlags: 0

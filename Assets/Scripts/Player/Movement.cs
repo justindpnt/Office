@@ -20,13 +20,7 @@ public class Movement : MonoBehaviour
     //Movement variables
     [SerializeField] float walkSpeed = 6f;
     [SerializeField] float crouchSpeed = 3f;
-    //[SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = .3f;
     float moveSpeed;
-    float speed;
-    public float acceleration = 1f;
-    Vector2 currentDir = Vector2.zero;
-    Vector2 currentDirVelocity = Vector2.zero;
-    public float smoothSpeed;
     public bool canMove { get; set; }
 
     //Crouch variables
@@ -164,7 +158,10 @@ public class Movement : MonoBehaviour
     }
 
     //don't touch
-    public float speedTimer = 0;
+    float accelerationTimer = 0;
+    float deccelerationTimer = 0;
+    float maxTimerValue = 50f;
+    
     //increase for overall faster fill speed
     public float speedTimerFillSpeed = 1f;
     public float firstZoneTimeBoundary;
@@ -172,32 +169,77 @@ public class Movement : MonoBehaviour
     public float firstZoneDivisorFactor;
     public float secondZoneDivisorFactor;
 
+    Vector2 lastKnownTargetDir = new Vector2(0,0);
+
     // Handle the left and right movement of the character
     private void HandleHorizontalMovement()
     {
         if (targetDir.magnitude > 0)
         {
-            speedTimer += Time.deltaTime * speedTimerFillSpeed;
+            deccelerationTimer = 0f;
+            
+            if(accelerationTimer > maxTimerValue)
+            {
+                accelerationTimer = maxTimerValue;
+            }
+            else
+            {
+                accelerationTimer += Time.deltaTime * speedTimerFillSpeed;
+            }
 
-            if(speedTimer < firstZoneTimeBoundary)
+            if(accelerationTimer < firstZoneTimeBoundary)
             {
                 rb.velocity = transform.rotation * 
-                    new Vector3(targetDir.x * moveSpeed/firstZoneDivisorFactor, rb.velocity.y, targetDir.y * moveSpeed/firstZoneDivisorFactor);
+                    new Vector3(targetDir.x * moveSpeed / firstZoneDivisorFactor, 
+                        rb.velocity.y, 
+                        targetDir.y * moveSpeed / firstZoneDivisorFactor);
+                lastKnownTargetDir = targetDir;
             }
-            else if (firstZoneTimeBoundary < speedTimer && speedTimer < secondZoneTimeBoundary)
+            else if (firstZoneTimeBoundary < accelerationTimer && accelerationTimer < secondZoneTimeBoundary)
             {
                 rb.velocity = transform.rotation *
-                    new Vector3(targetDir.x * moveSpeed / secondZoneDivisorFactor, rb.velocity.y, targetDir.y * moveSpeed / secondZoneDivisorFactor);
+                    new Vector3(targetDir.x * moveSpeed / secondZoneDivisorFactor, 
+                        rb.velocity.y, 
+                        targetDir.y * moveSpeed / secondZoneDivisorFactor);
+                lastKnownTargetDir = targetDir;
             }
-            else if (speedTimer > secondZoneTimeBoundary)
+            else if (accelerationTimer > secondZoneTimeBoundary)
             {
                 rb.velocity = transform.rotation * new Vector3(targetDir.x * moveSpeed, rb.velocity.y, targetDir.y * moveSpeed);
+                lastKnownTargetDir = targetDir;
             }  
         }
         else
         {
-            speedTimer = 0;
-            rb.velocity = new Vector3(0, rb.velocity.y, 0);
+            accelerationTimer = 0f;
+
+            if (deccelerationTimer > maxTimerValue)
+            {
+                deccelerationTimer = maxTimerValue;
+            }
+            else
+            {
+                deccelerationTimer += Time.deltaTime * speedTimerFillSpeed;
+            }
+
+            if (deccelerationTimer < firstZoneTimeBoundary)
+            {
+                rb.velocity = transform.rotation *
+                    new Vector3(lastKnownTargetDir.x * moveSpeed / secondZoneDivisorFactor,
+                        rb.velocity.y,
+                        lastKnownTargetDir.y * moveSpeed / secondZoneDivisorFactor);
+            }
+            else if (firstZoneTimeBoundary < deccelerationTimer && deccelerationTimer < secondZoneTimeBoundary)
+            {
+                rb.velocity = transform.rotation *
+                    new Vector3(lastKnownTargetDir.x * moveSpeed / firstZoneDivisorFactor,
+                        rb.velocity.y,
+                        lastKnownTargetDir.y * moveSpeed / firstZoneDivisorFactor);
+            }
+            else if (deccelerationTimer > secondZoneTimeBoundary)
+            {
+                rb.velocity = new Vector3(0, rb.velocity.y, 0);
+            }
         }
     }
 
