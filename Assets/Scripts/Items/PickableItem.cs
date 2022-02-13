@@ -13,5 +13,5 @@ public class PickableItem : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-    }
+    }  
 }
