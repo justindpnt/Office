@@ -30,6 +30,9 @@ public class GrabSystem : MonoBehaviour
     public Image enabledCursor;
     public Image powerBar;
 
+    //Aduio cache
+    AudioSource pickUpSound;
+
     public PickableItem getHeldItem()
     {
         return pickedItem;
@@ -41,6 +44,8 @@ public class GrabSystem : MonoBehaviour
         power = 0f;
         powerBar.fillAmount = 0f;
         stall = 0f;
+
+        pickUpSound = GetComponent<AudioSource>();
     }
 
 
@@ -197,6 +202,8 @@ public class GrabSystem : MonoBehaviour
 
     private void pickUpItem(PickableItem item)
     {
+        pickUpSound.Play();
+
         // Tie item to player
         pickedItem = item;
 
