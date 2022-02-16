@@ -4,25 +4,28 @@ using UnityEngine;
 
 public class SoundableItem : MonoBehaviour
 {
-    AudioSource soundEffect;
+    //AudioSource soundEffect;
     //bool hasPlayed = false;
+    AudioSource[] collisionSounds; 
 
     private void Awake()
     {
         if (GetComponent<AudioSource>())
         {
-            soundEffect = GetComponent<AudioSource>();
+            collisionSounds = GetComponents<AudioSource>();
+            //soundEffect = GetComponent<AudioSource>();
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.relativeVelocity.magnitude > 5f && soundEffect)
+        if (collision.relativeVelocity.magnitude > 2f)
         {
-            //hasPlayed = true;
-            //soundEffect.loop = true;
-            soundEffect.Play();
-            //AudioSource.PlayClipAtPoint(soundEffect.clip, collision.transform.position);
+            int indexOfSoundToPlay = Random.Range(0, collisionSounds.Length);
+
+            //The sound of a collision is depedent on the speed of the collision
+            collisionSounds[indexOfSoundToPlay].volume = Mathf.Clamp01(collision.relativeVelocity.magnitude / 40); 
+            collisionSounds[indexOfSoundToPlay].Play();
         }
     }
 
