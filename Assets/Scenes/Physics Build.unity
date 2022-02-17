@@ -1537,7 +1537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 1426461824}
-  controller: {fileID: 0}
+  movementScript: {fileID: 1843516333}
   slider: {fileID: 1127475806}
 --- !u!1001 &217942961
 PrefabInstance:

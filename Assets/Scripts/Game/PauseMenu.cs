@@ -13,7 +13,7 @@ public class PauseMenu : MonoBehaviour
 
     // Caches objects
     public GameObject menu;
-    public PlayerController controller;
+    public Movement movementScript;
 
     //Slider
     public Slider slider;
@@ -49,8 +49,8 @@ public class PauseMenu : MonoBehaviour
         menu.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        controller.canLook = false;
-        controller.canMove = false;
+        movementScript.canLook = false;
+        movementScript.canMove = false;
     }
 
     //Endable cursor, turn on menu UX, and writeback settings changes
@@ -61,13 +61,13 @@ public class PauseMenu : MonoBehaviour
         menu.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        controller.canLook = true;
-        controller.canMove = true;
+        movementScript.canLook = true;
+        movementScript.canMove = true;
     }
 
     //Writeback settings changes
     private void updateGameValues()
     {
-        controller.updateMouseSensMultiplier(settings.mouseSensetivity);
+        movementScript.updateMouseSensMultiplier(settings.mouseSensetivity);
     }
 }
