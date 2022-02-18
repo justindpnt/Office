@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -14,16 +15,21 @@ public class PauseMenu : MonoBehaviour
     // Caches objects
     public GameObject menu;
     public Movement movementScript;
+    public AudioMixerGroup masterVolumeMixer;
 
-    //Slider
-    public Slider slider;
+    //Sliders
+    public Slider sensitivitySlider;
+    public Slider volumeSlider;
 
     //Always have a fresh pointer to the one active game settings
     private void Awake()
     {
         settings = FindObjectOfType<PlayerSettings>() as PlayerSettings;
-        slider.value = settings.mouseSensetivity;
-        slider.onValueChanged.AddListener(delegate { settings.updateMouseSensitivity(slider.value); });
+        sensitivitySlider.value = settings.mouseSensetivity;
+        volumeSlider.value = settings.masterVolume;
+
+        sensitivitySlider.onValueChanged.AddListener(delegate { settings.updateMouseSensitivity(sensitivitySlider.value); });
+        volumeSlider.onValueChanged.AddListener(delegate { settings.updateGameVolume(volumeSlider.value); });
     }
 
     void Update()
@@ -69,5 +75,6 @@ public class PauseMenu : MonoBehaviour
     private void updateGameValues()
     {
         movementScript.updateMouseSensMultiplier(settings.mouseSensetivity);
+        masterVolumeMixer.audioMixer.SetFloat("musicVol", settings.masterVolume);
     }
 }

@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlayerSettings : MonoBehaviour
 {
     public static PlayerSettings instanceOfThis;
+
     public float mouseSensetivity = .5f;
+    public float masterVolume = 0f;
 
     //Create singleton for playersettings
     private void Awake()
@@ -25,5 +27,11 @@ public class PlayerSettings : MonoBehaviour
     public void updateMouseSensitivity(float newMouseSense)
     {
         mouseSensetivity = newMouseSense;
+    }
+
+    //Method called from UX menu from slider
+    public void updateGameVolume(float newGameVolume)
+    {
+        masterVolume = newGameVolume;
     }
 }
