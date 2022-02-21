@@ -48,11 +48,12 @@ public class GrabSystem : MonoBehaviour
         pickUpSound = GetComponent<AudioSource>();
     }
 
-
     // Update is called once per frame
     private void Update()
     {
-        if(pickedItem)
+        ProcessControllerRT();
+
+        if (pickedItem)
         {
             processRotation();
             defaultCursor.enabled = false;
@@ -64,6 +65,37 @@ public class GrabSystem : MonoBehaviour
         else
         {
             processPlayerInteraction();
+        }
+    }
+    enum rightBumperPressedState { notPresseed, firstFramePressed, pressed, lastFramePressed }
+    rightBumperPressedState rightBumperState = rightBumperPressedState.notPresseed;
+    bool wasRightBumperPressedLastFrame = false;
+
+    private void ProcessControllerRT()
+    {
+        if (Input.GetAxis("ControllerThrow") > 0)
+        {
+            if (wasRightBumperPressedLastFrame)
+            {
+                rightBumperState = rightBumperPressedState.pressed;
+            }
+            else
+            {
+                rightBumperState = rightBumperPressedState.firstFramePressed;
+                wasRightBumperPressedLastFrame = true;
+            }
+        }
+        else if (Input.GetAxis("ControllerThrow") < .1)
+        {
+            if (wasRightBumperPressedLastFrame)
+            {
+                rightBumperState = rightBumperPressedState.lastFramePressed;
+                wasRightBumperPressedLastFrame = false;
+            }
+            else
+            {
+                rightBumperState = rightBumperPressedState.notPresseed;
+            }
         }
     }
 
@@ -82,7 +114,8 @@ public class GrabSystem : MonoBehaviour
             {
                 defaultCursor.enabled = false;
                 enabledCursor.enabled = true;
-                if (Input.GetKeyDown(KeyCode.E))
+                
+                if (Input.GetButtonDown("Interact") || (rightBumperState == rightBumperPressedState.firstFramePressed)) 
                 {
                     defaultCursor.enabled = false;
                     enabledCursor.enabled = false;
@@ -104,7 +137,7 @@ public class GrabSystem : MonoBehaviour
 
     private void processThrow()
     {
-        if (Input.GetKey(KeyCode.E) && canThrow)
+        if ((Input.GetButton("Interact") || (rightBumperState == rightBumperPressedState.pressed))  && canThrow)
         {
             powerBar.enabled = true;
             if ((power < maxPower) && (stall > stallTime))
@@ -122,7 +155,7 @@ public class GrabSystem : MonoBehaviour
             powerBar.fillAmount = power / maxPower;
         }
 
-        if (Input.GetKeyUp(KeyCode.E) && canThrow)
+        if ((Input.GetButtonUp("Interact") || (rightBumperState == rightBumperPressedState.lastFramePressed)) && canThrow)
         {
             DropItem(pickedItem, power);
             powerBar.enabled = false;
@@ -133,7 +166,7 @@ public class GrabSystem : MonoBehaviour
             enabledCursor.enabled = false;
         }
 
-        else if (Input.GetKeyUp(KeyCode.E))
+        else if (Input.GetButtonUp("Interact") || (rightBumperState == rightBumperPressedState.lastFramePressed))
         {
             canThrow = true;
         }
