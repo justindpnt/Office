@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Lofelt.NiceVibrations;
 
 public class SoundableItem : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class SoundableItem : MonoBehaviour
     //bool hasPlayed = false;
     AudioSource[] collisionSounds;
     Rigidbody objectRB;
+    Movement player;
+    public float effectRadius = 20f;
 
     private void Awake()
     {
@@ -18,11 +21,13 @@ public class SoundableItem : MonoBehaviour
         {
             collisionSounds = GetComponents<AudioSource>();
         }
+
+        player = FindObjectOfType<Movement>();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        bool playSound = false;
+        bool playSoundandVibrate = false;
 
         if (collision.relativeVelocity.magnitude > 2f)
         {
@@ -35,26 +40,40 @@ public class SoundableItem : MonoBehaviour
                     //Only the faster moving object in a collsiion should make a sound
                     if (objectRB.velocity.magnitude > collision.collider.transform.parent.gameObject.GetComponent<Rigidbody>().velocity.magnitude)
                     {
-                        playSound = true;
+                        playSoundandVibrate = true;
                     }
                 }
                 else
                 {
-                    playSound = true;
+                    playSoundandVibrate = true;
                 }
             }
             else
             {
-                playSound = true;
+                playSoundandVibrate = true;
             }
 
-            if (playSound)
+            if (playSoundandVibrate)
             {
                 int indexOfSoundToPlay = Random.Range(0, collisionSounds.Length);
 
                 //The sound of a collision is depedent on the speed of the collision
-                collisionSounds[indexOfSoundToPlay].volume = Mathf.Clamp01(collision.relativeVelocity.magnitude / 40);
+                collisionSounds[indexOfSoundToPlay].volume = Mathf.Clamp01(collision.relativeVelocity.magnitude / 160);
                 collisionSounds[indexOfSoundToPlay].Play();
+
+                //Only play rumble id there is a controller connected
+                if((GamepadRumbler.IsConnected() != false) 
+                    && !collision.transform.tag.Contains("Glass") 
+                    && collision.relativeVelocity.magnitude > 4f)
+                {
+                    if ((player.transform.position - transform.position).magnitude < effectRadius)
+                    {
+                        //HapticPatterns.PresetType type = HapticPatterns.PresetType.Selection;
+                        //HapticPatterns.PlayPreset(type);
+                        //HapticPatterns.PlayConstant(Mathf.Clamp01(collision.relativeVelocity.magnitude / 40), 0.0f, .1f);
+                        HapticPatterns.PlayEmphasis(Mathf.Clamp01(collision.relativeVelocity.magnitude / 20), 0.0f);
+                    }
+                }
             }
         }
     }

@@ -3894,6 +3894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Laptop_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1673640180901966, guid: c86c81b52a7985843a833ae46ac6255c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4346068106931734, guid: c86c81b52a7985843a833ae46ac6255c, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -4988,6 +4992,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Window (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8933028198148481107, guid: c8e8071302a04d543953bc77427f7f9a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Glass
+      objectReference: {fileID: 0}
     - target: {fileID: 8967446051108591001, guid: c8e8071302a04d543953bc77427f7f9a,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -5614,6 +5623,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Window (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933028198148481107, guid: c8e8071302a04d543953bc77427f7f9a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Glass
       objectReference: {fileID: 0}
     - target: {fileID: 8967446051108591001, guid: c8e8071302a04d543953bc77427f7f9a,
         type: 3}
@@ -7192,6 +7206,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Window (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933028198148481107, guid: c8e8071302a04d543953bc77427f7f9a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Glass
       objectReference: {fileID: 0}
     - target: {fileID: 8967446051108591001, guid: c8e8071302a04d543953bc77427f7f9a,
         type: 3}
@@ -9809,6 +9828,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Window (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8933028198148481107, guid: c8e8071302a04d543953bc77427f7f9a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Glass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8e8071302a04d543953bc77427f7f9a, type: 3}
 --- !u!1 &981513433
@@ -11061,6 +11085,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Window (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933028198148481107, guid: c8e8071302a04d543953bc77427f7f9a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Glass
       objectReference: {fileID: 0}
     - target: {fileID: 8967446051108591001, guid: c8e8071302a04d543953bc77427f7f9a,
         type: 3}
@@ -14272,6 +14301,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Window (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8933028198148481107, guid: c8e8071302a04d543953bc77427f7f9a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Glass
+      objectReference: {fileID: 0}
     - target: {fileID: 8967446051108591001, guid: c8e8071302a04d543953bc77427f7f9a,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -15773,6 +15807,10 @@ PrefabInstance:
     - target: {fileID: 1673640180901966, guid: c86c81b52a7985843a833ae46ac6255c, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Laptop_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1673640180901966, guid: c86c81b52a7985843a833ae46ac6255c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4346068106931734, guid: c86c81b52a7985843a833ae46ac6255c, type: 3}
       propertyPath: m_RootOrder
@@ -18932,6 +18970,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Window (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8933028198148481107, guid: c8e8071302a04d543953bc77427f7f9a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Glass
+      objectReference: {fileID: 0}
     - target: {fileID: 8967446051108591001, guid: c8e8071302a04d543953bc77427f7f9a,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -20121,6 +20164,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Window (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933028198148481107, guid: c8e8071302a04d543953bc77427f7f9a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Glass
       objectReference: {fileID: 0}
     - target: {fileID: 8967446051108591001, guid: c8e8071302a04d543953bc77427f7f9a,
         type: 3}
@@ -24066,16 +24114,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1327163841}
     m_Modifications:
-    - target: {fileID: 7247761202055526675, guid: c8e8071302a04d543953bc77427f7f9a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8590919758412180982, guid: c8e8071302a04d543953bc77427f7f9a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8933028198148481106, guid: c8e8071302a04d543953bc77427f7f9a,
         type: 3}
       propertyPath: m_RootOrder
