@@ -16,6 +16,7 @@ public class GrabSystem : MonoBehaviour
     [SerializeField] public float itemOffsetFromPlayer = 1f;
     [SerializeField] public float itemMoveSpeed = 1f;
     [SerializeField] public float itemRotationSpeed = 1f;
+    [SerializeField] public float itemControllerRotationSpeed = 1f;
     [SerializeField] public float powerBarFillSpeed = 1f;
     [SerializeField] public float powerMultiplier = 1f;
     [SerializeField] public float itemThrowSpinSpeed = 10f;
@@ -185,6 +186,8 @@ public class GrabSystem : MonoBehaviour
         }   
     }
 
+    bool isUsingControllerToInspect = false;
+
     private void processRotation()
     {
         // Right click inspect
@@ -195,6 +198,20 @@ public class GrabSystem : MonoBehaviour
         }
         if (Input.GetMouseButtonUp(1))
         {
+            rotateObjectView = false;
+            playerMovement.canLook = true;
+        }
+
+        if (Input.GetButtonDown("Inspect"))
+        {
+            isUsingControllerToInspect = true;
+            playerMovement.canLook = false;
+            rotateObjectView = true;
+        }
+
+        if (Input.GetButtonUp("Inspect"))
+        {
+            isUsingControllerToInspect = false;
             rotateObjectView = false;
             playerMovement.canLook = true;
         }
@@ -229,8 +246,16 @@ public class GrabSystem : MonoBehaviour
     //Right click is held down
     private void rotateHeldItem()
     {
-        pickedItem.transform.Rotate(transform.up, -Input.GetAxis("Mouse X") * itemRotationSpeed * playerMovement.mouseSensitivityMultiplier * 2, Space.World);
-        pickedItem.transform.Rotate(characterCamera.transform.right, Input.GetAxis("Mouse Y") * itemRotationSpeed * playerMovement.mouseSensitivityMultiplier * 2, Space.World);
+        if (isUsingControllerToInspect)
+        {
+            pickedItem.transform.Rotate(transform.up, -Input.GetAxis("Mouse X") * itemControllerRotationSpeed * playerMovement.mouseSensitivityMultiplier * 2, Space.World);
+            pickedItem.transform.Rotate(characterCamera.transform.right, Input.GetAxis("Mouse Y") * itemControllerRotationSpeed * playerMovement.mouseSensitivityMultiplier * 2, Space.World);
+        }
+        else
+        {
+            pickedItem.transform.Rotate(transform.up, -Input.GetAxis("Mouse X") * itemRotationSpeed * playerMovement.mouseSensitivityMultiplier * 2, Space.World);
+            pickedItem.transform.Rotate(characterCamera.transform.right, Input.GetAxis("Mouse Y") * itemRotationSpeed * playerMovement.mouseSensitivityMultiplier * 2, Space.World);
+        }  
     }
 
     private void pickUpItem(PickableItem item)

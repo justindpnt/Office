@@ -115,17 +115,17 @@ public class Movement : MonoBehaviour
 
         if (canMove)
         {
-            if (Input.GetKeyDown("space") && (isGrounded))
+            if (Input.GetButtonDown("Jump") && (isGrounded))
             {
                 spacePressed = true;
             }
 
-            if (Input.GetKeyDown(KeyCode.LeftControl))
+            if ((Input.GetKeyDown(KeyCode.LeftControl)||(Input.GetButtonDown("ControllerCrouch"))) && isGrounded && !isCrouched)
             {
                 crouchPressed = true;
             }
 
-            if (Input.GetKeyUp(KeyCode.LeftControl))
+            else if ((Input.GetKeyUp(KeyCode.LeftControl)||(Input.GetButtonDown("ControllerCrouch"))) && isGrounded)
             {
                 crouchReleased = true;
             }

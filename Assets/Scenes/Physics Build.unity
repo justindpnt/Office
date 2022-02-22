@@ -21147,6 +21147,7 @@ MonoBehaviour:
   itemOffsetFromPlayer: 1
   itemMoveSpeed: 20
   itemRotationSpeed: 4
+  itemControllerRotationSpeed: 8
   powerBarFillSpeed: 120
   powerMultiplier: 0.666
   itemThrowSpinSpeed: 10
