@@ -18,6 +18,10 @@ public class AudioManager : MonoBehaviour
     public AudioSource heavyCollisionSoundTwo;
     public AudioSource heavyCollisionSoundThree;
 
+    public AudioSource[] lightCollisionSounds;
+    public AudioSource[] mediumCollisionSounds;
+    public AudioSource[] heavyCollisionSounds;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -34,8 +38,8 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        AudioSource[] lightCollisionSounds = { lightCollisionSoundOne, lightCollisionSoundTwo, lightCollisionSoundThree };
-        AudioSource[] mediumCollisionSounds = { mediumCollisionSoundOne, mediumCollisionSoundTwo, mediumCollisionSoundThree };
-        AudioSource[] heavyCollisionSounds = { heavyCollisionSoundOne, heavyCollisionSoundTwo, heavyCollisionSoundThree };
+        lightCollisionSounds = new AudioSource[] { lightCollisionSoundOne, lightCollisionSoundTwo, lightCollisionSoundThree };
+        mediumCollisionSounds = new AudioSource[] { mediumCollisionSoundOne, mediumCollisionSoundTwo, mediumCollisionSoundThree };
+        heavyCollisionSounds = new AudioSource[] { heavyCollisionSoundOne, heavyCollisionSoundTwo, heavyCollisionSoundThree };
     }
 }

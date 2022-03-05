@@ -7,19 +7,21 @@ public class SoundableItem : MonoBehaviour
 {
     //AudioSource soundEffect;
     //bool hasPlayed = false;
-    AudioSource[] collisionSounds;
+    public AudioSource[] collisionSounds;
     Rigidbody objectRB;
     Movement player;
     public float effectRadius = 20f;
+    public bool shouldCreateCollisionSound = true;
 
     private void Awake()
     {
         objectRB = GetComponent<Rigidbody>();
 
         //If this object has an audio source, then we put that 
-        if (GetComponent<AudioSource>())
+        if (shouldCreateCollisionSound)
         {
-            collisionSounds = GetComponents<AudioSource>();
+            AudioManager sceneAudioManager = GameObject.Find("Audio Manager").GetComponent<AudioManager>();
+            collisionSounds = sceneAudioManager.lightCollisionSounds;
         }
 
         player = FindObjectOfType<Movement>();
