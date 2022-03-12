@@ -13,18 +13,57 @@ public class SoundableItem : MonoBehaviour
     public float effectRadius = 20f;
     public bool shouldCreateCollisionSound = true;
 
+    //Sound type
+    public enum CollisionSound {lightObject, mediumObject, heavyObject };
+
+    //This item type
+    public CollisionSound soundType;
+
+
     private void Awake()
     {
         objectRB = GetComponent<Rigidbody>();
+        player = FindObjectOfType<Movement>();
+    }
 
+    //This has to happen in start so the arrays in audioManager get initialized
+    private void Start()
+    {
         //If this object has an audio source, then we put that 
         if (shouldCreateCollisionSound)
         {
             AudioManager sceneAudioManager = GameObject.Find("Audio Manager").GetComponent<AudioManager>();
-            collisionSounds = sceneAudioManager.lightCollisionSounds;
-        }
 
-        player = FindObjectOfType<Movement>();
+            if(soundType == CollisionSound.lightObject)
+            {
+                copySoundEffectsFromManager(sceneAudioManager.lightCollisionSounds);
+            }
+            else if(soundType == CollisionSound.mediumObject)
+            {
+                copySoundEffectsFromManager(sceneAudioManager.mediumCollisionSounds);
+            }
+            else if(soundType == CollisionSound.heavyObject)
+            {
+                copySoundEffectsFromManager(sceneAudioManager.heavyCollisionSounds);
+            }
+
+            collisionSounds = GetComponents<AudioSource>();
+        }
+    }
+
+    private void copySoundEffectsFromManager(AudioSource[] managerSounds)
+    {
+        foreach (var soundFromManager in managerSounds)
+        {
+            AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.clip = soundFromManager.clip;
+            audioSource.outputAudioMixerGroup = soundFromManager.outputAudioMixerGroup;
+            audioSource.volume = soundFromManager.volume;
+            audioSource.playOnAwake = soundFromManager.playOnAwake;
+            audioSource.loop = soundFromManager.loop;
+            audioSource.pitch = soundFromManager.pitch;
+            audioSource.spatialBlend = soundFromManager.spatialBlend;
+        }
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -18,6 +18,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource heavyCollisionSoundTwo;
     public AudioSource heavyCollisionSoundThree;
 
+    [Header("Runtime Arrys (Only populated during runtime)")]
     public AudioSource[] lightCollisionSounds;
     public AudioSource[] mediumCollisionSounds;
     public AudioSource[] heavyCollisionSounds;
@@ -34,10 +35,7 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
-    }
 
-    private void Start()
-    {
         lightCollisionSounds = new AudioSource[] { lightCollisionSoundOne, lightCollisionSoundTwo, lightCollisionSoundThree };
         mediumCollisionSounds = new AudioSource[] { mediumCollisionSoundOne, mediumCollisionSoundTwo, mediumCollisionSoundThree };
         heavyCollisionSounds = new AudioSource[] { heavyCollisionSoundOne, heavyCollisionSoundTwo, heavyCollisionSoundThree };
