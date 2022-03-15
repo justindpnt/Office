@@ -8,8 +8,15 @@ public class PushableSound : MonoBehaviour
     Rigidbody objectRB;
     public float audioDampenerFactor = 10f;
     public float minimumMovementVelocity = .1f;
-    
-    
+    public bool shouldCreateFrictionSound = true;
+
+    //Sound type
+    public enum pushingSound { chair, light, medium, heavy };
+
+    //This item type
+    public pushingSound soundType;
+
+
     // Start is called before the first frame update
     void Start()
     {

@@ -5,13 +5,14 @@ using Lofelt.NiceVibrations;
 
 public class SoundableItem : MonoBehaviour
 {
-    //AudioSource soundEffect;
-    //bool hasPlayed = false;
+    //Sound Variables
     public AudioSource[] collisionSounds;
     Rigidbody objectRB;
     Movement player;
-    public float effectRadius = 20f;
     public bool shouldCreateCollisionSound = true;
+
+    float effectRadius = 20f; //Change this to increase/decrease vibration radius
+    float soundDampFactor = 60f; //Decrease this number to increase sound volume
 
     //Sound type
     public enum CollisionSound {lightObject, mediumObject, heavyObject };
@@ -70,7 +71,7 @@ public class SoundableItem : MonoBehaviour
     {
         bool playSoundandVibrate = false;
 
-        if (collision.relativeVelocity.magnitude > 2f)
+        if (collision.relativeVelocity.magnitude > .5f)
         {
             //if the object has a parent (which means it is a collider object)
             if (collision.collider.transform.parent != null)
@@ -99,7 +100,7 @@ public class SoundableItem : MonoBehaviour
                 int indexOfSoundToPlay = Random.Range(0, collisionSounds.Length);
 
                 //The sound of a collision is depedent on the speed of the collision
-                collisionSounds[indexOfSoundToPlay].volume = Mathf.Clamp01(collision.relativeVelocity.magnitude / 160);
+                collisionSounds[indexOfSoundToPlay].volume = Mathf.Clamp01(collision.relativeVelocity.magnitude / soundDampFactor);
                 collisionSounds[indexOfSoundToPlay].Play();
 
                 //Only play rumble id there is a controller connected

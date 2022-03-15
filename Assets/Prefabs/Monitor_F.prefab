@@ -352,8 +352,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2fe7ac4a89a181428c20d19788be097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionSounds: []
   effectRadius: 20
   shouldCreateCollisionSound: 1
+  soundDampFactor: 80
+  soundType: 1
 --- !u!1 &6039965610836495182
 GameObject:
   m_ObjectHideFlags: 0

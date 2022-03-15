@@ -18,6 +18,11 @@ public class AudioManager : MonoBehaviour
     public AudioSource heavyCollisionSoundTwo;
     public AudioSource heavyCollisionSoundThree;
 
+    public AudioSource rollingChair;
+    public AudioSource lightPushableObject;
+    public AudioSource mediumPushableObject;
+    public AudioSource heavyPushableObject;
+
     [Header("Runtime Arrys (Only populated during runtime)")]
     public AudioSource[] lightCollisionSounds;
     public AudioSource[] mediumCollisionSounds;
