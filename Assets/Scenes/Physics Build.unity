@@ -22610,6 +22610,7 @@ MonoBehaviour:
   lockCursor: 1
   walkSpeed: 8.5
   crouchSpeed: 4.25
+  shouldUseAcceleration: 0
   crouchTime: 0.2
   crouchHieght: 1
   isCrouched: 0

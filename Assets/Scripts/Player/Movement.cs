@@ -22,6 +22,7 @@ public class Movement : MonoBehaviour
     [SerializeField] float crouchSpeed = 3f;
     float moveSpeed;
     public bool canMove { get; set; }
+    public bool shouldUseAcceleration = false;
 
     //Crouch variables
     [SerializeField] float crouchTime = 1f;
@@ -174,73 +175,83 @@ public class Movement : MonoBehaviour
     // Handle the left and right movement of the character
     private void HandleHorizontalMovement()
     {
-        if (targetDir.magnitude > 0)
+
+        if(shouldUseAcceleration)
         {
-            deccelerationTimer = 0f;
-            
-            if(accelerationTimer > maxTimerValue)
+            if (targetDir.magnitude > 0)
             {
-                accelerationTimer = maxTimerValue;
+                deccelerationTimer = 0f;
+
+                if (accelerationTimer > maxTimerValue)
+                {
+                    accelerationTimer = maxTimerValue;
+                }
+                else
+                {
+                    accelerationTimer += Time.deltaTime * speedTimerFillSpeed;
+                }
+
+                if (accelerationTimer < firstZoneTimeBoundary)
+                {
+                    rb.velocity = transform.rotation *
+                        new Vector3(targetDir.x * moveSpeed / firstZoneDivisorFactor,
+                            rb.velocity.y,
+                            targetDir.y * moveSpeed / firstZoneDivisorFactor);
+                    lastKnownTargetDir = targetDir;
+                }
+                else if (firstZoneTimeBoundary < accelerationTimer && accelerationTimer < secondZoneTimeBoundary)
+                {
+                    rb.velocity = transform.rotation *
+                        new Vector3(targetDir.x * moveSpeed / secondZoneDivisorFactor,
+                            rb.velocity.y,
+                            targetDir.y * moveSpeed / secondZoneDivisorFactor);
+                    lastKnownTargetDir = targetDir;
+                }
+                else if (accelerationTimer > secondZoneTimeBoundary)
+                {
+                    rb.velocity = transform.rotation * new Vector3(targetDir.x * moveSpeed, rb.velocity.y, targetDir.y * moveSpeed);
+                    lastKnownTargetDir = targetDir;
+                }
             }
             else
             {
-                accelerationTimer += Time.deltaTime * speedTimerFillSpeed;
-            }
+                accelerationTimer = 0f;
 
-            if(accelerationTimer < firstZoneTimeBoundary)
-            {
-                rb.velocity = transform.rotation * 
-                    new Vector3(targetDir.x * moveSpeed / firstZoneDivisorFactor, 
-                        rb.velocity.y, 
-                        targetDir.y * moveSpeed / firstZoneDivisorFactor);
-                lastKnownTargetDir = targetDir;
+                if (deccelerationTimer > maxTimerValue)
+                {
+                    deccelerationTimer = maxTimerValue;
+                }
+                else
+                {
+                    deccelerationTimer += Time.deltaTime * speedTimerFillSpeed;
+                }
+
+                if (deccelerationTimer < firstZoneTimeBoundary)
+                {
+                    rb.velocity = transform.rotation *
+                        new Vector3(lastKnownTargetDir.x * moveSpeed / secondZoneDivisorFactor,
+                            rb.velocity.y,
+                            lastKnownTargetDir.y * moveSpeed / secondZoneDivisorFactor);
+                }
+                else if (firstZoneTimeBoundary < deccelerationTimer && deccelerationTimer < secondZoneTimeBoundary)
+                {
+                    rb.velocity = transform.rotation *
+                        new Vector3(lastKnownTargetDir.x * moveSpeed / firstZoneDivisorFactor,
+                            rb.velocity.y,
+                            lastKnownTargetDir.y * moveSpeed / firstZoneDivisorFactor);
+                }
+                else if (deccelerationTimer > secondZoneTimeBoundary)
+                {
+                    rb.velocity = new Vector3(0, rb.velocity.y, 0);
+                }
             }
-            else if (firstZoneTimeBoundary < accelerationTimer && accelerationTimer < secondZoneTimeBoundary)
-            {
-                rb.velocity = transform.rotation *
-                    new Vector3(targetDir.x * moveSpeed / secondZoneDivisorFactor, 
-                        rb.velocity.y, 
-                        targetDir.y * moveSpeed / secondZoneDivisorFactor);
-                lastKnownTargetDir = targetDir;
-            }
-            else if (accelerationTimer > secondZoneTimeBoundary)
-            {
-                rb.velocity = transform.rotation * new Vector3(targetDir.x * moveSpeed, rb.velocity.y, targetDir.y * moveSpeed);
-                lastKnownTargetDir = targetDir;
-            }  
         }
         else
         {
-            accelerationTimer = 0f;
-
-            if (deccelerationTimer > maxTimerValue)
-            {
-                deccelerationTimer = maxTimerValue;
-            }
-            else
-            {
-                deccelerationTimer += Time.deltaTime * speedTimerFillSpeed;
-            }
-
-            if (deccelerationTimer < firstZoneTimeBoundary)
-            {
-                rb.velocity = transform.rotation *
-                    new Vector3(lastKnownTargetDir.x * moveSpeed / secondZoneDivisorFactor,
-                        rb.velocity.y,
-                        lastKnownTargetDir.y * moveSpeed / secondZoneDivisorFactor);
-            }
-            else if (firstZoneTimeBoundary < deccelerationTimer && deccelerationTimer < secondZoneTimeBoundary)
-            {
-                rb.velocity = transform.rotation *
-                    new Vector3(lastKnownTargetDir.x * moveSpeed / firstZoneDivisorFactor,
-                        rb.velocity.y,
-                        lastKnownTargetDir.y * moveSpeed / firstZoneDivisorFactor);
-            }
-            else if (deccelerationTimer > secondZoneTimeBoundary)
-            {
-                rb.velocity = new Vector3(0, rb.velocity.y, 0);
-            }
+            rb.velocity = transform.rotation * new Vector3(targetDir.x * moveSpeed, rb.velocity.y, targetDir.y * moveSpeed);
+            lastKnownTargetDir = targetDir;
         }
+
     }
 
     // Handle the up and down movement of the character
