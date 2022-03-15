@@ -9,7 +9,6 @@ public class SoundableItem : MonoBehaviour
     public AudioSource[] collisionSounds;
     Rigidbody objectRB;
     Movement player;
-    public bool shouldCreateCollisionSound = true;
 
     float effectRadius = 20f; //Change this to increase/decrease vibration radius
     float soundDampFactor = 60f; //Decrease this number to increase sound volume
@@ -30,26 +29,22 @@ public class SoundableItem : MonoBehaviour
     //This has to happen in start so the arrays in audioManager get initialized
     private void Start()
     {
-        //If this object has an audio source, then we put that 
-        if (shouldCreateCollisionSound)
+        AudioManager sceneAudioManager = GameObject.Find("Audio Manager").GetComponent<AudioManager>();
+
+        if(soundType == CollisionSound.lightObject)
         {
-            AudioManager sceneAudioManager = GameObject.Find("Audio Manager").GetComponent<AudioManager>();
-
-            if(soundType == CollisionSound.lightObject)
-            {
-                copySoundEffectsFromManager(sceneAudioManager.lightCollisionSounds);
-            }
-            else if(soundType == CollisionSound.mediumObject)
-            {
-                copySoundEffectsFromManager(sceneAudioManager.mediumCollisionSounds);
-            }
-            else if(soundType == CollisionSound.heavyObject)
-            {
-                copySoundEffectsFromManager(sceneAudioManager.heavyCollisionSounds);
-            }
-
-            collisionSounds = GetComponents<AudioSource>();
+            copySoundEffectsFromManager(sceneAudioManager.lightCollisionSounds);
         }
+        else if(soundType == CollisionSound.mediumObject)
+        {
+            copySoundEffectsFromManager(sceneAudioManager.mediumCollisionSounds);
+        }
+        else if(soundType == CollisionSound.heavyObject)
+        {
+            copySoundEffectsFromManager(sceneAudioManager.heavyCollisionSounds);
+        }
+
+        collisionSounds = GetComponents<AudioSource>();
     }
 
     private void copySoundEffectsFromManager(AudioSource[] managerSounds)

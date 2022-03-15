@@ -6,12 +6,11 @@ public class PushableSound : MonoBehaviour
 {
     AudioSource continuousSound;
     Rigidbody objectRB;
-    public float audioDampenerFactor = 10f;
-    public float minimumMovementVelocity = .1f;
-    public bool shouldCreateFrictionSound = true;
+    float audioDampenerFactor = 5f;
+    float minimumMovementVelocity = .1f;
 
     //Sound type
-    public enum pushingSound { chair, light, medium, heavy };
+    public enum pushingSound { none, chair, light, medium, heavy };
 
     //This item type
     public pushingSound soundType;
@@ -20,8 +19,38 @@ public class PushableSound : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AudioManager sceneAudioManager = GameObject.Find("Audio Manager").GetComponent<AudioManager>();
+
+        if (soundType == pushingSound.chair)
+        {
+            copySoundEffectsFromManager(sceneAudioManager.rollingChair);
+        }
+        else if (soundType == pushingSound.light)
+        {
+            copySoundEffectsFromManager(sceneAudioManager.lightPushableObject);
+        }
+        else if (soundType == pushingSound.medium)
+        {
+            copySoundEffectsFromManager(sceneAudioManager.mediumPushableObject);
+        }
+        else if (soundType == pushingSound.heavy)
+        {
+            copySoundEffectsFromManager(sceneAudioManager.heavyPushableObject);
+        }
+
         continuousSound = GetComponent<AudioSource>();
         objectRB = GetComponent<Rigidbody>();
+    }
+    private void copySoundEffectsFromManager(AudioSource soundFromManager)
+    {
+        AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = soundFromManager.clip;
+        audioSource.outputAudioMixerGroup = soundFromManager.outputAudioMixerGroup;
+        audioSource.volume = soundFromManager.volume;
+        audioSource.playOnAwake = soundFromManager.playOnAwake;
+        audioSource.loop = soundFromManager.loop;
+        audioSource.pitch = soundFromManager.pitch;
+        audioSource.spatialBlend = soundFromManager.spatialBlend;
     }
 
     // Update is called once per frame
