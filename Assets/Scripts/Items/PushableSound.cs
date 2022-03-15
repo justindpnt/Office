@@ -24,21 +24,23 @@ public class PushableSound : MonoBehaviour
         if (soundType == pushingSound.chair)
         {
             copySoundEffectsFromManager(sceneAudioManager.rollingChair);
+            continuousSound = GetComponent<AudioSource>();
         }
         else if (soundType == pushingSound.light)
         {
             copySoundEffectsFromManager(sceneAudioManager.lightPushableObject);
+            continuousSound = GetComponent<AudioSource>();
         }
         else if (soundType == pushingSound.medium)
         {
             copySoundEffectsFromManager(sceneAudioManager.mediumPushableObject);
+            continuousSound = GetComponent<AudioSource>();
         }
         else if (soundType == pushingSound.heavy)
         {
             copySoundEffectsFromManager(sceneAudioManager.heavyPushableObject);
+            continuousSound = GetComponent<AudioSource>();
         }
-
-        continuousSound = GetComponent<AudioSource>();
         objectRB = GetComponent<Rigidbody>();
     }
     private void copySoundEffectsFromManager(AudioSource soundFromManager)
@@ -56,19 +58,22 @@ public class PushableSound : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Mathf.Sqrt(Mathf.Pow(objectRB.velocity.x, 2) + Mathf.Pow(objectRB.velocity.z, 2)) > minimumMovementVelocity)
+        if(soundType != pushingSound.none)
         {
-            continuousSound.volume = Mathf.Clamp01(
-                Mathf.Sqrt(Mathf.Pow(objectRB.velocity.x, 2) + Mathf.Pow(objectRB.velocity.z, 2)) / audioDampenerFactor );
-
-            if(continuousSound.isPlaying != true)
+            if (Mathf.Sqrt(Mathf.Pow(objectRB.velocity.x, 2) + Mathf.Pow(objectRB.velocity.z, 2)) > minimumMovementVelocity)
             {
-                continuousSound.Play();
+                continuousSound.volume = Mathf.Clamp01(
+                    Mathf.Sqrt(Mathf.Pow(objectRB.velocity.x, 2) + Mathf.Pow(objectRB.velocity.z, 2)) / audioDampenerFactor);
+
+                if (continuousSound.isPlaying != true)
+                {
+                    continuousSound.Play();
+                }
             }
-        }
-        else
-        {
-            continuousSound.Stop();
+            else
+            {
+                continuousSound.Stop();
+            }
         }
     }
 }
