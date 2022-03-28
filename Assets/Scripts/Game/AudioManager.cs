@@ -31,15 +31,17 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        if (instanceOfThis == null)
+
+        if (instanceOfThis != null && instanceOfThis != this)
         {
-            instanceOfThis = this;
+            Destroy(this.gameObject);
         }
         else
         {
-            Destroy(gameObject);
+            instanceOfThis = this;
         }
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
+
 
         lightCollisionSounds = new AudioSource[] { lightCollisionSoundOne, lightCollisionSoundTwo, lightCollisionSoundThree };
         mediumCollisionSounds = new AudioSource[] { mediumCollisionSoundOne, mediumCollisionSoundTwo, mediumCollisionSoundThree };

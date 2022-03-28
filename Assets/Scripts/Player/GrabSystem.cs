@@ -26,6 +26,7 @@ public class GrabSystem : MonoBehaviour
     public float power, maxPower = 100f;
     public float stall, stallTime = 5f;
 
+
     //UI cache
     public Image defaultCursor;
     public Image enabledCursor;
