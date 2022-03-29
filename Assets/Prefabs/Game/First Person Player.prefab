@@ -228,9 +228,6 @@ MonoBehaviour:
   maxPower: 100
   stall: 0
   stallTime: 10
-  defaultCursor: {fileID: 0}
-  enabledCursor: {fileID: 0}
-  powerBar: {fileID: 0}
 --- !u!114 &5807793132968464320
 MonoBehaviour:
   m_ObjectHideFlags: 0

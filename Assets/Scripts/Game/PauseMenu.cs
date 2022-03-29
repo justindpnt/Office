@@ -14,8 +14,8 @@ public class PauseMenu : MonoBehaviour
 
     // Caches objects
     public GameObject menu;
-    public Movement movementScript;
     public AudioMixerGroup masterVolumeMixer;
+    Movement movementScript;
 
     //Sliders
     public Slider sensitivitySlider;
@@ -30,6 +30,8 @@ public class PauseMenu : MonoBehaviour
 
         sensitivitySlider.onValueChanged.AddListener(delegate { settings.updateMouseSensitivity(sensitivitySlider.value); });
         volumeSlider.onValueChanged.AddListener(delegate { settings.updateGameVolume(volumeSlider.value); });
+
+        movementScript = FindObjectOfType<Movement>();
     }
 
     void Update()

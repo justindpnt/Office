@@ -6117,18 +6117,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a453d0a70c0120e448b5cb9205509cff, type: 3}
---- !u!114 &697405864 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 265464212848296545, guid: 183974ec4933c7043a7c08b6bf6f592e,
-    type: 3}
-  m_PrefabInstance: {fileID: 265464213243646921}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &699034240
 GameObject:
   m_ObjectHideFlags: 0
@@ -6710,18 +6698,6 @@ Transform:
   m_Father: {fileID: 160044329}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &758041365 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 265464212922931420, guid: 183974ec4933c7043a7c08b6bf6f592e,
-    type: 3}
-  m_PrefabInstance: {fileID: 265464213243646921}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &758064669
 GameObject:
   m_ObjectHideFlags: 0
@@ -10068,18 +10044,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 687073909}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1044865099 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 265464213138322306, guid: 183974ec4933c7043a7c08b6bf6f592e,
-    type: 3}
-  m_PrefabInstance: {fileID: 265464213243646921}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1045117197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22139,17 +22103,17 @@ PrefabInstance:
         type: 3}
       propertyPath: powerBar
       value: 
-      objectReference: {fileID: 758041365}
+      objectReference: {fileID: 0}
     - target: {fileID: 5807793132968464321, guid: db90968db7c363a4a972c0065cbfa24e,
         type: 3}
       propertyPath: defaultCursor
       value: 
-      objectReference: {fileID: 1044865099}
+      objectReference: {fileID: 0}
     - target: {fileID: 5807793132968464321, guid: db90968db7c363a4a972c0065cbfa24e,
         type: 3}
       propertyPath: enabledCursor
       value: 
-      objectReference: {fileID: 697405864}
+      objectReference: {fileID: 0}
     - target: {fileID: 5807793132968464324, guid: db90968db7c363a4a972c0065cbfa24e,
         type: 3}
       propertyPath: m_Name

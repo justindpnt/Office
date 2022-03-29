@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 265464212848296544}
   - component: {fileID: 265464212848296545}
   m_Layer: 5
-  m_Name: Center Dot - Approved
+  m_Name: CenterDotConfirmed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 265464212922931423}
   - component: {fileID: 265464212922931420}
   m_Layer: 5
-  m_Name: Throw Power
+  m_Name: ThrowPower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 265464213138322309}
   - component: {fileID: 265464213138322306}
   m_Layer: 5
-  m_Name: Center Dot
+  m_Name: CenterDot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -603,7 +603,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 265464214669313865}
-  movementScript: {fileID: 0}
   masterVolumeMixer: {fileID: 24300002, guid: d0b2012b47d6e71478061929e1b85cca, type: 2}
   sensitivitySlider: {fileID: 265464214297295255}
   volumeSlider: {fileID: 265464214243552754}

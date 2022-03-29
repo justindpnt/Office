@@ -28,16 +28,20 @@ public class GrabSystem : MonoBehaviour
 
 
     //UI cache
-    public Image defaultCursor;
-    public Image enabledCursor;
-    public Image powerBar;
+    Image defaultCursor;
+    Image enabledCursor;
+    Image powerBar;
 
     //Aduio cache
     AudioSource pickUpSound;
 
-    public PickableItem getHeldItem()
+    public PickableItem getHeldItem(){ return pickedItem; }
+
+    private void Awake()
     {
-        return pickedItem;
+        defaultCursor = GameObject.Find("UI/CenterDot").GetComponent<Image>();
+        enabledCursor = GameObject.Find("UI/CenterDotConfirmed").GetComponent<Image>();
+        powerBar = GameObject.Find("UI/ThrowPower").GetComponent<Image>();
     }
 
     private void Start()
