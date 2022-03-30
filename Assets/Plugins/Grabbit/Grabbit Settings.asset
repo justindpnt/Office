@@ -1059,7 +1059,7 @@ MonoBehaviour:
   ColliderResolution: 300000
   velocityIterations: 10
   solverIterations: 10
-  useLowQualityConvexCollidersOnSelection: 0
+  useLowQualityConvexCollidersOnSelection: 1
   UseLimitationZone: 0
   Constraints: 0
   JungleLogo: {fileID: 2800000, guid: 1e021604d3033604dbbdf0af3615fbe5, type: 3}
@@ -1100,7 +1100,7 @@ MonoBehaviour:
   StaticObjectsLayer: 0
   AlignStrength: 1
   ExtraDragForRotationMode: 100
-  GravityStrength: {x: 0, y: -9.79145, z: -0.0000011672319}
+  GravityStrength: {x: 0, y: -9.792771, z: -0.0000011673894}
   LimitBodyVelocityInGravityMode: 0
   SetGravityInDirectionOfMouse: 0
   PausePositionReajustment: 1

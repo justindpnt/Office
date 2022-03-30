@@ -353,9 +353,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionSounds: []
-  effectRadius: 20
-  shouldCreateCollisionSound: 1
-  soundDampFactor: 80
   soundType: 1
 --- !u!1 &6039965610836495182
 GameObject:
