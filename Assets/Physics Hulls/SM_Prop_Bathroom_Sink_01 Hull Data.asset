@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74576fe588befbe4087dd6600108db92, type: 3}
-  m_Name: SM_Bld_Wall_Trim_Door_Large_01 Hull Data
+  m_Name: SM_Prop_Bathroom_Sink_01 Hull Data
   m_EditorClassIdentifier: 
---- !u!43 &2603609715931498933
+--- !u!43 &4917468856404257835
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23,14 +23,14 @@ Mesh:
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
-    indexCount: 60
+    indexCount: 0
     topology: 0
     baseVertex: 0
     firstVertex: 0
-    vertexCount: 12
+    vertexCount: 0
     localAABB:
-      m_Center: {x: -4.6875005, y: 1.498501, z: 0.08180237}
-      m_Extent: {x: 0.3125, y: 1.498501, z: 0.08180237}
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
@@ -47,10 +47,10 @@ Mesh:
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer: 0b00040006000500060004000300010005000300050004000a00080007000a00070002000a00020003000a00030004000a0004000b00000002000700000007000800000001000300000003000200090008000a0009000a000b0009000b000600090006000500090005000100090001000000090000000800
+  m_IndexBuffer: 
   m_VertexData:
     serializedVersion: 3
-    m_VertexCount: 12
+    m_VertexCount: 0
     m_Channels:
     - stream: 0
       offset: 0
@@ -108,8 +108,8 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 144
-    _typelessdata: 0100a0c0c275b23c0088273e0100a0c0000000004799193e01008cc0c275b23c0088273e01008cc0000000004799193e01008cc000000000000000000100a0c000000000000000000100a0c0e1ce3f400000000001008cc0f0e13d400088273e0100a0c01ef13d400088273e0100a0c0e1ce3f403d9a193e01008cc0dcce3f40eb99193e01008cc0dcce3f400ad7a335
+    m_DataSize: 0
+    _typelessdata: 
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -163,8 +163,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: -4.6875005, y: 1.498501, z: 0.08180237}
-    m_Extent: {x: 0.3125, y: 1.498501, z: 0.08180237}
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 

@@ -394,10 +394,18 @@ namespace Technie.PhysicsCreator
 				overlayRenderer.receiveShadows = false;
 
 				overlayFilter.sharedMesh = new Mesh ();
+			}
 
+			if (overlayMaterial == null)
+			{
 				Shader overlayShader = Shader.Find("Hidden/HullPainterOverlay");
 				overlayMaterial = new Material(overlayShader);
 				overlayRenderer.sharedMaterial = overlayMaterial;
+			}
+
+			if (overlayFilter.sharedMesh == null)
+			{
+				overlayFilter.sharedMesh = new Mesh();
 			}
 
 			overlayObject.transform.SetParent( overlayParents[ overlayParents.Count-1 ], false );

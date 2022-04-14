@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0de965f2e710c1c489ead8e62cd25da0, type: 3}
-  m_Name: SM_Bld_Wall_Trim_Door_Large_01 Painting Data
+  m_Name: Top Painting Data
   m_EditorClassIdentifier: 
-  hullData: {fileID: 11400000, guid: 7b2d8ac2e7f1313448390d41e506837c, type: 2}
-  sourceMesh: {fileID: 4300000, guid: f03bbdf2030322d4fa6ba9ee11e73321, type: 3}
+  hullData: {fileID: 11400000, guid: 10d6d50a83b59444f905a3e09927fd4a, type: 2}
+  sourceMesh: {fileID: 8201437419870775723, guid: 56ed8283226e92b48b9ac7408a078e49,
+    type: 3}
   activeHull: 0
   faceThickness: 0.1
   hulls:
   - name: Hull 1
     isVisible: 1
-    type: 0
+    type: 1
     colour: {r: 0, g: 1, b: 1, a: 0.7}
     material: {fileID: 0}
     enableInflation: 0
@@ -27,16 +28,15 @@ MonoBehaviour:
     boxFitMethod: 1
     isTrigger: 0
     isChildCollider: 0
-    selectedFaces: 42000000430000003d0000003c000000390000003800000037000000360000003400000035000000310000003000000032000000330000002f0000002e0000003e0000003f00000041000000460000004700000045000000400000004400000048000000490000003b0000003a000000
-    collisionMesh: {fileID: 2603609715931498933, guid: 7b2d8ac2e7f1313448390d41e506837c,
-      type: 2}
+    selectedFaces: 
+    collisionMesh: {fileID: 0}
     faceCollisionMesh: {fileID: 0}
     faceBoxCenter: {x: 0, y: 0, z: 0}
     faceBoxSize: {x: 0, y: 0, z: 0}
     faceAsBoxRotation: {x: 0, y: 0, z: 0, w: 0}
     autoMeshes: []
     hasColliderError: 0
-    numColliderFaces: 20
+    numColliderFaces: 0
     noInputError: 0
   autoHullPreset: 1
   vhacdParams:
