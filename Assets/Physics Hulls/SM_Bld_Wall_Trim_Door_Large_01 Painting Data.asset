@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0de965f2e710c1c489ead8e62cd25da0, type: 3}
-  m_Name: SM_Prop_Coffee_Tray_01 (1) Painting Data
+  m_Name: SM_Bld_Wall_Trim_Door_Large_01 Painting Data
   m_EditorClassIdentifier: 
-  hullData: {fileID: 11400000, guid: dc8120d1cfc76f145b146e24df16b304, type: 2}
-  sourceMesh: {fileID: 4300000, guid: e4d0973980ecac64c86406c7fac395f1, type: 3}
+  hullData: {fileID: 11400000, guid: 7b2d8ac2e7f1313448390d41e506837c, type: 2}
+  sourceMesh: {fileID: 4300000, guid: f03bbdf2030322d4fa6ba9ee11e73321, type: 3}
   activeHull: 0
   faceThickness: 0.1
   hulls:
@@ -37,7 +37,7 @@ MonoBehaviour:
     hasColliderError: 0
     numColliderFaces: 0
     noInputError: 0
-  autoHullPreset: 2
+  autoHullPreset: 1
   vhacdParams:
     concavity: 0.001
     alpha: 0.05
