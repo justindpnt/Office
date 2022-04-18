@@ -732,3 +732,7 @@ Received Import Request.
   path: Assets/PolygonCity/Prefabs/Environments/SM_Env_Sidewalk_Straight_01.prefab
   artifactKey: Guid(ae7b8255185ace64ca379cb1ca3b24e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/PolygonCity/Prefabs/Environments/SM_Env_Sidewalk_Straight_01.prefab using Guid(ae7b8255185ace64ca379cb1ca3b24e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '936232164f3415ee7ac7f3d83aad045e') in 0.022484 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
