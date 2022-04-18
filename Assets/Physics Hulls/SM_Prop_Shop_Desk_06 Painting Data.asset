@@ -27,7 +27,7 @@ MonoBehaviour:
     boxFitMethod: 1
     isTrigger: 0
     isChildCollider: 0
-    selectedFaces: ce000000
+    selectedFaces: ce000000d0000000
     collisionMesh: {fileID: -4071893044985240318, guid: e87bc0aa1ff7fe0499709855de23d5a9,
       type: 2}
     faceCollisionMesh: {fileID: 0}

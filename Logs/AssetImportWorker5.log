@@ -15,7 +15,7 @@ C:/Users/justi/OneDrive/Games/RageQuit/Office
 -logFile
 Logs/AssetImportWorker5.log
 -srvPort
-59979
+58941
 Successfully changed project path to: C:/Users/justi/OneDrive/Games/RageQuit/Office
 C:/Users/justi/OneDrive/Games/RageQuit/Office
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/justi/OneDrive/Games/RageQuit/Office
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 151.33 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 143.29 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.0f1 (6eacc8284459)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -63,88 +63,88 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56724
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56200
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004418 seconds.
+Registered in 0.005836 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 186.67 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 150.20 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.780 seconds
+- Completed reload, in  0.693 seconds
 Domain Reload Profiling:
-	ReloadAssembly (780ms)
-		BeginReloadAssembly (69ms)
+	ReloadAssembly (693ms)
+		BeginReloadAssembly (67ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (592ms)
-			LoadAssemblies (67ms)
+		EndReloadAssembly (520ms)
+			LoadAssemblies (64ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (125ms)
+			SetupTypeCache (103ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (372ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (342ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (187ms)
+				RefreshPlugins (150ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (135ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
+				ProcessInitializeOnLoadAttributes (138ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005621 seconds.
+Registered in 0.006560 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 193.94 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 192.70 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.673 seconds
+- Completed reload, in  1.661 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1674ms)
-		BeginReloadAssembly (105ms)
+	ReloadAssembly (1662ms)
+		BeginReloadAssembly (110ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (1462ms)
-			LoadAssemblies (115ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (1441ms)
+			LoadAssemblies (103ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (223ms)
+			SetupTypeCache (221ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (981ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (1006ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (194ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (618ms)
-				ProcessInitializeOnLoadMethodAttributes (69ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				RefreshPlugins (193ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (641ms)
+				ProcessInitializeOnLoadMethodAttributes (65ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 5.75 ms, found 6 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 6.26 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4213 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 139 unused Assets / (415.0 KB). Loaded Objects now: 4666.
-Memory consumption went from 224.7 MB to 224.3 MB.
-Total: 7.505200 ms (FindLiveObjects: 0.832600 ms CreateObjectMapping: 0.182400 ms MarkObjects: 5.890500 ms  DeleteObjects: 0.597100 ms)
+Unloading 139 unused Assets / (414.5 KB). Loaded Objects now: 4666.
+Memory consumption went from 224.6 MB to 224.2 MB.
+Total: 6.506200 ms (FindLiveObjects: 0.780400 ms CreateObjectMapping: 0.116400 ms MarkObjects: 4.954200 ms  DeleteObjects: 0.653100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -158,35 +158,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 8652.927631 seconds.
-  path: Assets/PolygonTown/Prefabs/Generic/SM_Generic_Ground_04.prefab
-  artifactKey: Guid(391f9182fbee18047888beef314c5e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonTown/Prefabs/Generic/SM_Generic_Ground_04.prefab using Guid(391f9182fbee18047888beef314c5e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b5bd67df7981100d8aba7e04d510c0f') in 0.296132 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/PolygonTown/Prefabs/Generic/SM_Generic_Ground_Flat_01.prefab
-  artifactKey: Guid(6b08b22e01997b64287471d7f3b33935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonTown/Prefabs/Generic/SM_Generic_Ground_Flat_01.prefab using Guid(6b08b22e01997b64287471d7f3b33935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77286156384922636449cff0ed94eea8') in 0.033657 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/PolygonTown/Prefabs/Generic/SM_Generic_Cloud_05.prefab
-  artifactKey: Guid(a3efeb21d0b8e7e46830dca47174b59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonTown/Prefabs/Generic/SM_Generic_Cloud_05.prefab using Guid(a3efeb21d0b8e7e46830dca47174b59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32925ffeb01dd3293ca8be3994614b47') in 0.035784 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/PolygonTown/Prefabs/Generic/SM_Generic_Ground_03.prefab
-  artifactKey: Guid(70221ad9d90a8d54b90e065d033857d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonTown/Prefabs/Generic/SM_Generic_Ground_03.prefab using Guid(70221ad9d90a8d54b90e065d033857d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3191479f3d29db9fd7dbbba6fd3d6821') in 0.045800 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/PolygonTown/Prefabs/Generic/SM_Generic_Tree_03.prefab
-  artifactKey: Guid(633078a5a4c63fd4e9f74ac715464876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonTown/Prefabs/Generic/SM_Generic_Tree_03.prefab using Guid(633078a5a4c63fd4e9f74ac715464876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b04601684c31a3f2ec42ba3b9636152') in 0.037088 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  Time since last request: 11129.742958 seconds.
+  path: Assets/PolygonOffice/Textures/PolygonOffice_Texture_02_A.png
+  artifactKey: Guid(aa02daf680a4ac64bb12d001f5959a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Textures/PolygonOffice_Texture_02_A.png using Guid(aa02daf680a4ac64bb12d001f5959a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5ef3bab79a332f0422fed1496770f2e') in 0.100280 seconds 
