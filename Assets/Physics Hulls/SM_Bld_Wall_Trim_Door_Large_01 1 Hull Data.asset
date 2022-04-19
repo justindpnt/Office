@@ -1,24 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &-2054750285860163533
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74576fe588befbe4087dd6600108db92, type: 3}
+  m_Name: SM_Bld_Wall_Trim_Door_Large_01 1 Hull Data
+  m_EditorClassIdentifier: 
+--- !u!43 &601251163466361489
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hull 1
+  m_Name: Hull 4
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
-    indexCount: 126
+    indexCount: 24
     topology: 0
     baseVertex: 0
     firstVertex: 0
-    vertexCount: 23
+    vertexCount: 6
     localAABB:
-      m_Center: {x: 0.000000018626451, y: 0.11184425, z: 0.021035425}
-      m_Extent: {x: 0.11704478, y: 0.11184425, z: 0.1471178}
+      m_Center: {x: -2.5000002, y: 0.019757079, z: 0.03847168}
+      m_Extent: {x: 0.9498465, y: 0.019757079, z: 0.03847168}
   m_Shapes:
     vertices: []
     shapes: []
@@ -35,10 +47,10 @@ Mesh:
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer: 080002000700080007000600050006000700050004000600150004000500150005000700150007000100090001000700090007000200110004001500110015000f000300060014000300000008000300080006000b0001000900100004001100130011000f0013000f0003001300030014000a000b0009000a00090002000d00080000000d00000003000d0003000f000d000f000e000d000b000a000d000a0002000d00020008000c000e000f000c000f0015000c0001000b000c000b000d000c000d000e00120010001100120011001300120013001400120014000600120006000400120004001000160001000c0016000c001500160015000100
+  m_IndexBuffer: 020000000100050002000100050001000400030000000200030002000500030005000400030004000100030001000000
   m_VertexData:
     serializedVersion: 3
-    m_VertexCount: 23
+    m_VertexCount: 6
     m_Channels:
     - stream: 0
       offset: 0
@@ -96,8 +108,8 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 276
-    _typelessdata: 00aaaebd1b1d293e000000002eb5ef3d1fd8023ee9bcafbdb81270bd1fd8023ebc1b01be29b5efbd1fd8023e2cb5ef3d2eb5ef3d143a9f3d5b302c3e2eb5ef3d000000002cb5ef3d29b5efbd143a9f3d5b302c3e2eb5ef3d00000000e9bcafbd29b5efbd1fd8023ee9bcafbdc212703d1fd8023ebc1b01be000000001b1d293ef0a9aebdb7fe243c990e653eb7e38ebcb8fea43c990e653e0000000066fe24bc990e653eb7e38ebc00000000990e653e00000000472926bc4798583e05e0353d2945b83df5b1cc3d72fe203e2945b83df545f03d4bd20e3e5c6b7fbd6666ce3d8fe1263e716993bdc287e63de2d01a3e3d1da7bd6666ce3d8fe1263e2eb5ef3d1fd8023e2cb5ef3df0a9ae3d1b1d293e00000000
+    m_DataSize: 72
+    _typelessdata: 8fe8c7bf99d9213d00000000706bc6bf99d9213d7b949d3d020020c0000000007b949d3d020020c099d9213d000000004aca5cc099d9213d7b949d3d4aca5cc0000000007b949d3d
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -151,8 +163,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 0.000000018626451, y: 0.11184425, z: 0.021035425}
-    m_Extent: {x: 0.11704478, y: 0.11184425, z: 0.1471178}
+    m_Center: {x: -2.5000002, y: 0.019757079, z: 0.03847168}
+    m_Extent: {x: 0.9498465, y: 0.019757079, z: 0.03847168}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -164,15 +176,3 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74576fe588befbe4087dd6600108db92, type: 3}
-  m_Name: SM_Prop_Blender_01 Hull Data
-  m_EditorClassIdentifier: 
