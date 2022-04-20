@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0de965f2e710c1c489ead8e62cd25da0, type: 3}
+  m_Name: SM_Prop_Mall_Kiosk_Circular_01 Painting Data
+  m_EditorClassIdentifier: 
+  hullData: {fileID: 11400000, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+  sourceMesh: {fileID: 4300000, guid: 6d0b45d8c6d06044fbc56b61e89dd52b, type: 3}
+  activeHull: 0
+  faceThickness: 0.1
+  hulls:
+  - name: Hull 1
+    isVisible: 1
+    type: 5
+    colour: {r: 0, g: 1, b: 1, a: 0.7}
+    material: {fileID: 0}
+    enableInflation: 0
+    inflationAmount: 0.01
+    boxFitMethod: 1
+    isTrigger: 0
+    isChildCollider: 0
+    selectedFaces: 
+    collisionMesh: {fileID: 3344924005827579221, guid: a707f973287fc6e44b1f0d9861da14e1,
+      type: 2}
+    faceCollisionMesh: {fileID: 0}
+    faceBoxCenter: {x: 0, y: 0, z: 0}
+    faceBoxSize: {x: 0, y: 0, z: 0}
+    faceAsBoxRotation: {x: 0, y: 0, z: 0, w: 0}
+    autoMeshes:
+    - {fileID: 8775820819354563153, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    - {fileID: -5865141423006550519, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    - {fileID: 2967298825027969465, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    - {fileID: -8607232720623037557, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    - {fileID: 8113060718197653044, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    - {fileID: 8500071390075851552, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    - {fileID: 5711780203357260286, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    - {fileID: 7251489997137441772, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    - {fileID: -2568947361178108360, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    - {fileID: 6329023955520300394, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    - {fileID: 6696484248731213326, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    - {fileID: -675793360026481190, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    - {fileID: -982793556211152358, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    - {fileID: -2304458405388368687, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    - {fileID: 5031219494607467777, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    - {fileID: 5703734772952268369, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    - {fileID: 6764770224780199513, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    - {fileID: 7549938054197637593, guid: a707f973287fc6e44b1f0d9861da14e1, type: 2}
+    hasColliderError: 0
+    numColliderFaces: 230
+    noInputError: 0
+  autoHullPreset: 2
+  vhacdParams:
+    concavity: 0.001
+    alpha: 0.05
+    beta: 0.05
+    minVolumePerCH: 0.0001
+    resolution: 100000
+    maxNumVerticesPerCH: 64
+    planeDownsampling: 4
+    convexhullDownsampling: 4
+    pca: 0
+    mode: 0
+    convexhullApproximation: 1
+    oclAcceleration: 0
+    maxConvexHulls: 1024
+    projectHullVertices: 1
+  hasLastVhacdTimings: 0
+  lastVhacdPreset: 1
+  lastVhacdDurationSecs: 0

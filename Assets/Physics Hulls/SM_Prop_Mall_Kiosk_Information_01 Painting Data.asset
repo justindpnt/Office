@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0de965f2e710c1c489ead8e62cd25da0, type: 3}
+  m_Name: SM_Prop_Mall_Kiosk_Information_01 Painting Data
+  m_EditorClassIdentifier: 
+  hullData: {fileID: 11400000, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+  sourceMesh: {fileID: 4300000, guid: f70ca54384356b1439e49e8bcae8d3ad, type: 3}
+  activeHull: 0
+  faceThickness: 0.1
+  hulls:
+  - name: Hull 1
+    isVisible: 1
+    type: 5
+    colour: {r: 0, g: 1, b: 1, a: 0.7}
+    material: {fileID: 0}
+    enableInflation: 0
+    inflationAmount: 0.01
+    boxFitMethod: 1
+    isTrigger: 0
+    isChildCollider: 0
+    selectedFaces: 
+    collisionMesh: {fileID: 5298365062497354907, guid: 7b6074129bf964746be908effa14ae42,
+      type: 2}
+    faceCollisionMesh: {fileID: 0}
+    faceBoxCenter: {x: 0, y: 0, z: 0}
+    faceBoxSize: {x: 0, y: 0, z: 0}
+    faceAsBoxRotation: {x: 0, y: 0, z: 0, w: 0}
+    autoMeshes:
+    - {fileID: -5133459788942559637, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -7024938129195181383, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 5725275322721257820, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -916001436343742707, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -6234118796095908597, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 4583069939623542735, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -3507972113285582243, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -4505397892636492322, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -8624718966154902791, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -7022948705346880078, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 5604446240471899163, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 2547834361910621575, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -1873688341007224608, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 4494317340626431608, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 5079686084601145718, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -4442130871756826942, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -440383164924537120, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -6808902871836725370, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -1047410261135428934, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -5041758638836678070, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -6637354759974150600, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -2324270483611257537, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -2416258874384666455, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 1356185485118452163, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 6161329706739653055, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -6019421794964327898, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -157972183638666684, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -1201126645934828731, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -386021702353492015, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 5585938339001031174, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -322027040865461904, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 4453086561380524374, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -2062811289750861379, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 2198727894186414648, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -4330702975559044606, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -8705036642503924007, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 9177114694593706991, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 44869675513374632, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 1728662082296929898, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -7841976043272346911, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -2326226049434514589, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 3793782140095296677, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 7017781929616168540, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -1877708090224600803, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -7714966960808798876, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 8458774665351793248, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 6757072445660060408, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -338923628135186846, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 848979592579642124, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 4690380293693262740, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -500012050823237257, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 1395804306669738627, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -2934742626922286776, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -6363102649282969940, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: 3921147655677887097, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    - {fileID: -2482618003343337180, guid: 7b6074129bf964746be908effa14ae42, type: 2}
+    hasColliderError: 0
+    numColliderFaces: 168
+    noInputError: 0
+  autoHullPreset: 2
+  vhacdParams:
+    concavity: 0.001
+    alpha: 0.05
+    beta: 0.05
+    minVolumePerCH: 0.0001
+    resolution: 100000
+    maxNumVerticesPerCH: 64
+    planeDownsampling: 4
+    convexhullDownsampling: 4
+    pca: 0
+    mode: 0
+    convexhullApproximation: 1
+    oclAcceleration: 0
+    maxConvexHulls: 1024
+    projectHullVertices: 1
+  hasLastVhacdTimings: 0
+  lastVhacdPreset: 1
+  lastVhacdDurationSecs: 0

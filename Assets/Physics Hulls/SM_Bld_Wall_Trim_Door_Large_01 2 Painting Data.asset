@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hullData: {fileID: 11400000, guid: b6e3c4b7781b3434e8e4b6f945d203aa, type: 2}
   sourceMesh: {fileID: 4300000, guid: f03bbdf2030322d4fa6ba9ee11e73321, type: 3}
-  activeHull: 3
+  activeHull: -1
   faceThickness: 0.1
   hulls:
   - name: Hull 1
@@ -87,7 +87,7 @@ MonoBehaviour:
     boxFitMethod: 1
     isTrigger: 0
     isChildCollider: 0
-    selectedFaces: b0000000af000000cb000000ca0000000d0000000a000000b4000000b30000000900000006000000c8000000b2000000b1000000c9000000bb000000bc000000bd0000007100000072000000
+    selectedFaces: b0000000cb0000000a000000b4000000b30000000900000006000000c8000000b2000000b1000000c90000003e0000003c000000d90000002100000020000000cf000000
     collisionMesh: {fileID: 0}
     faceCollisionMesh: {fileID: 0}
     faceBoxCenter: {x: 0, y: 0, z: 0}
