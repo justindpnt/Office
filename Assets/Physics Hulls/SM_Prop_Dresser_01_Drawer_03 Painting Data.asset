@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0de965f2e710c1c489ead8e62cd25da0, type: 3}
+  m_Name: SM_Prop_Dresser_01_Drawer_03 Painting Data
+  m_EditorClassIdentifier: 
+  hullData: {fileID: 11400000, guid: 5254520f320c4474384630559c1ffcc6, type: 2}
+  sourceMesh: {fileID: 4300006, guid: 2c8650faa2be324479c7bc75358b8cd7, type: 3}
+  activeHull: 0
+  faceThickness: 0.1
+  hulls:
+  - name: Hull 1
+    isVisible: 1
+    type: 5
+    colour: {r: 0, g: 1, b: 1, a: 0.7}
+    material: {fileID: 0}
+    enableInflation: 0
+    inflationAmount: 0.01
+    boxFitMethod: 1
+    isTrigger: 0
+    isChildCollider: 0
+    selectedFaces: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b000000
+    collisionMesh: {fileID: 218466327788498310, guid: 5254520f320c4474384630559c1ffcc6,
+      type: 2}
+    faceCollisionMesh: {fileID: 0}
+    faceBoxCenter: {x: 0, y: 0, z: 0}
+    faceBoxSize: {x: 0, y: 0, z: 0}
+    faceAsBoxRotation: {x: 0, y: 0, z: 0, w: 0}
+    autoMeshes:
+    - {fileID: -8366852672550617310, guid: 5254520f320c4474384630559c1ffcc6, type: 2}
+    - {fileID: 366827521441971528, guid: 5254520f320c4474384630559c1ffcc6, type: 2}
+    - {fileID: 8497555920264805307, guid: 5254520f320c4474384630559c1ffcc6, type: 2}
+    - {fileID: -4617334003360297341, guid: 5254520f320c4474384630559c1ffcc6, type: 2}
+    - {fileID: -7450291035307403991, guid: 5254520f320c4474384630559c1ffcc6, type: 2}
+    - {fileID: -7931505026247025281, guid: 5254520f320c4474384630559c1ffcc6, type: 2}
+    - {fileID: 2714181013777186733, guid: 5254520f320c4474384630559c1ffcc6, type: 2}
+    - {fileID: 2098335068118954011, guid: 5254520f320c4474384630559c1ffcc6, type: 2}
+    hasColliderError: 0
+    numColliderFaces: 28
+    noInputError: 0
+  autoHullPreset: 1
+  vhacdParams:
+    concavity: 0.001
+    alpha: 0.05
+    beta: 0.05
+    minVolumePerCH: 0.0001
+    resolution: 100000
+    maxNumVerticesPerCH: 64
+    planeDownsampling: 4
+    convexhullDownsampling: 4
+    pca: 0
+    mode: 0
+    convexhullApproximation: 1
+    oclAcceleration: 0
+    maxConvexHulls: 1024
+    projectHullVertices: 1
+  hasLastVhacdTimings: 0
+  lastVhacdPreset: 1
+  lastVhacdDurationSecs: 0
