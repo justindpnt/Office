@@ -1,0 +1,263 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.32f1 (12f8b0834f07) revision 1243312'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'en' Physical Memory: 32682 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.32f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/justi/OneDrive/Games/RageQuit/Office
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+61333
+Successfully changed project path to: C:/Users/justi/OneDrive/Games/RageQuit/Office
+C:/Users/justi/OneDrive/Games/RageQuit/Office
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 178.96 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.32f1 (12f8b0834f07)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/justi/OneDrive/Games/RageQuit/Office/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1080 Ti (ID=0x1b06)
+    Vendor:   
+    VRAM:     11128 MB
+    Driver:   30.0.15.1215
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56736
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001646 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 160.08 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.600 seconds
+Domain Reload Profiling:
+	ReloadAssembly (601ms)
+		BeginReloadAssembly (48ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (489ms)
+			LoadAssemblies (47ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (124ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (258ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (160ms)
+				BeforeProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (63ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004558 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 173.98 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.150 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1151ms)
+		BeginReloadAssembly (125ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (970ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (273ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (473ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (174ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 2.50 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3673 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.7 MB.
+System memory in use after: 186.9 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 4125.
+Total: 3.572800 ms (FindLiveObjects: 0.355900 ms CreateObjectMapping: 0.082400 ms MarkObjects: 3.022900 ms  DeleteObjects: 0.110700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Meshes/Closed_laptop.fbx
+  artifactKey: Guid(134cd1df4cd47dc4aaa799b7bf0f8561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Closed_laptop.fbx using Guid(134cd1df4cd47dc4aaa799b7bf0f8561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c428f07ba737081dd7a209ea52060bc') in 0.244442 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 109.727297 seconds.
+  path: Assets/Objects/Closed_laptop.prefab
+  artifactKey: Guid(7b50e3f903d6d0f4b87d71f082ce5039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Closed_laptop.prefab using Guid(7b50e3f903d6d0f4b87d71f082ce5039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6de3d4ea68b7bb4032bad860eef9318') in 0.086488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 55.073002 seconds.
+  path: Assets/PolygonOffice/Scene
+  artifactKey: Guid(1bbf41389b7827645a15499b34f31f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Scene using Guid(1bbf41389b7827645a15499b34f31f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88fbd5a76ccb0e25ee82b8fb05b808ee') in 0.007094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 92.954446 seconds.
+  path: Assets/Physics Hulls/Closed_laptop Hull Data.asset
+  artifactKey: Guid(22efdbda31a084d4286fd0e276893b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physics Hulls/Closed_laptop Hull Data.asset using Guid(22efdbda31a084d4286fd0e276893b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fdbb22349dbeb155697c4584aaee814') in 0.008515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Physics Hulls/Closed_laptop Painting Data.asset
+  artifactKey: Guid(9992d4149cbba1d4f9dbfce9131ab039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physics Hulls/Closed_laptop Painting Data.asset using Guid(9992d4149cbba1d4f9dbfce9131ab039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5f99ee262458a52207d9e74f89f94ea') in 0.009036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.486457 seconds.
+  path: Assets/Physics Hulls/Closed_laptop Hull Data.asset
+  artifactKey: Guid(22efdbda31a084d4286fd0e276893b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physics Hulls/Closed_laptop Hull Data.asset using Guid(22efdbda31a084d4286fd0e276893b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b09d754a6ec0e735e21df6f29090e10') in 0.039695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Physics Hulls/Closed_laptop Painting Data.asset
+  artifactKey: Guid(9992d4149cbba1d4f9dbfce9131ab039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physics Hulls/Closed_laptop Painting Data.asset using Guid(9992d4149cbba1d4f9dbfce9131ab039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2a016f35fe662cc46340c257fbf2d7') in 0.003589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.847134 seconds.
+  path: Assets/Physics Hulls/SM_Prop_Laptop_Folding_Screen_01 Hull Data.asset
+  artifactKey: Guid(b6e02d575154a194f8745a60b54cde1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physics Hulls/SM_Prop_Laptop_Folding_Screen_01 Hull Data.asset using Guid(b6e02d575154a194f8745a60b54cde1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5c3d20face12c6efccde717123f0346') in 0.007583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Physics Hulls/SM_Prop_Laptop_Folding_Screen_01 Painting Data.asset
+  artifactKey: Guid(413d73f2d7059fa48becccd489ddf334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physics Hulls/SM_Prop_Laptop_Folding_Screen_01 Painting Data.asset using Guid(413d73f2d7059fa48becccd489ddf334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32346c3a3bb8cb1c12d325b8cc119c0c') in 0.007031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.641183 seconds.
+  path: Assets/Physics Hulls/SM_Prop_Laptop_Folding_Screen_01 Hull Data.asset
+  artifactKey: Guid(b6e02d575154a194f8745a60b54cde1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physics Hulls/SM_Prop_Laptop_Folding_Screen_01 Hull Data.asset using Guid(b6e02d575154a194f8745a60b54cde1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43831b81e9715239dbb6735d46d5d39c') in 0.030564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Physics Hulls/SM_Prop_Laptop_Folding_Screen_01 Painting Data.asset
+  artifactKey: Guid(413d73f2d7059fa48becccd489ddf334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physics Hulls/SM_Prop_Laptop_Folding_Screen_01 Painting Data.asset using Guid(413d73f2d7059fa48becccd489ddf334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa301a67f83e1e7756fd15adea017f6') in 0.003421 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006270 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.44 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.017 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1017ms)
+		BeginReloadAssembly (132ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (832ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (279ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (304ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.65 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3527 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.6 MB.
+System memory in use after: 181.9 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4209.
+Total: 4.426700 ms (FindLiveObjects: 0.396500 ms CreateObjectMapping: 0.090600 ms MarkObjects: 3.907900 ms  DeleteObjects: 0.030100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 119.177384 seconds.
+  path: Assets/Physics Hulls/Closed_laptop Painting Data.asset
+  artifactKey: Guid(9992d4149cbba1d4f9dbfce9131ab039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physics Hulls/Closed_laptop Painting Data.asset using Guid(9992d4149cbba1d4f9dbfce9131ab039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '880d6343d3c951dafd6b9361f10f04bb') in 0.031627 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
