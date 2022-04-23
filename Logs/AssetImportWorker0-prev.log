@@ -15,11 +15,11 @@ C:/Users/justi/OneDrive/Games/RageQuit/Office
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61333
+61529
 Successfully changed project path to: C:/Users/justi/OneDrive/Games/RageQuit/Office
 C:/Users/justi/OneDrive/Games/RageQuit/Office
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 178.96 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 160.74 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.32f1 (12f8b0834f07)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Resources/UnitySubsystems
@@ -35,75 +35,75 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56736
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56720
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001646 seconds.
+Registered in 0.001756 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 160.08 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 162.80 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.600 seconds
+- Completed reload, in  0.616 seconds
 Domain Reload Profiling:
-	ReloadAssembly (601ms)
-		BeginReloadAssembly (48ms)
+	ReloadAssembly (616ms)
+		BeginReloadAssembly (50ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (489ms)
-			LoadAssemblies (47ms)
+		EndReloadAssembly (504ms)
+			LoadAssemblies (49ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (124ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (258ms)
+			SetupLoadedEditorAssemblies (271ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (160ms)
+				RefreshPlugins (163ms)
 				BeforeProcessingInitializeOnLoad (11ms)
-				ProcessInitializeOnLoadAttributes (63ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
+				ProcessInitializeOnLoadAttributes (71ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004558 seconds.
+Registered in 0.006723 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 173.98 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 185.77 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.150 seconds
+- Completed reload, in  1.196 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1151ms)
-		BeginReloadAssembly (125ms)
+	ReloadAssembly (1197ms)
+		BeginReloadAssembly (122ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (970ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1022ms)
 			LoadAssemblies (85ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (273ms)
+			SetupTypeCache (286ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (473ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (497ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (174ms)
-				BeforeProcessingInitializeOnLoad (80ms)
-				ProcessInitializeOnLoadAttributes (203ms)
+				RefreshPlugins (186ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (211ms)
 				ProcessInitializeOnLoadMethodAttributes (7ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
@@ -113,14 +113,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 2.50 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 2.40 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3673 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 186.7 MB.
-System memory in use after: 186.9 MB.
+System memory in use before: 186.8 MB.
+System memory in use after: 187.0 MB.
 
 Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 4125.
-Total: 3.572800 ms (FindLiveObjects: 0.355900 ms CreateObjectMapping: 0.082400 ms MarkObjects: 3.022900 ms  DeleteObjects: 0.110700 ms)
+Total: 4.012200 ms (FindLiveObjects: 0.373500 ms CreateObjectMapping: 0.092300 ms MarkObjects: 3.427000 ms  DeleteObjects: 0.118800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,115 +134,979 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Meshes/Closed_laptop.fbx
-  artifactKey: Guid(134cd1df4cd47dc4aaa799b7bf0f8561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/Closed_laptop.fbx using Guid(134cd1df4cd47dc4aaa799b7bf0f8561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c428f07ba737081dd7a209ea52060bc') in 0.244442 seconds 
+  path: Assets/Kaden Campbell/Futuristic Letter Models/Materials/Lambert1.mat
+  artifactKey: Guid(8248c0cdc845c634780d0cef50c4eae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kaden Campbell/Futuristic Letter Models/Materials/Lambert1.mat using Guid(8248c0cdc845c634780d0cef50c4eae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03e595834e18fb03ce01a207eede50ee') in 0.226119 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 109.727297 seconds.
-  path: Assets/Objects/Closed_laptop.prefab
-  artifactKey: Guid(7b50e3f903d6d0f4b87d71f082ce5039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Closed_laptop.prefab using Guid(7b50e3f903d6d0f4b87d71f082ce5039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6de3d4ea68b7bb4032bad860eef9318') in 0.086488 seconds 
+  Time since last request: 9.967901 seconds.
+  path: Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/B Prefabs/B_Null.prefab
+  artifactKey: Guid(7b7edb913cc0428429b03967cda6ab2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/B Prefabs/B_Null.prefab using Guid(7b7edb913cc0428429b03967cda6ab2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dac144c4f7573a3dd2992b2440990f0') in 0.036882 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 55.073002 seconds.
-  path: Assets/PolygonOffice/Scene
-  artifactKey: Guid(1bbf41389b7827645a15499b34f31f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonOffice/Scene using Guid(1bbf41389b7827645a15499b34f31f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88fbd5a76ccb0e25ee82b8fb05b808ee') in 0.007094 seconds 
+  Time since last request: 1.165234 seconds.
+  path: Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/D Prefabs/D_Null.prefab
+  artifactKey: Guid(fd41af98c7ac0354aa26cc90e0a11c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/D Prefabs/D_Null.prefab using Guid(fd41af98c7ac0354aa26cc90e0a11c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b46498ca29205cf4c047c02eb28bb0a9') in 0.018407 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 92.954446 seconds.
-  path: Assets/Physics Hulls/Closed_laptop Hull Data.asset
-  artifactKey: Guid(22efdbda31a084d4286fd0e276893b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Physics Hulls/Closed_laptop Hull Data.asset using Guid(22efdbda31a084d4286fd0e276893b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fdbb22349dbeb155697c4584aaee814') in 0.008515 seconds 
+  Time since last request: 2.101938 seconds.
+  path: Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/A Prefabs/OriginalPrefab
+  artifactKey: Guid(fc6d59f998e1b5c4b983002d9c13c54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/A Prefabs/OriginalPrefab using Guid(fc6d59f998e1b5c4b983002d9c13c54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9456eb13d50a58e2cf940346bcb6b552') in 0.005151 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/Physics Hulls/Closed_laptop Painting Data.asset
-  artifactKey: Guid(9992d4149cbba1d4f9dbfce9131ab039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Physics Hulls/Closed_laptop Painting Data.asset using Guid(9992d4149cbba1d4f9dbfce9131ab039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5f99ee262458a52207d9e74f89f94ea') in 0.009036 seconds 
+  Time since last request: 0.056961 seconds.
+  path: Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/A Prefabs/OriginalPrefab/A_TwoLines.prefab
+  artifactKey: Guid(e94376332b2539749963da8f74b2cd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/A Prefabs/OriginalPrefab/A_TwoLines.prefab using Guid(e94376332b2539749963da8f74b2cd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1190cbdec6afac797ce940cb9bcdec94') in 0.019633 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.486457 seconds.
-  path: Assets/Physics Hulls/Closed_laptop Hull Data.asset
-  artifactKey: Guid(22efdbda31a084d4286fd0e276893b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Physics Hulls/Closed_laptop Hull Data.asset using Guid(22efdbda31a084d4286fd0e276893b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b09d754a6ec0e735e21df6f29090e10') in 0.039695 seconds 
+  Time since last request: 44.384557 seconds.
+  path: Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/J Prefabs/J_Null.prefab
+  artifactKey: Guid(d0bc46ad35634d34f8d6280595873255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/J Prefabs/J_Null.prefab using Guid(d0bc46ad35634d34f8d6280595873255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc8d9659ce6d239ae4aa8209f80f748a') in 0.019315 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/Physics Hulls/Closed_laptop Painting Data.asset
-  artifactKey: Guid(9992d4149cbba1d4f9dbfce9131ab039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Physics Hulls/Closed_laptop Painting Data.asset using Guid(9992d4149cbba1d4f9dbfce9131ab039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2a016f35fe662cc46340c257fbf2d7') in 0.003589 seconds 
+  Time since last request: 0.497993 seconds.
+  path: Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/M Prefabs/M_Null.prefab
+  artifactKey: Guid(42e30e515438b38498a775c02a85b1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/M Prefabs/M_Null.prefab using Guid(42e30e515438b38498a775c02a85b1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '283440a8f58d0257843d8bb474f1e005') in 0.018710 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.847134 seconds.
-  path: Assets/Physics Hulls/SM_Prop_Laptop_Folding_Screen_01 Hull Data.asset
-  artifactKey: Guid(b6e02d575154a194f8745a60b54cde1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Physics Hulls/SM_Prop_Laptop_Folding_Screen_01 Hull Data.asset using Guid(b6e02d575154a194f8745a60b54cde1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5c3d20face12c6efccde717123f0346') in 0.007583 seconds 
+  Time since last request: 3.530562 seconds.
+  path: Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/C Prefabs/C_Back_Null.prefab
+  artifactKey: Guid(06ccafa2eda62ec4694bb7bd1bb4a2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/C Prefabs/C_Back_Null.prefab using Guid(06ccafa2eda62ec4694bb7bd1bb4a2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6f00814434cd8b80e273a84ace17987') in 0.019417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/C Prefabs/C_Backless_Null.prefab
+  artifactKey: Guid(cc10092d0828230479e4ed5437a168b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/C Prefabs/C_Backless_Null.prefab using Guid(cc10092d0828230479e4ed5437a168b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1819c81650bb679e883915ad80611113') in 0.019103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.574404 seconds.
+  path: Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/R Prefabs/R_Null.prefab
+  artifactKey: Guid(4713f8b7aa947034996daff97f6f9964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/R Prefabs/R_Null.prefab using Guid(4713f8b7aa947034996daff97f6f9964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0f217887d813b7c81108d22469ed44d') in 0.022301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.366022 seconds.
+  path: Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/O Prefabs/O_BottomLine.prefab
+  artifactKey: Guid(a633fdfb8d6bdbd44a9514eaea5f8a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/O Prefabs/O_BottomLine.prefab using Guid(a633fdfb8d6bdbd44a9514eaea5f8a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8c8aca791a248da99046d75b4a9c614') in 0.019223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/O Prefabs/O_Null.prefab
+  artifactKey: Guid(1564adee95e00084eb43ff676b3ac55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/O Prefabs/O_Null.prefab using Guid(1564adee95e00084eb43ff676b3ac55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '624a331f677c3946afcb72a6ce163700') in 0.020747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/O Prefabs/O_TopLine.prefab
+  artifactKey: Guid(76662d5fd6a65224682904821983aee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/O Prefabs/O_TopLine.prefab using Guid(76662d5fd6a65224682904821983aee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68e29b7782f1cff893da11e762c54f66') in 0.019012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.957210 seconds.
+  path: Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/O Prefabs/OriginalPrefab
+  artifactKey: Guid(469791d5345788c40a59033ff1315143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/O Prefabs/OriginalPrefab using Guid(469791d5345788c40a59033ff1315143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3f8ad00a3106946d4de8f062ba37766') in 0.002213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.069770 seconds.
+  path: Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/O Prefabs/OriginalPrefab/O_TwoLines.prefab
+  artifactKey: Guid(c6b7c51ab6f9d3442b91bb67851f35e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kaden Campbell/Futuristic Letter Models/Prefabs/O Prefabs/OriginalPrefab/O_TwoLines.prefab using Guid(c6b7c51ab6f9d3442b91bb67851f35e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c169f184f62f897a14224950d9c1d0ff') in 0.019276 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 818.710883 seconds.
+  path: Assets/TirgamesAssets/ModernWorld
+  artifactKey: Guid(0d21941ad8fb0114a81de1be8a7c01eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld using Guid(0d21941ad8fb0114a81de1be8a7c01eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae43cf205fd86474c975a752b3042bc6') in 0.004733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.806593 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props
+  artifactKey: Guid(a7252beec4e1ae540abbad12e0f940f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props using Guid(a7252beec4e1ae540abbad12e0f940f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f557a1b931c4b4d5bb3b2f45642342a') in 0.005341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.336092 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office
+  artifactKey: Guid(e198851d6226ed64d81279e90d950cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office using Guid(e198851d6226ed64d81279e90d950cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4567912a1098554b247431cc9e799a26') in 0.004977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.517203 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration
+  artifactKey: Guid(fe428b54f075d4e4b8608699dd3f23a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration using Guid(fe428b54f075d4e4b8608699dd3f23a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83f4fecba7b02058f09db7402e38e3ce') in 0.004309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.492234 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters
+  artifactKey: Guid(3e6080172d5295a41816cacd5024faba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters using Guid(3e6080172d5295a41816cacd5024faba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da6fa5d9ec54ce163e196322674feba0') in 0.005894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.540536 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models
+  artifactKey: Guid(20efaebd82a14834b94bb3d4a0cadecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models using Guid(20efaebd82a14834b94bb3d4a0cadecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21fde0d28bd549cf7ab420433fb095a1') in 0.005325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.882366 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Prefabs
+  artifactKey: Guid(b25b58b39cbe46d43bb91bb9efd267df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Prefabs using Guid(b25b58b39cbe46d43bb91bb9efd267df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3f198676c6653fe9a4e617272c9e85') in 0.001975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.362779 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures
+  artifactKey: Guid(fecd33e410b5f5a45844f85fda2dd29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures using Guid(fecd33e410b5f5a45844f85fda2dd29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b38947d33e9bcd847d91ac955c7b1200') in 0.005560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.044796 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp01A.png
+  artifactKey: Guid(6a54d67bb75e9eb4b82aadc4de139d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp01A.png using Guid(6a54d67bb75e9eb4b82aadc4de139d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c7aa42131cf2f5e934cbb1ff08de00') in 0.020638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp01B_Metallic.png
+  artifactKey: Guid(a58ec57f3cd4a6147a62c56be5ca65db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp01B_Metallic.png using Guid(a58ec57f3cd4a6147a62c56be5ca65db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ed22c41aa83a0b6ffc70c8ddb1c72b') in 0.010023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp02B.png
+  artifactKey: Guid(93b6abe4dc345374895d019a4ba1117f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp02B.png using Guid(93b6abe4dc345374895d019a4ba1117f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '664e11e6c6fabe9fefd36333915c6da0') in 0.012330 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000205 seconds.
-  path: Assets/Physics Hulls/SM_Prop_Laptop_Folding_Screen_01 Painting Data.asset
-  artifactKey: Guid(413d73f2d7059fa48becccd489ddf334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Physics Hulls/SM_Prop_Laptop_Folding_Screen_01 Painting Data.asset using Guid(413d73f2d7059fa48becccd489ddf334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32346c3a3bb8cb1c12d325b8cc119c0c') in 0.007031 seconds 
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp02A.png
+  artifactKey: Guid(1ee4bb20ff99c7c4c82a1daf6cfbd374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp02A.png using Guid(1ee4bb20ff99c7c4c82a1daf6cfbd374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46068cb9625b02504eaa70b5ee19ea44') in 0.011479 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.641183 seconds.
-  path: Assets/Physics Hulls/SM_Prop_Laptop_Folding_Screen_01 Hull Data.asset
-  artifactKey: Guid(b6e02d575154a194f8745a60b54cde1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Physics Hulls/SM_Prop_Laptop_Folding_Screen_01 Hull Data.asset using Guid(b6e02d575154a194f8745a60b54cde1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43831b81e9715239dbb6735d46d5d39c') in 0.030564 seconds 
+  Time since last request: 0.000231 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp01A_Emission.png
+  artifactKey: Guid(812368a50095f804db82a73c0b854099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp01A_Emission.png using Guid(812368a50095f804db82a73c0b854099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f21373cadf72aa9a3d2e1a7d91ef1d50') in 0.012059 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Physics Hulls/SM_Prop_Laptop_Folding_Screen_01 Painting Data.asset
-  artifactKey: Guid(413d73f2d7059fa48becccd489ddf334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Physics Hulls/SM_Prop_Laptop_Folding_Screen_01 Painting Data.asset using Guid(413d73f2d7059fa48becccd489ddf334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa301a67f83e1e7756fd15adea017f6') in 0.003421 seconds 
+  Time since last request: 0.000211 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp02B_Metallic.png
+  artifactKey: Guid(98d551a0875f5c1448e02b275470e94e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp02B_Metallic.png using Guid(98d551a0875f5c1448e02b275470e94e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd054eef38008538cd88ea30c990774c') in 0.013347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp01B.png
+  artifactKey: Guid(e9a2adf4569684d4b8b236f4fe34e555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp01B.png using Guid(e9a2adf4569684d4b8b236f4fe34e555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c334e7399517e32a3fd42814b33229c') in 0.010039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp02A_Emission.png
+  artifactKey: Guid(cf8e4e6b7c321b74490dcb0c68f181d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp02A_Emission.png using Guid(cf8e4e6b7c321b74490dcb0c68f181d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19ecdf43fcaf6f3e368c8eeb0ee00018') in 0.011201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp01A_Metallic.png
+  artifactKey: Guid(d1176bdb8cbdb264e91fc0771e941264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp01A_Metallic.png using Guid(d1176bdb8cbdb264e91fc0771e941264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929b9599c734a1d2aa432f4a58513988') in 0.009909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp02B_NM.png
+  artifactKey: Guid(b2e28f72288c3b24aa43d665fed7a579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp02B_NM.png using Guid(b2e28f72288c3b24aa43d665fed7a579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c28308b4f3fcea9d662336271c905120') in 0.013510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp02A_Metallic.png
+  artifactKey: Guid(0eb2d441a9e85774bbfe9019f49ee359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp02A_Metallic.png using Guid(0eb2d441a9e85774bbfe9019f49ee359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b72e2c7cfac9bb03f6cd70f120aa786d') in 0.011731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp01A_NM.png
+  artifactKey: Guid(3db4bb72e4413b04dac063e48df317c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp01A_NM.png using Guid(3db4bb72e4413b04dac063e48df317c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd36e332e9fca10b0955ab58b1de3809') in 0.010024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp02A_NM.png
+  artifactKey: Guid(dd7d0cdb56ca1704183e7160eb6452b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Textures/LettersLightUp02A_NM.png using Guid(dd7d0cdb56ca1704183e7160eb6452b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fb4da965000c2c29b6a8083505c3ba0') in 0.012029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.084652 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_0.FBX
+  artifactKey: Guid(4a3edf53eae52fe4592f4ca662e9df60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_0.FBX using Guid(4a3edf53eae52fe4592f4ca662e9df60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5a44ab519727b6be09ef6815a6105d7') in 0.045335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_9.FBX
+  artifactKey: Guid(862b521c1d8ac114d854af98f15b3f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_9.FBX using Guid(862b521c1d8ac114d854af98f15b3f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '217b6e5a96aeca50392a816707c835cb') in 0.028398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_Z.FBX
+  artifactKey: Guid(2383212e64f837c4abf03d0034776505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_Z.FBX using Guid(2383212e64f837c4abf03d0034776505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bf2e5e7bb4db9ddef5f224827d7a484') in 0.030191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_M.FBX
+  artifactKey: Guid(d80f89e274fd9db4082d937df71fe3f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_M.FBX using Guid(d80f89e274fd9db4082d937df71fe3f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f36fcc1804155f9d3f630c85cf388a2b') in 0.027834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_C.FBX
+  artifactKey: Guid(558a0cdce8d078c4fa1115d7be44f2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_C.FBX using Guid(558a0cdce8d078c4fa1115d7be44f2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '781540c152a95f217507a88d862a92df') in 0.027418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_F.FBX
+  artifactKey: Guid(a35b16d360f25cb43ac84c38f0d5cfaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_F.FBX using Guid(a35b16d360f25cb43ac84c38f0d5cfaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1199161e9333f50194343cf5dd60625') in 0.026043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_2.FBX
+  artifactKey: Guid(b31bd0b1b328f4c4b8e8d83d3ef5969b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_2.FBX using Guid(b31bd0b1b328f4c4b8e8d83d3ef5969b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2a1d6281acd375f370945558346878') in 0.035520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_S1.FBX
+  artifactKey: Guid(9470ff21133220b4ba42c7832ca5b692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_S1.FBX using Guid(9470ff21133220b4ba42c7832ca5b692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26b4917be2bbadfaa5e45dff5c5b931b') in 0.026356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_B.FBX
+  artifactKey: Guid(0bf69c69694fda94391c50285b288eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_B.FBX using Guid(0bf69c69694fda94391c50285b288eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69a65ab79d06ce74c9bb929e1e73ffb1') in 0.033061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_6.FBX
+  artifactKey: Guid(301c37f098278504cb859e0a0a66633c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_6.FBX using Guid(301c37f098278504cb859e0a0a66633c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3762565821119a5483b1e15e8c9503b') in 0.036066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_D.FBX
+  artifactKey: Guid(95b73b2da0cf53c40a80ae4fa54cdb62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_D.FBX using Guid(95b73b2da0cf53c40a80ae4fa54cdb62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02c5be6f3d64f8bf07ce0950043bf6db') in 0.031067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_0.FBX
+  artifactKey: Guid(4883ec50fed69be45b21ecc464f1e6c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_0.FBX using Guid(4883ec50fed69be45b21ecc464f1e6c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efcca0f8f3b15ea740735c18053f81ac') in 0.033468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_J.FBX
+  artifactKey: Guid(b1c0cec244394e845a852e608c499cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_J.FBX using Guid(b1c0cec244394e845a852e608c499cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72ce14cc5eac2339c4c7198c742193dd') in 0.026531 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_T.FBX
+  artifactKey: Guid(f77e76e8f7f583e4894f6374efa95418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_T.FBX using Guid(f77e76e8f7f583e4894f6374efa95418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de0f6a5542056daffc8a3d33e65b406e') in 0.027790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_V.FBX
+  artifactKey: Guid(f91497c52ccfccd458dff302ce33ac50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_V.FBX using Guid(f91497c52ccfccd458dff302ce33ac50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29d114268715b316290cdbf38f424dbe') in 0.026820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_W.FBX
+  artifactKey: Guid(c21a4cf7a8056174989a1fe7d9ae2850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_W.FBX using Guid(c21a4cf7a8056174989a1fe7d9ae2850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b6063722c5af297dcbd5250f3ee3bb') in 0.025895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_7.FBX
+  artifactKey: Guid(c18ed1eece0649641b0c261266939a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_7.FBX using Guid(c18ed1eece0649641b0c261266939a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99fea1571d25374d15a9872e8de4f5c0') in 0.032843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_U.FBX
+  artifactKey: Guid(c7158a491139ded4eafdd0bf89286996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_U.FBX using Guid(c7158a491139ded4eafdd0bf89286996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d8353b63d5a20c854c7c12ee4282d50') in 0.026388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_6.FBX
+  artifactKey: Guid(20992621e135c4e44b1c7c908b63bf0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_6.FBX using Guid(20992621e135c4e44b1c7c908b63bf0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c49ea5b02c4e5df280ca24d5913c71f7') in 0.026212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_8.FBX
+  artifactKey: Guid(331de54fca3ef774dada931c6a6d61b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_8.FBX using Guid(331de54fca3ef774dada931c6a6d61b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd943ecaa06adca579e7c42e054c88ef7') in 0.027270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_H.FBX
+  artifactKey: Guid(a1cab63b957fb8c44a6d9db6194eaff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_H.FBX using Guid(a1cab63b957fb8c44a6d9db6194eaff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e476208443fc9ca68bc760ff34c2af0e') in 0.026883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_A.FBX
+  artifactKey: Guid(f1f27d8128205d24aa42b2a8555c26e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_A.FBX using Guid(f1f27d8128205d24aa42b2a8555c26e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aa562d0cc9ae92bfed7b8045ea1e708') in 0.028457 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_S.FBX
+  artifactKey: Guid(818a3c515fb419243a81336358ab7791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_S.FBX using Guid(818a3c515fb419243a81336358ab7791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f44e2ae20cfc415192a2abe54a11d044') in 0.027793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_9.FBX
+  artifactKey: Guid(04750c96fee68ec40b8877d370fbb6fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_9.FBX using Guid(04750c96fee68ec40b8877d370fbb6fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '566e6d3f78b91f973ae4d6c5fa20a413') in 0.035536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_Q.FBX
+  artifactKey: Guid(e7cb5971e1a31bb4c92dfe342839099a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_Q.FBX using Guid(e7cb5971e1a31bb4c92dfe342839099a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0881d63b3852779fdcea74bdcb9b3e5a') in 0.025605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_Y.FBX
+  artifactKey: Guid(9ffa33c8fd0ae5a4294a7258b9820761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_Y.FBX using Guid(9ffa33c8fd0ae5a4294a7258b9820761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '258e3f97d364894399be1671f9858e14') in 0.027450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_I.FBX
+  artifactKey: Guid(fc7a505f5dcca804fa297e2282023150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_I.FBX using Guid(fc7a505f5dcca804fa297e2282023150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1302c75e095b4abb5d015cded3683494') in 0.025811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_4.FBX
+  artifactKey: Guid(75414fa019883234dad675dc4b8ce482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_4.FBX using Guid(75414fa019883234dad675dc4b8ce482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdbefe3c90ca6d64ecf2a5c6237e23b9') in 0.046571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_K.FBX
+  artifactKey: Guid(3065df599a0953c408aaf8c9e4728473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_K.FBX using Guid(3065df599a0953c408aaf8c9e4728473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be92833aae78857a9c178960cfe5b88a') in 0.026121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_1.FBX
+  artifactKey: Guid(384614b7b77d1644cb2a70a65ee3816c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_1.FBX using Guid(384614b7b77d1644cb2a70a65ee3816c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d6abbcfc56f2c682eab0c949e99b63d') in 0.027585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_O.FBX
+  artifactKey: Guid(93d8ca4d0fb02ca4abfe9c3c2df4d992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_O.FBX using Guid(93d8ca4d0fb02ca4abfe9c3c2df4d992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86782945c1f384602e14d7f2b96ffb03') in 0.025824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_7.FBX
+  artifactKey: Guid(565f5bdf32ac3304d918208e5051ab6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_7.FBX using Guid(565f5bdf32ac3304d918208e5051ab6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71ea9db1fc9b2cbc23632c180e9dce9d') in 0.025558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_X.FBX
+  artifactKey: Guid(35572203aab89a54484672b0c4c76848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_X.FBX using Guid(35572203aab89a54484672b0c4c76848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '135db1433ad9f81bfe365f037ca3c7be') in 0.025881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_C.FBX
+  artifactKey: Guid(cade1c8ab8efad844bbe9148481f08c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_C.FBX using Guid(cade1c8ab8efad844bbe9148481f08c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e86f0d971286fce7df53c0d220c78d8') in 0.034192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_3.FBX
+  artifactKey: Guid(0b656967af2fbc044b3e51f851fae5ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_3.FBX using Guid(0b656967af2fbc044b3e51f851fae5ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b2c3ffed6f59119278ce55746217eb0') in 0.029550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_8.FBX
+  artifactKey: Guid(ace56e69fbc6c8946911ef78b195b6e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_8.FBX using Guid(ace56e69fbc6c8946911ef78b195b6e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '284156d5b62746ff2ba65fc5964f2aec') in 0.033617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_3.FBX
+  artifactKey: Guid(43f3be5f07da858499a33f97d2fc74ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_3.FBX using Guid(43f3be5f07da858499a33f97d2fc74ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c98a46dc221be3930c53b9e903893b9b') in 0.034553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_R.FBX
+  artifactKey: Guid(6ef55fed39b125545af40c41431634d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_R.FBX using Guid(6ef55fed39b125545af40c41431634d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dd28a3b8a8106aac207e617a007bb6a') in 0.052822 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_E.FBX
+  artifactKey: Guid(f36237c5729c2a843b76a519ecaa02c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_E.FBX using Guid(f36237c5729c2a843b76a519ecaa02c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ad1d6f3c3ff3bbeeca2a785fab93057') in 0.026522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_4.FBX
+  artifactKey: Guid(d637e47387c08414a86c0c5727488d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_4.FBX using Guid(d637e47387c08414a86c0c5727488d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9dd99518cfe31395ca9c9d1512acb4e') in 0.027112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_S2.FBX
+  artifactKey: Guid(0d7e9c09f50a48240950f96553c24947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_S2.FBX using Guid(0d7e9c09f50a48240950f96553c24947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e49ed19d18d8c4fb0c0526c9c1ec72') in 0.028081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_5.FBX
+  artifactKey: Guid(8e7c5c6dcdc83764eb7d5ca3cb0f8567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_5.FBX using Guid(8e7c5c6dcdc83764eb7d5ca3cb0f8567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bc237ad9e34d79a847ba83d94d5fd81') in 0.034668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_G.FBX
+  artifactKey: Guid(5710739078490f242b86de6bd2fe60f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_G.FBX using Guid(5710739078490f242b86de6bd2fe60f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c163b4d5f1be341758b7173a6adb907e') in 0.026910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_S3.FBX
+  artifactKey: Guid(c9027372e447625439ec34e5dfecbc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_S3.FBX using Guid(c9027372e447625439ec34e5dfecbc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c907589bd2664262fad9c4911dc0cc22') in 0.025467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_A.FBX
+  artifactKey: Guid(3d2ad95e392ca22469ccd754b1a4e903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_A.FBX using Guid(3d2ad95e392ca22469ccd754b1a4e903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f1e691fd10f61d4e7b21eeed2be481') in 0.032936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_5.FBX
+  artifactKey: Guid(13a73ee3ed65f6443a6ec9bbf371463e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_5.FBX using Guid(13a73ee3ed65f6443a6ec9bbf371463e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dcee8b2e9cd5e0f5a6c492c42161aed') in 0.026530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_N.FBX
+  artifactKey: Guid(b307b0a3c90656842ac1f1716af828ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_N.FBX using Guid(b307b0a3c90656842ac1f1716af828ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f364a7f9af7702c93836283f8992e76') in 0.026351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_B.FBX
+  artifactKey: Guid(ec94334c63704b64c9cfab78232ffa8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_B.FBX using Guid(ec94334c63704b64c9cfab78232ffa8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb1e71114b989484795dbd5b73dc1b4a') in 0.027980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_2.FBX
+  artifactKey: Guid(e3b20d2fca16ab542a58b0f11ceb13e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_2.FBX using Guid(e3b20d2fca16ab542a58b0f11ceb13e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4539b314c22004d5674f793aab9038fe') in 0.026339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_1.FBX
+  artifactKey: Guid(6a29122541a0e384fabf916c10eb5057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_1.FBX using Guid(6a29122541a0e384fabf916c10eb5057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3491a48ecda5d9cb16d98466506b4990') in 0.034384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_P.FBX
+  artifactKey: Guid(6f3993d8845415e44bf0f1a366092352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_P.FBX using Guid(6f3993d8845415e44bf0f1a366092352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7f87a0fc8311a979b11e5f76944155b') in 0.029152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_L.FBX
+  artifactKey: Guid(72a7230df84094240b797feafdb50948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp01_L.FBX using Guid(72a7230df84094240b797feafdb50948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbd79473ada83eb9f0bb89f5817afa53') in 0.026740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.325950 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/Materials
+  artifactKey: Guid(a0d4111a7c7a00440849bd5262fa59d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/Materials using Guid(a0d4111a7c7a00440849bd5262fa59d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36352a7d4c0dcaa0cbb6dc5b4e2eab81') in 0.005181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.051496 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/Materials/LettersLightUp01A.mat
+  artifactKey: Guid(eb5dd62c68be30645ae4b261d4b0bb96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/Materials/LettersLightUp01A.mat using Guid(eb5dd62c68be30645ae4b261d4b0bb96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86e2481e14e60e8e4c03e100a1250d8e') in 0.009513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/Materials/LettersLightUp02A.mat
+  artifactKey: Guid(67da4bd734085474b8a9fae84b45a94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/Materials/LettersLightUp02A.mat using Guid(67da4bd734085474b8a9fae84b45a94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '221e25f8d7d6f166594df739958e58af') in 0.018008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/Materials/LettersLightUp02APink.mat
+  artifactKey: Guid(77bff28d09a402e40b3ea834b02f9262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/Materials/LettersLightUp02APink.mat using Guid(77bff28d09a402e40b3ea834b02f9262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c902a1639e5a42e02b9c01df5e7698') in 0.020182 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/Materials/Phy.mat
+  artifactKey: Guid(f489c1039adf7ca49946870257aa46e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/Materials/Phy.mat using Guid(f489c1039adf7ca49946870257aa46e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e75677a971079fdb2b4bd05874a49b4f') in 0.012693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/Materials/LettersLightUp02B.mat
+  artifactKey: Guid(c92dbb45a8ae93e40bfabc760f745eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/Materials/LettersLightUp02B.mat using Guid(c92dbb45a8ae93e40bfabc760f745eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '664cc557a93a0c5ccc29eaceb2f6b51f') in 0.017229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/Materials/LettersLightUp02ABlue.mat
+  artifactKey: Guid(76282756d8f372f4590eaaa05ad87940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/Materials/LettersLightUp02ABlue.mat using Guid(76282756d8f372f4590eaaa05ad87940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db5a990b9dd83118def003a60207fee1') in 0.019552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/Materials/LettersLightUp01B.mat
+  artifactKey: Guid(7b405982f53e5004eafe6b754aca5a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/Materials/LettersLightUp01B.mat using Guid(7b405982f53e5004eafe6b754aca5a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b611f9e171771e1420a27b46eef09328') in 0.011498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 106.977721 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_D.FBX
+  artifactKey: Guid(7b54da31014c47a48899559f50102cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_D.FBX using Guid(7b54da31014c47a48899559f50102cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '116fd781719d9d3a607cbdcb1bf10989') in 0.033285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_H.FBX
+  artifactKey: Guid(1f84663ace99aa144962ba3c7bd99c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_H.FBX using Guid(1f84663ace99aa144962ba3c7bd99c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578f1a8c88772a3043aaf9f43d21eb1b') in 0.058994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_I.FBX
+  artifactKey: Guid(ae93221ad6ecb934bb60b74b5352b3c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_I.FBX using Guid(ae93221ad6ecb934bb60b74b5352b3c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e778d86f476e0b39c021a308da709898') in 0.035197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_L.FBX
+  artifactKey: Guid(aad01646410e0374cb2ffdcdc0a9f9fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_L.FBX using Guid(aad01646410e0374cb2ffdcdc0a9f9fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ed1004adaf85870c619d7e18c534863') in 0.032817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_K.FBX
+  artifactKey: Guid(fff94732f84581a40b9059f81e7269b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_K.FBX using Guid(fff94732f84581a40b9059f81e7269b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bd288b093a23ac08c0312c34d109ea3') in 0.033067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_F.FBX
+  artifactKey: Guid(b21ee353c8a65194692e3084924bfa71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_F.FBX using Guid(b21ee353c8a65194692e3084924bfa71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '115122092b9e14a173eccf7b636e26cb') in 0.034821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_O.FBX
+  artifactKey: Guid(1f696bc92452f80448fd94db0930af09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_O.FBX using Guid(1f696bc92452f80448fd94db0930af09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a88d5181ae0cb3cfaed901e98bff95de') in 0.033035 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_J.FBX
+  artifactKey: Guid(63e2f6abdd81e5f478a2bd4a1addedbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_J.FBX using Guid(63e2f6abdd81e5f478a2bd4a1addedbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bf70e9ebacd0417a19f7c6276470896') in 0.035674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_E.FBX
+  artifactKey: Guid(f8fe1f4fad7ed8e45a1bc7ad4aa483d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_E.FBX using Guid(f8fe1f4fad7ed8e45a1bc7ad4aa483d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d8c8e1ec76eab2bd49998bebb1d59e0') in 0.036640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_P.FBX
+  artifactKey: Guid(f0d54de7d5573cc4e8951516cc2c2ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_P.FBX using Guid(f0d54de7d5573cc4e8951516cc2c2ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f5d211ccf2ba1d949e00b11cdb2bc4b') in 0.036189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_M.FBX
+  artifactKey: Guid(64c7030d76641f246850a5ea7bdc92d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_M.FBX using Guid(64c7030d76641f246850a5ea7bdc92d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f663ef7f0ca3cfcaad7c0072a387705') in 0.034595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_G.FBX
+  artifactKey: Guid(3b8f73e9b4f937b4a803b7c0e1c62d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_G.FBX using Guid(3b8f73e9b4f937b4a803b7c0e1c62d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb5143e3c5b69da0850f4004e66ca903') in 0.036663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_N.FBX
+  artifactKey: Guid(64399ad0c35fa614aa2fe9972a205c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_N.FBX using Guid(64399ad0c35fa614aa2fe9972a205c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92aab723ac8fa811a9b1f057a501f1f0') in 0.047739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 120.020828 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_Q.FBX
+  artifactKey: Guid(0bbc578bef86df94b9864e95480be16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_Q.FBX using Guid(0bbc578bef86df94b9864e95480be16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e48c93787b2fbf5c9517d96875dcc0ac') in 0.033641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_Z.FBX
+  artifactKey: Guid(052a9aef835d9004e91de337c1836b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_Z.FBX using Guid(052a9aef835d9004e91de337c1836b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e6c9f39e7488cfbabce47e340bd8612') in 0.052456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_Y.FBX
+  artifactKey: Guid(b7ab4b91c34790441ab8b89c064430b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_Y.FBX using Guid(b7ab4b91c34790441ab8b89c064430b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a2cbbfeddf61417daef9243034b44f9') in 0.032944 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_V.FBX
+  artifactKey: Guid(8e58181d715366b499bc2a09eccb9435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_V.FBX using Guid(8e58181d715366b499bc2a09eccb9435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '090c1841728698ef26b50852e1b88537') in 0.034787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_S1.FBX
+  artifactKey: Guid(532696774b841ae4c80d10a5e5f95986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_S1.FBX using Guid(532696774b841ae4c80d10a5e5f95986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c195592f845b30e4eeba8dc07397c3b') in 0.043430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_S2.FBX
+  artifactKey: Guid(9ca1ef4a386a1664cb4336f6b2329bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_S2.FBX using Guid(9ca1ef4a386a1664cb4336f6b2329bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f2d02641fa95afdf33f8d549aff9d7') in 0.041911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_S3.FBX
+  artifactKey: Guid(7da29aed8a17d634b82e721049fae438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_S3.FBX using Guid(7da29aed8a17d634b82e721049fae438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d463999bdbf15232a6488c700e1bceb') in 0.034748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_S.FBX
+  artifactKey: Guid(f20e58ed9c62c9e498d6c38e10cb1b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_S.FBX using Guid(f20e58ed9c62c9e498d6c38e10cb1b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6622c69f3ac87d9d6173335f5ac9f68a') in 0.034161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_R.FBX
+  artifactKey: Guid(8e82f17b41bc8a3499071b86123af694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_R.FBX using Guid(8e82f17b41bc8a3499071b86123af694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddf91c1ec77780548b0de224cea07c8c') in 0.033851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_X.FBX
+  artifactKey: Guid(0028d250c9c2256499425329e0b93d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_X.FBX using Guid(0028d250c9c2256499425329e0b93d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5566ff0f12956431be745470337525e8') in 0.032325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_U.FBX
+  artifactKey: Guid(997ebb1ac4fd9ac41910e4f2d8d4efc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_U.FBX using Guid(997ebb1ac4fd9ac41910e4f2d8d4efc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b9405bf3f1031fef5355b6ff1a6c6fa') in 0.033809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_W.FBX
+  artifactKey: Guid(4a7e0e3befff55543acfc8cf01c2c972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_W.FBX using Guid(4a7e0e3befff55543acfc8cf01c2c972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fb9d6dd4b6c31d0c24e56eb3fdc7909') in 0.032732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_T.FBX
+  artifactKey: Guid(73032fdbf9101434c805f74fd779354a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Props/Office/Decoration/Letters/Models/LettersLightUp02_T.FBX using Guid(73032fdbf9101434c805f74fd779354a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd706b97ff46fcca41b88dfeeec253b15') in 0.035689 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006270 seconds.
+Registered in 0.006985 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.44 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 2.41 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.017 seconds
+- Completed reload, in  0.999 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1017ms)
-		BeginReloadAssembly (132ms)
+	ReloadAssembly (1000ms)
+		BeginReloadAssembly (133ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (43ms)
-		EndReloadAssembly (832ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (816ms)
 			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (279ms)
+			SetupTypeCache (276ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (304ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (297ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (201ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.37 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3527 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.7 MB.
+System memory in use after: 182.9 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4213.
+Total: 3.813900 ms (FindLiveObjects: 0.386900 ms CreateObjectMapping: 0.082800 ms MarkObjects: 3.313500 ms  DeleteObjects: 0.029500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1168.506012 seconds.
+  path: Assets/Prefabs/Game/Global Volume.prefab
+  artifactKey: Guid(391f916aa609a5c4c857916e8806d377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Game/Global Volume.prefab using Guid(391f916aa609a5c4c857916e8806d377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0295d2154c3f9d2c8f9e5fd2aa01286') in 0.037154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/PolygonOffice/Models/SM_Prop_Globe_01_Convex.asset
+  artifactKey: Guid(1d2102fedeeb5f3418393894f58f76c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Models/SM_Prop_Globe_01_Convex.asset using Guid(1d2102fedeeb5f3418393894f58f76c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d27f331cf4199cd933cba5c82cde139') in 0.054479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/PolygonShops/Models/Convex/SM_Prop_Sport_BoxingGlove_r_01_Convex.asset
+  artifactKey: Guid(9eca79206e87f34408a8c4b10b252abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/Convex/SM_Prop_Sport_BoxingGlove_r_01_Convex.asset using Guid(9eca79206e87f34408a8c4b10b252abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd80102d988a850571687a532fe6740c6') in 0.012191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Sport_BoxingGlove_r_01.fbx
+  artifactKey: Guid(28d563f1cdded0d4c88472ba105d84c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Sport_BoxingGlove_r_01.fbx using Guid(28d563f1cdded0d4c88472ba105d84c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '351d4dc8c29c552ec09fb76a5245c68c') in 0.123512 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/PolygonTown/Models/CollisionConvex/SM_Prop_Globe_01_Convex.asset
+  artifactKey: Guid(c012e4d00176d3a45bea2693c8b08849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/CollisionConvex/SM_Prop_Globe_01_Convex.asset using Guid(c012e4d00176d3a45bea2693c8b08849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c48e95c742692aaf5e5b57356208c2ae') in 0.010789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/PolygonNature/Scenes/DemoScene_01/Global Volume Profile.asset
+  artifactKey: Guid(be9111d9d20029b4985eb4c00448c5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonNature/Scenes/DemoScene_01/Global Volume Profile.asset using Guid(be9111d9d20029b4985eb4c00448c5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c9cc9789acfb56a7fc8c45cad2e6bda') in 0.009929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Sport_BoxingGlove_l_01.fbx
+  artifactKey: Guid(ab8f0d0f63f89174597c541be2e65695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Sport_BoxingGlove_l_01.fbx using Guid(ab8f0d0f63f89174597c541be2e65695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3d91327f5f2cb11706d256d67b5dc87') in 0.031932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/PolygonOffice/Models/SM_Prop_Globe_01.fbx
+  artifactKey: Guid(9d61de09eb171924f8b42bcaeb0f430b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Models/SM_Prop_Globe_01.fbx using Guid(9d61de09eb171924f8b42bcaeb0f430b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3338c9aa4719fa4093b422186284a14f') in 0.030639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Sport_Baseball_Glove_01.fbx
+  artifactKey: Guid(79c640272a58b6741bf01bc945f39416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Sport_Baseball_Glove_01.fbx using Guid(79c640272a58b6741bf01bc945f39416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd080c26639cd93411a9dce2d5f576d23') in 0.036514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/PolygonNature/FX/FX_Prefabs/Glowing_Dust_01.prefab
+  artifactKey: Guid(e62fe7588430d264ab316d646f76d61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonNature/FX/FX_Prefabs/Glowing_Dust_01.prefab using Guid(e62fe7588430d264ab316d646f76d61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1a17e30abe988c21482d36e936d4241') in 0.020626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/PolygonShops/Models/Convex/SM_Prop_Sport_Baseball_Glove_01_Convex.asset
+  artifactKey: Guid(8693f0cf58eea764cb00846aad10ccf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/Convex/SM_Prop_Sport_Baseball_Glove_01_Convex.asset using Guid(8693f0cf58eea764cb00846aad10ccf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2ab82f286ae8af1c38eeb26aad29cbe') in 0.011120 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/PolygonOffice/Prefabs/Props/Desk Props/SM_Prop_Globe_01.prefab
+  artifactKey: Guid(238b625e5b98041459bbb7bfe96cab9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Prefabs/Props/Desk Props/SM_Prop_Globe_01.prefab using Guid(238b625e5b98041459bbb7bfe96cab9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1e7e1fecbff656797e9c72fdd3bb622') in 0.030606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/PolygonShops/Models/Convex/SM_Prop_Sport_BoxingGlove_l_01_Convex.asset
+  artifactKey: Guid(640801df337a7c546b43b6c63591e8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/Convex/SM_Prop_Sport_BoxingGlove_l_01_Convex.asset using Guid(640801df337a7c546b43b6c63591e8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a83ab5c75e9dd84970e2f7fb338436fd') in 0.011766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/PolygonTown/Models/Props/SM_Prop_Globe_01.fbx
+  artifactKey: Guid(289d24c785cad884e941a251dec78b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/Props/SM_Prop_Globe_01.fbx using Guid(289d24c785cad884e941a251dec78b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '928256b248adf2fea351130a6126ea9a') in 0.035489 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006377 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.53 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.981 seconds
+Domain Reload Profiling:
+	ReloadAssembly (982ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (807ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (272ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (301ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (3ms)
 				BeforeProcessingInitializeOnLoad (81ms)
-				ProcessInitializeOnLoadAttributes (203ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				ProcessInitializeOnLoadAttributes (202ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (13ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.65 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 2.57 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3527 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 181.6 MB.
-System memory in use after: 181.9 MB.
+System memory in use before: 183.3 MB.
+System memory in use after: 183.6 MB.
 
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4209.
-Total: 4.426700 ms (FindLiveObjects: 0.396500 ms CreateObjectMapping: 0.090600 ms MarkObjects: 3.907900 ms  DeleteObjects: 0.030100 ms)
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 4252.
+Total: 3.814900 ms (FindLiveObjects: 0.373900 ms CreateObjectMapping: 0.112200 ms MarkObjects: 3.280300 ms  DeleteObjects: 0.047600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005074 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.27 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.959 seconds
+Domain Reload Profiling:
+	ReloadAssembly (960ms)
+		BeginReloadAssembly (110ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (797ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (265ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (296ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (197ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.52 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3527 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.3 MB.
+System memory in use after: 183.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4255.
+Total: 3.985800 ms (FindLiveObjects: 0.388400 ms CreateObjectMapping: 0.084700 ms MarkObjects: 3.482400 ms  DeleteObjects: 0.029200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -256,8 +1120,701 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 119.177384 seconds.
-  path: Assets/Physics Hulls/Closed_laptop Painting Data.asset
-  artifactKey: Guid(9992d4149cbba1d4f9dbfce9131ab039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Physics Hulls/Closed_laptop Painting Data.asset using Guid(9992d4149cbba1d4f9dbfce9131ab039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '880d6343d3c951dafd6b9361f10f04bb') in 0.031627 seconds 
+  Time since last request: 496.167788 seconds.
+  path: Assets/Scenes/Secretary.unity
+  artifactKey: Guid(23137fcfc4d70c044b7b77fe714fec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Secretary.unity using Guid(23137fcfc4d70c044b7b77fe714fec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b132eaed8545c36b7c36095f5c711e9d') in 0.011468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 322.552366 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Clothes_Eyewear_Stand_01.fbx
+  artifactKey: Guid(9a1e52551a52d0841b592332280f7f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Clothes_Eyewear_Stand_01.fbx using Guid(9a1e52551a52d0841b592332280f7f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd168b9194af404d3c34cab0bc7e9f95') in 0.175957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Plugins/Grabbit/Demo/Materials/Glass.mat
+  artifactKey: Guid(66575bc01e026ff4eaf328e5d7b99778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Grabbit/Demo/Materials/Glass.mat using Guid(66575bc01e026ff4eaf328e5d7b99778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '453df7d56ea23241698122d8684b0584') in 0.049566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.822350 seconds.
+  path: Assets/NiceVibrations/HapticSamples/Impacts/Glass1.wav
+  artifactKey: Guid(8694b04a08a264b4e9fcb4ad2fdad2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NiceVibrations/HapticSamples/Impacts/Glass1.wav using Guid(8694b04a08a264b4e9fcb4ad2fdad2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '489d5ebaf91e9757ea95afc5ce9f95e2') in 0.030960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/NiceVibrations/HapticSamples/Impacts/Glass3.haptic
+  artifactKey: Guid(66fe4b2b2e6f340688712ab94b2f0a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NiceVibrations/HapticSamples/Impacts/Glass3.haptic using Guid(66fe4b2b2e6f340688712ab94b2f0a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a2aa0463e7f10279741b1896ce9f42') in 0.010473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/NiceVibrations/HapticSamples/Impacts/Glass3.wav
+  artifactKey: Guid(d0cc49fe4e87d4f1cb57c1052f6b8986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NiceVibrations/HapticSamples/Impacts/Glass3.wav using Guid(d0cc49fe4e87d4f1cb57c1052f6b8986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0232b797232a967e8596b7a9c41ba62c') in 0.012750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/NiceVibrations/HapticSamples/Impacts/Glass2.wav
+  artifactKey: Guid(f75b9add6a48347fdb4beca72e9dba09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NiceVibrations/HapticSamples/Impacts/Glass2.wav using Guid(f75b9add6a48347fdb4beca72e9dba09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aafb4e6114e93715f306b4a6dbbbc403') in 0.014410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/NiceVibrations/HapticSamples/Impacts/Glass1.haptic
+  artifactKey: Guid(ef9858f2530394b7e91724587f9ad29f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NiceVibrations/HapticSamples/Impacts/Glass1.haptic using Guid(ef9858f2530394b7e91724587f9ad29f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '132c4d76e421508e495828614b8ee9f8') in 0.006289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/NiceVibrations/HapticSamples/Impacts/Glass2.haptic
+  artifactKey: Guid(76300b058d5fd4e73a1279964ea13b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NiceVibrations/HapticSamples/Impacts/Glass2.haptic using Guid(76300b058d5fd4e73a1279964ea13b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aaa8e440908e24650dae37fc6847437') in 0.007376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.184743 seconds.
+  path: Assets/TirgamesAssets/ModernWorld/Shared/PhysMaterials/PhyGlass.physicMaterial
+  artifactKey: Guid(da2dc68a65718a74783ce810f689f8c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TirgamesAssets/ModernWorld/Shared/PhysMaterials/PhyGlass.physicMaterial using Guid(da2dc68a65718a74783ce810f689f8c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14f4320640b6a93d2f240f49822990ab') in 0.006749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/PolygonShops/Materials/Misc/PolygonShops_Glass_01.mat
+  artifactKey: Guid(815265f0bd174eb4eb30a87cc5550102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Materials/Misc/PolygonShops_Glass_01.mat using Guid(815265f0bd174eb4eb30a87cc5550102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315cd2a5e5acae35207ca75295dd672a') in 0.015318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.590915 seconds.
+  path: Assets/PolygonTown/Models/Buildings/SM_Bld_House_Window_05.fbx
+  artifactKey: Guid(a2462efb4aef90e4fbe5fe8784f244b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/Buildings/SM_Bld_House_Window_05.fbx using Guid(a2462efb4aef90e4fbe5fe8784f244b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbc237f7645c054c9ac696cb05d1ab8d') in 0.031640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.380154 seconds.
+  path: Assets/PolygonCity/Models/SM_Bld_OfficeRound_Base_01.fbx
+  artifactKey: Guid(cb3684e034b0818468149778f9f61d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Bld_OfficeRound_Base_01.fbx using Guid(cb3684e034b0818468149778f9f61d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4175b71919353815abf8d319c33f146') in 0.037422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/PolygonCity/Models/SM_Bld_Shop_02.fbx
+  artifactKey: Guid(88e975ccc0a823e45881be9718fd83de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Bld_Shop_02.fbx using Guid(88e975ccc0a823e45881be9718fd83de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b04b7d146b5783e99c7b2359b2364f8e') in 0.034683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/PolygonCity/Models/SM_Bld_Shop_05.fbx
+  artifactKey: Guid(3c61d7aa61eefe24d8bba4e86f649b12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Bld_Shop_05.fbx using Guid(3c61d7aa61eefe24d8bba4e86f649b12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33c15108126d7cef925a0a6523a5981b') in 0.029631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/PolygonCity/Models/SM_Bld_Shop_03.fbx
+  artifactKey: Guid(cabf262b9c587ab4cb3cb6dae282959b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Bld_Shop_03.fbx using Guid(cabf262b9c587ab4cb3cb6dae282959b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f21050d1c18199bcc0041e6d135f7fcd') in 0.030564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/PolygonCity/Models/SM_Bld_OfficeSquare_Base_01.fbx
+  artifactKey: Guid(4d4ef4bd4ca5c7b41ba293cd161b871e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Bld_OfficeSquare_Base_01.fbx using Guid(4d4ef4bd4ca5c7b41ba293cd161b871e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc337304e568e5c2574b5e46989ebdbc') in 0.029985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/PolygonCity/Models/SM_Bld_Shop_01.fbx
+  artifactKey: Guid(d875b9ce96fd6cf4bb90e507580835d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Bld_Shop_01.fbx using Guid(d875b9ce96fd6cf4bb90e507580835d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '827cbe52da3d7384d84a37c37e66aae8') in 0.029642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/PolygonOffice/Models/SM_Bld_Wall_Brick_Window_01.fbx
+  artifactKey: Guid(01fd5a09764a67248aea29c8b20ae10f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Models/SM_Bld_Wall_Brick_Window_01.fbx using Guid(01fd5a09764a67248aea29c8b20ae10f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dba6c7b872a2d0860f0c899755d58e0') in 0.030662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/PolygonOffice/Models/SM_Bld_Wall_Blank_Window_04.fbx
+  artifactKey: Guid(7b6920c3691c04b46b13d36711de5fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Models/SM_Bld_Wall_Blank_Window_04.fbx using Guid(7b6920c3691c04b46b13d36711de5fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62de76163388f69c73d580e11a7b1d79') in 0.032390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/PolygonCity/Models/SM_Bld_Shop_Corner_02.fbx
+  artifactKey: Guid(1e49b63f0f0c0864e997789a8d3d01be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Bld_Shop_Corner_02.fbx using Guid(1e49b63f0f0c0864e997789a8d3d01be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d800a7143855771868f708ad947c6ab') in 0.031021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/PolygonCity/Models/SM_Bld_Shop_04.fbx
+  artifactKey: Guid(df75d1a69c99b944998e075e30c98272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Bld_Shop_04.fbx using Guid(df75d1a69c99b944998e075e30c98272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0259da60c3379bb69b79bb46deccfc08') in 0.029250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/PolygonCity/Models/SM_Bld_Shop_Corner_01.fbx
+  artifactKey: Guid(fd288f04e290fec4da09f82785ea46e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Bld_Shop_Corner_01.fbx using Guid(fd288f04e290fec4da09f82785ea46e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd96f908a3fabdfbe65c53b25fbec75c2') in 0.027629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.805487 seconds.
+  path: Assets/PolygonOffice/Models/SM_Bld_Wall_Brick_Window_02.fbx
+  artifactKey: Guid(a43780b86ff39da4a8564ec62e223020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Models/SM_Bld_Wall_Brick_Window_02.fbx using Guid(a43780b86ff39da4a8564ec62e223020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb0f4b08c16f14851c317fe7d5fc5b61') in 0.036391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/PolygonOffice/Models/SM_Bld_Wall_Brick_Window_03.fbx
+  artifactKey: Guid(f6335ef90308a68489c839d34f4e4d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Models/SM_Bld_Wall_Brick_Window_03.fbx using Guid(f6335ef90308a68489c839d34f4e4d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '538cfd132e0bc7486ceb52d5fddf5168') in 0.032745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/PolygonOffice/Models/SM_Bld_Wall_Brick_Window_04.fbx
+  artifactKey: Guid(cfaae529eed616a489020fde0661c16d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Models/SM_Bld_Wall_Brick_Window_04.fbx using Guid(cfaae529eed616a489020fde0661c16d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bbeb6f89c12b4bd604f95a98bf7dcec') in 0.029177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.301117 seconds.
+  path: Assets/PolygonOffice/Models/SM_Bld_Window_Cover_Glass_01.fbx
+  artifactKey: Guid(73e537be245ef6e42b8c1bdce5000a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Models/SM_Bld_Window_Cover_Glass_01.fbx using Guid(73e537be245ef6e42b8c1bdce5000a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '617526e064825f1deb88b05e0798c30f') in 0.030133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/PolygonOffice/Models/SM_Bld_Window_Cover_Glass_Gap_01.fbx
+  artifactKey: Guid(9ee7dde1c3d1d3440ac1583b8f1cba21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Models/SM_Bld_Window_Cover_Glass_Gap_01.fbx using Guid(9ee7dde1c3d1d3440ac1583b8f1cba21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f68613b0ec4ef5396bec5f4115fd9a') in 0.031060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.382613 seconds.
+  path: Assets/PolygonShops/Prefabs/Characters/Attachments/SM_Chr_Attach_Glasses_01.prefab
+  artifactKey: Guid(03e427f7de0325a4d8d9c100636fa33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Prefabs/Characters/Attachments/SM_Chr_Attach_Glasses_01.prefab using Guid(03e427f7de0325a4d8d9c100636fa33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a209efae0559065c83432a292c5055b') in 0.062838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/PolygonTown/Models/CollisionConvex/SM_Item_Drink_Glass_01_Convex.asset
+  artifactKey: Guid(1bfb84ed2f0b6b74d884ba1fdbae98c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/CollisionConvex/SM_Item_Drink_Glass_01_Convex.asset using Guid(1bfb84ed2f0b6b74d884ba1fdbae98c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc03fa1dbab572166ae3ff3fafde0921') in 0.012261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/PolygonShops/Prefabs/Characters/Attachments/SM_Chr_Attach_Glasses_02.prefab
+  artifactKey: Guid(6d98707291ceb3b47bf4a66f89bef440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Prefabs/Characters/Attachments/SM_Chr_Attach_Glasses_02.prefab using Guid(6d98707291ceb3b47bf4a66f89bef440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a0c6cd6abc50702c668c99c055cac4b') in 0.034073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/PolygonTown/Models/Items/SM_Item_Drink_Glass_01.fbx
+  artifactKey: Guid(a7017af43473bfe429569afe89bae0db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/Items/SM_Item_Drink_Glass_01.fbx using Guid(a7017af43473bfe429569afe89bae0db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2631e77a7ce51446c8aac5e93c367b49') in 0.030734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/PolygonTown/Prefabs/Items/SM_Item_Drink_Glass_01.prefab
+  artifactKey: Guid(e2074223d3e2cde45a95f49fa6771733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Prefabs/Items/SM_Item_Drink_Glass_01.prefab using Guid(e2074223d3e2cde45a95f49fa6771733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e4069c52bae7a506d0c83e2e4eabda') in 0.021534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/PolygonCity/Models/SM_Env_SubwayEntrance_01.fbx
+  artifactKey: Guid(8bfbd72541b8c314d98c45881b486f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Env_SubwayEntrance_01.fbx using Guid(8bfbd72541b8c314d98c45881b486f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9f31bcf9a66507b99fde4be807e0b2c') in 0.030426 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.100064 seconds.
+  path: Assets/PolygonTown/Prefabs/Items/SM_Item_Drink_Glass_02.prefab
+  artifactKey: Guid(ceca18381ffe1e948b586767a27faad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Prefabs/Items/SM_Item_Drink_Glass_02.prefab using Guid(ceca18381ffe1e948b586767a27faad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '900eef9c3875ee9ff28388538ca5d5ac') in 0.032745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/PolygonTown/Prefabs/Items/SM_Item_GlassCup_01.prefab
+  artifactKey: Guid(a2d4db4b118e3704fb62b3c7f4a42f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Prefabs/Items/SM_Item_GlassCup_01.prefab using Guid(a2d4db4b118e3704fb62b3c7f4a42f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b014fc38fde40243219d73e50983b6a7') in 0.037627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/PolygonTown/Models/CollisionConvex/SM_Item_GlassCup_01_Convex.asset
+  artifactKey: Guid(957d0f8776763a849ba39d1c8681c4d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/CollisionConvex/SM_Item_GlassCup_01_Convex.asset using Guid(957d0f8776763a849ba39d1c8681c4d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae74f02641e0aff83594b532c8b9775a') in 0.010923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Cafe_Glass_Water_Bottle_01.fbx
+  artifactKey: Guid(8eb53a39defda4345aef2dfe37ca5974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Cafe_Glass_Water_Bottle_01.fbx using Guid(8eb53a39defda4345aef2dfe37ca5974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c77c9d541fa176f62748b0dadd996edf') in 0.018628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/PolygonOffice/Models/SM_Prop_Alcohol_Glass_01_Convex.asset
+  artifactKey: Guid(5641b16a4d4eeba45ab688e24e5e2de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Models/SM_Prop_Alcohol_Glass_01_Convex.asset using Guid(5641b16a4d4eeba45ab688e24e5e2de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91282e1d4bcf8031697354bafa151756') in 0.012192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/PolygonOffice/Models/SM_Prop_Computer_Tower_Modern_01.fbx
+  artifactKey: Guid(0901b6f688fb2084392c774bb4bcab6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Models/SM_Prop_Computer_Tower_Modern_01.fbx using Guid(0901b6f688fb2084392c774bb4bcab6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48cd00ee677632f21f9a3eabd7312ac2') in 0.029083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Computer_Tower_03.fbx
+  artifactKey: Guid(6006a00c00aa65546a9eedc30b58b672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Computer_Tower_03.fbx using Guid(6006a00c00aa65546a9eedc30b58b672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d583f942d8a3673e80e6c5643f4d527') in 0.027411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/PolygonShops/Models/Convex/SM_Prop_Cafe_Glass_Water_Bottle_01_Convex.asset
+  artifactKey: Guid(b7eed245d84389e449b9d8082e8df539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/Convex/SM_Prop_Cafe_Glass_Water_Bottle_01_Convex.asset using Guid(b7eed245d84389e449b9d8082e8df539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4d83e1fd85cdfdf7b8b65c47f8ecfd2') in 0.011682 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/PolygonCity/Models/SM_Prop_BusStop_01.fbx
+  artifactKey: Guid(1beca94c7e191af4da3b42a4db6c20ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Prop_BusStop_01.fbx using Guid(1beca94c7e191af4da3b42a4db6c20ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa04e38c663caa0d6e1c5625e3683df3') in 0.027980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/PolygonTown/Models/CollisionConvex/SM_Item_GlassCup_02_Convex.asset
+  artifactKey: Guid(2908051ac5f445b42807e76eaf099fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/CollisionConvex/SM_Item_GlassCup_02_Convex.asset using Guid(2908051ac5f445b42807e76eaf099fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b715d569f77bdec528a004d90152df1a') in 0.011089 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/PolygonTown/Models/Items/SM_Item_Drink_Glass_02.fbx
+  artifactKey: Guid(42c85beed9c78fb43b5cb6b9dd7a6e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/Items/SM_Item_Drink_Glass_02.fbx using Guid(42c85beed9c78fb43b5cb6b9dd7a6e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd740616e06d11f351fdeb0a52e336414') in 0.015857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/PolygonOffice/Models/SM_Prop_Alcohol_Glass_01.fbx
+  artifactKey: Guid(75c626e954cae004ebf015bcfcbba08e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Models/SM_Prop_Alcohol_Glass_01.fbx using Guid(75c626e954cae004ebf015bcfcbba08e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa063ec520cd30cfd0ee91a2d8f0fca') in 0.030777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/PolygonTown/Prefabs/Items/SM_Item_GlassCup_02.prefab
+  artifactKey: Guid(bb2f253baec511248b974eff37d0afba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Prefabs/Items/SM_Item_GlassCup_02.prefab using Guid(bb2f253baec511248b974eff37d0afba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a30b76ad893cd5582fde19a5be5ca7f6') in 0.029706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/PolygonOffice/Models/SM_Prop_CoffeeMachine_Dripper_01_Pot_01.fbx
+  artifactKey: Guid(90bde1da437b3074990ac14370f58e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Models/SM_Prop_CoffeeMachine_Dripper_01_Pot_01.fbx using Guid(90bde1da437b3074990ac14370f58e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a8da60ea5973095b31acdf259f4f810') in 0.034713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Cafe_Grinder_01.fbx
+  artifactKey: Guid(64654b017755af84f8bbf9eab79c4d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Cafe_Grinder_01.fbx using Guid(64654b017755af84f8bbf9eab79c4d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b065157a076f8a482a735a437c4575fe') in 0.025265 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/PolygonTown/Models/Items/SM_Item_GlassCup_02.fbx
+  artifactKey: Guid(37a0d763e166e2649b220258684bd6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/Items/SM_Item_GlassCup_02.fbx using Guid(37a0d763e166e2649b220258684bd6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41db3d6adaacb48f313bc7974d6c433c') in 0.016282 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001380 seconds.
+  path: Assets/PolygonTown/Models/Items/SM_Item_GlassCup_01.fbx
+  artifactKey: Guid(4942da66a10a3bb429d18d3b9ce0d38b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/Items/SM_Item_GlassCup_01.fbx using Guid(4942da66a10a3bb429d18d3b9ce0d38b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '835edcba15f6f0e7dc7b3cb6b79e1efe') in 0.018622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/PolygonTown/Models/CollisionConvex/SM_Item_Drink_Glass_02_Convex.asset
+  artifactKey: Guid(4cb9ddbcb2e0aea41826307ec17c1ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/CollisionConvex/SM_Item_Drink_Glass_02_Convex.asset using Guid(4cb9ddbcb2e0aea41826307ec17c1ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13791aeca1feca67859e4cbfcedcbaec') in 0.013975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.129065 seconds.
+  path: Assets/PolygonOffice/Models/SM_Prop_Fishtank_01.fbx
+  artifactKey: Guid(a86f5b8b2a1b6b145b8413f4d367f82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Models/SM_Prop_Fishtank_01.fbx using Guid(a86f5b8b2a1b6b145b8413f4d367f82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '365e8e33f30fb878d053e3c662875b8b') in 0.042239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/PolygonTown/Models/CollisionConvex/SM_Prop_GlassesStand_01_Convex.asset
+  artifactKey: Guid(962c1ea067561a04885650cb6ef62d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/CollisionConvex/SM_Prop_GlassesStand_01_Convex.asset using Guid(962c1ea067561a04885650cb6ef62d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fffe7f0b5ce3bd9c3cd960a33aa97ce') in 0.014428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Lighting_Ceiling_Industrial_02.fbx
+  artifactKey: Guid(f540a13d4581b904fb73b951a43db8eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Lighting_Ceiling_Industrial_02.fbx using Guid(f540a13d4581b904fb73b951a43db8eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08eb64d2bed675955491e0be9a3a44c') in 0.033477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Lighting_Wall_05.fbx
+  artifactKey: Guid(ccd4c26f8810ccf4f801fddccc9d86e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Lighting_Wall_05.fbx using Guid(ccd4c26f8810ccf4f801fddccc9d86e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72b0cbfefa56bd265751a2638e5dbd81') in 0.025161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Kitchen_Counter_01.fbx
+  artifactKey: Guid(92fb6be27a65e3d448c8fd7c11b0197c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Kitchen_Counter_01.fbx using Guid(92fb6be27a65e3d448c8fd7c11b0197c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '090a02997308f32f8ca2982f0822cb2a') in 0.114874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Market_Food_Display_04.fbx
+  artifactKey: Guid(cd004485748b70042b8bc597a0c7d08d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Market_Food_Display_04.fbx using Guid(cd004485748b70042b8bc597a0c7d08d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e8ad4ef8922396cc6093cce400e4826') in 0.026178 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Gumball_Machine_01.fbx
+  artifactKey: Guid(06c7a927d3ea9e949b95f9e576bbeeb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Gumball_Machine_01.fbx using Guid(06c7a927d3ea9e949b95f9e576bbeeb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '709a2c287f7422815ad65d83b80bcdb5') in 0.033868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/PolygonTown/Models/Props/SM_Prop_GlassesStand_01.fbx
+  artifactKey: Guid(e2c3330a1c72b6d4bbfcb564ae502537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/Props/SM_Prop_GlassesStand_01.fbx using Guid(e2c3330a1c72b6d4bbfcb564ae502537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd21a1855ee00d37229b293b4f4587897') in 0.028979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Market_Deli_Fridge_01.fbx
+  artifactKey: Guid(dfb3fd110bb58ed468f509fc899b75f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Market_Deli_Fridge_01.fbx using Guid(dfb3fd110bb58ed468f509fc899b75f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f2a00f4fce8126da622b25370c11349') in 0.035897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Market_Deli_Fridge_02.fbx
+  artifactKey: Guid(6bcf05246278a6048a2850b26682ec9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Market_Deli_Fridge_02.fbx using Guid(6bcf05246278a6048a2850b26682ec9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35095c931609a88a18c28cedb113694f') in 0.038598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/PolygonCity/Models/SM_Prop_Skylight_01.fbx
+  artifactKey: Guid(3ea1f81fede821944884acf69ebaabf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Prop_Skylight_01.fbx using Guid(3ea1f81fede821944884acf69ebaabf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a40d023e70a850a215d2a2b6f794fd') in 0.028169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/PolygonOffice/Models/SM_Prop_WaterCooler_01.fbx
+  artifactKey: Guid(879865d9fdc3a1b43a548df3e4fd78b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Models/SM_Prop_WaterCooler_01.fbx using Guid(879865d9fdc3a1b43a548df3e4fd78b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f1d05a383bc12933fe82641c08b60e7') in 0.029490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/PolygonCity/Models/SM_Veh_Car_Police_01.fbx
+  artifactKey: Guid(1b9e9f93cf8ada14b8dfb8c9c1b35002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Veh_Car_Police_01.fbx using Guid(1b9e9f93cf8ada14b8dfb8c9c1b35002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d4a26edfc8531da90e490c9bf8201f6') in 0.096699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/PolygonTown/Models/Vehicles/SM_Veh_Pickup_01.fbx
+  artifactKey: Guid(849135a6566265b4a926dd95cfaef9f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/Vehicles/SM_Veh_Pickup_01.fbx using Guid(849135a6566265b4a926dd95cfaef9f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e15420af7160bf17cae3a3a73a8a35b') in 0.071191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/PolygonCity/Models/SM_Veh_Car_Medium_01.fbx
+  artifactKey: Guid(9e3e05b5e4951d64a9412bf0e557e6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Veh_Car_Medium_01.fbx using Guid(9e3e05b5e4951d64a9412bf0e557e6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de4271afa93a549baa3808308b5db19d') in 0.086108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/PolygonTown/Models/Vehicles/SM_Veh_Convertable_01.fbx
+  artifactKey: Guid(b2acca9e077a4804fbde3b00afc0d599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/Vehicles/SM_Veh_Convertable_01.fbx using Guid(b2acca9e077a4804fbde3b00afc0d599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '300913d5c1617f9b592f96a21ff91ba4') in 0.074464 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/PolygonTown/Models/Props/SM_Prop_Shower_01.fbx
+  artifactKey: Guid(837e6b2b02b89964cb0b0bbae0ae114f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/Props/SM_Prop_Shower_01.fbx using Guid(837e6b2b02b89964cb0b0bbae0ae114f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3ee77ec8a87ac217d8e5919a8249d8e') in 0.028309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Sport_BasketballHoop_01.fbx
+  artifactKey: Guid(d91b33bcedfa8e44ea12c72fd633b54c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Sport_BasketballHoop_01.fbx using Guid(d91b33bcedfa8e44ea12c72fd633b54c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f618ad6836d1c6e604cd33a1c45446cd') in 0.034851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/PolygonCity/Models/SM_Veh_Car_Small_01.fbx
+  artifactKey: Guid(5f72e1579cd001244802c30b332dae70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Veh_Car_Small_01.fbx using Guid(5f72e1579cd001244802c30b332dae70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd09d24de93dc418ff74253285492a44f') in 0.073272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/PolygonOffice/Models/SM_Prop_VendingMachine_01.fbx
+  artifactKey: Guid(5fe6a4066e478fa4d87e3d0166c73174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonOffice/Models/SM_Prop_VendingMachine_01.fbx using Guid(5fe6a4066e478fa4d87e3d0166c73174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4606d20b311caab7f8ea60042b04bb9e') in 0.029449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/PolygonTown/Models/Props/SM_Prop_Shower_02.fbx
+  artifactKey: Guid(56f17c97a63cbef4f81eb2d46f89f9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/Props/SM_Prop_Shower_02.fbx using Guid(56f17c97a63cbef4f81eb2d46f89f9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e90cd8ff7cf87f119dd5b0302f1ed008') in 0.029021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/PolygonCity/Models/SM_Veh_Car_Muscle_01.fbx
+  artifactKey: Guid(823ed423ae6ba0d4589ddb8fe51e7f14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Veh_Car_Muscle_01.fbx using Guid(823ed423ae6ba0d4589ddb8fe51e7f14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f9187b6eca1985bb5bfc1651e661315') in 0.076934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/PolygonCity/Models/SM_Veh_Car_Taxi_01.fbx
+  artifactKey: Guid(db57e923d75cb6c4e936d5e8caaa9165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Veh_Car_Taxi_01.fbx using Guid(db57e923d75cb6c4e936d5e8caaa9165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba8f8fc729f001e8242d025ae661e3ce') in 0.095896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/PolygonTown/Models/Vehicles/SM_Veh_Firetruck_01.fbx
+  artifactKey: Guid(b951ce64c26326341a411f33b1c66036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/Vehicles/SM_Veh_Firetruck_01.fbx using Guid(b951ce64c26326341a411f33b1c66036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6c0021fe1a024a3f6bbb818f2865634') in 0.101435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Shop_Case_01.fbx
+  artifactKey: Guid(a98e1b49268fa624589723dc86570b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Shop_Case_01.fbx using Guid(a98e1b49268fa624589723dc86570b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31c5ab1c1059050f04bead72f46b2472') in 0.028972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/PolygonShops/Models/SM_Wep_Rifle_Scope_01.fbx
+  artifactKey: Guid(c0307d10d63e9804e906d14d422caf44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Wep_Rifle_Scope_01.fbx using Guid(c0307d10d63e9804e906d14d422caf44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c0b0ed24ce49a5d1a4596c5f0acb591') in 0.034346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Kitchen_Counter_02.fbx
+  artifactKey: Guid(f5ee6a85299d9b14bb5eaf91183c7afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Kitchen_Counter_02.fbx using Guid(f5ee6a85299d9b14bb5eaf91183c7afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0098c4b63f4cd76fcb3e6e9b65951f93') in 0.085768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/PolygonCity/Models/SM_Veh_Car_Sedan_01.fbx
+  artifactKey: Guid(2dfd189627cfe43479265db2e35e552c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Veh_Car_Sedan_01.fbx using Guid(2dfd189627cfe43479265db2e35e552c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '449c31f4236d7a7eb1868ea4bf14db50') in 0.089643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Lighting_Ceiling_Industrial_03.fbx
+  artifactKey: Guid(433a132e7763a4a44a986af44871f98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Lighting_Ceiling_Industrial_03.fbx using Guid(433a132e7763a4a44a986af44871f98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa43dc8e9af9560a6986c782e6694df') in 0.029842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/PolygonTown/Models/Props/SM_Prop_Mirror_02.fbx
+  artifactKey: Guid(9b4037bbe03a3a5498a0d0a97b1a6929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/Props/SM_Prop_Mirror_02.fbx using Guid(9b4037bbe03a3a5498a0d0a97b1a6929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2726e2940500b8ef42d2f3b75a278d1a') in 0.030826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Lighting_Ceiling_Industrial_01.fbx
+  artifactKey: Guid(3b67aa7535c60b947a2a4b9ab35fef7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Lighting_Ceiling_Industrial_01.fbx using Guid(3b67aa7535c60b947a2a4b9ab35fef7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3ca29e552027a2be789da7aae3134c8') in 0.028332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/PolygonTown/Models/Props/SM_Prop_Mirror_01.fbx
+  artifactKey: Guid(9fa808030eac99646b436e58c4c7af58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/Props/SM_Prop_Mirror_01.fbx using Guid(9fa808030eac99646b436e58c4c7af58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75dbfea90b6af938a697c94a4aa90017') in 0.027527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/PolygonShops/Models/SM_Prop_Market_Food_Display_05.fbx
+  artifactKey: Guid(c00471f901acd154fb1162206fbeda7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Prop_Market_Food_Display_05.fbx using Guid(c00471f901acd154fb1162206fbeda7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '816d46a732098528f407649a331b5891') in 0.029429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.360522 seconds.
+  path: Assets/PolygonShops/Models/Convex/SM_Bld_Skylight_Corner_02_Convex.asset
+  artifactKey: Guid(42ac6e5ca450ba14eaaa2d7b1fe91fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/Convex/SM_Bld_Skylight_Corner_02_Convex.asset using Guid(42ac6e5ca450ba14eaaa2d7b1fe91fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b7c8ffe25dc0eb7afdb5005ea0abd35') in 0.012248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/PolygonCity/Models/SM_Env_Skyline_01.fbx
+  artifactKey: Guid(feaca7a0cbb9b1540940bac6ce5e5501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/SM_Env_Skyline_01.fbx using Guid(feaca7a0cbb9b1540940bac6ce5e5501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b90ab16f331bf016113fabc2739094') in 0.045224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/PolygonCity/Models/Collisions/SM_Prop_Skylight_01_Convex.asset
+  artifactKey: Guid(fc2d1af9045b6a04ba1e198772d298ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Models/Collisions/SM_Prop_Skylight_01_Convex.asset using Guid(fc2d1af9045b6a04ba1e198772d298ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57feb74b4ef09990b19ea6fc300eea6b') in 0.013309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/PolygonShops/Models/Convex/SM_Bld_Skylight_Side_01_Convex.asset
+  artifactKey: Guid(d5b5270b7d9cf6244b93b2481c96dcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/Convex/SM_Bld_Skylight_Side_01_Convex.asset using Guid(d5b5270b7d9cf6244b93b2481c96dcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dd65c45b247e60897d6393056f8d969') in 0.011988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/PolygonShops/Models/SM_Generic_SkyDome_02.fbx
+  artifactKey: Guid(c50dc2f0236f8394290c5c08e6c1026c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Generic_SkyDome_02.fbx using Guid(c50dc2f0236f8394290c5c08e6c1026c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e72665ba5bc76328efc574fbf56c74b') in 0.029537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Skylight_01.prefab
+  artifactKey: Guid(340c857ab70b5be4abab55cba8788069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Skylight_01.prefab using Guid(340c857ab70b5be4abab55cba8788069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '621a68974e2fdf1ef9c044657986a5e6') in 0.041702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/PolygonNature/FX/FX_Models/SM_Generic_SkyDome.fbx
+  artifactKey: Guid(94ed92c4b7ab4ba4d8d2dfee32c2c4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonNature/FX/FX_Models/SM_Generic_SkyDome.fbx using Guid(94ed92c4b7ab4ba4d8d2dfee32c2c4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a8193fac0268287260017e3db3a347f') in 0.020840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/PolygonNature/FX/FX_Prefabs/SM_Generic_SkyDome.prefab
+  artifactKey: Guid(1db8601c97565c84084b5b490940fae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonNature/FX/FX_Prefabs/SM_Generic_SkyDome.prefab using Guid(1db8601c97565c84084b5b490940fae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae0c8b07c7dfc0fe48c05fe3cb91fa72') in 0.018336 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/PolygonShops/Models/SM_Generic_SkyDome_01.fbx
+  artifactKey: Guid(9f6c8e033acfd9a45b34fd0c000a5af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/SM_Generic_SkyDome_01.fbx using Guid(9f6c8e033acfd9a45b34fd0c000a5af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0e192f05d6d8da447fba2e004405447') in 0.017396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/PolygonShops/Models/Convex/SM_Bld_Skylight_Side_01_Convex 1.asset
+  artifactKey: Guid(a6c4d541efbe7144bb34e1d3cd792c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/Convex/SM_Bld_Skylight_Side_01_Convex 1.asset using Guid(a6c4d541efbe7144bb34e1d3cd792c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5b5ef63b78281bdc36627b79687b738') in 0.016730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/PolygonShops/Models/Convex/SM_Bld_Skylight_Corner_02_Convex 1.asset
+  artifactKey: Guid(a2bfafd1ce6cd174eb1e1d9aef2dfc57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/Convex/SM_Bld_Skylight_Corner_02_Convex 1.asset using Guid(a2bfafd1ce6cd174eb1e1d9aef2dfc57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79fe5dec4e537f1cd0085bbe76fa62e5') in 0.016570 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.330647 seconds.
+  path: Assets/PolygonTown/Models/Buildings/SM_Bld_Skylight_01.fbx
+  artifactKey: Guid(de4e0f4ff4897ad47ae904bed14fc2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/Buildings/SM_Bld_Skylight_01.fbx using Guid(de4e0f4ff4897ad47ae904bed14fc2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd650401076e192928afd0693a3db2e05') in 0.036813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/PolygonTown/Prefabs/Buildings/SM_Bld_Skylight_03.prefab
+  artifactKey: Guid(f31f0c56fe8a1324581c7a24f8a0050c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Prefabs/Buildings/SM_Bld_Skylight_03.prefab using Guid(f31f0c56fe8a1324581c7a24f8a0050c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '822369b0f82ccfd76041505260830a34') in 0.043889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/PolygonTown/Prefabs/Buildings/SM_Bld_Skylight_01.prefab
+  artifactKey: Guid(2a9854b6e1666d04089c2205bfc9bf74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Prefabs/Buildings/SM_Bld_Skylight_01.prefab using Guid(2a9854b6e1666d04089c2205bfc9bf74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a71745330525f748c7c5acdfc3920f17') in 0.017710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/PolygonTown/Models/CollisionConvex/SM_Bld_Skylight_03_Convex.asset
+  artifactKey: Guid(06a48fc2638fc4e4dbf3446b6685bfc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/CollisionConvex/SM_Bld_Skylight_03_Convex.asset using Guid(06a48fc2638fc4e4dbf3446b6685bfc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'debc09eff995749b671dbf7d8194984f') in 0.013360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/PolygonShops/Models/Convex/SM_Bld_Skylight_Corner_01_Convex.asset
+  artifactKey: Guid(7b95426a97ff5f7499b1e10b432427d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/Convex/SM_Bld_Skylight_Corner_01_Convex.asset using Guid(7b95426a97ff5f7499b1e10b432427d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe91ece1c5261ab739bb05a65b02412b') in 0.011972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/PolygonTown/Models/CollisionConvex/SM_Bld_Skylight_01_Convex.asset
+  artifactKey: Guid(8411875f6ac7ba044935b00eb878463e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/CollisionConvex/SM_Bld_Skylight_01_Convex.asset using Guid(8411875f6ac7ba044935b00eb878463e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2858918a6a54e238f544e0539312ea9f') in 0.011475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/PolygonTown/Models/Buildings/SM_Bld_Skylight_02.fbx
+  artifactKey: Guid(fed0184a2a4bd02489d11c9797f13958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/Buildings/SM_Bld_Skylight_02.fbx using Guid(fed0184a2a4bd02489d11c9797f13958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a01e9b43ffbc24f483f19c8da87ce18') in 0.032827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/PolygonTown/Models/Buildings/SM_Bld_Skylight_03.fbx
+  artifactKey: Guid(052967ee9d92d2f41baddbe7f8e2f44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/Buildings/SM_Bld_Skylight_03.fbx using Guid(052967ee9d92d2f41baddbe7f8e2f44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf017bb5b7aa36353103a27245fe9406') in 0.019055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/PolygonTown/Prefabs/Buildings/SM_Bld_Skylight_02.prefab
+  artifactKey: Guid(ac01a4302d2c64340be03ca628724179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Prefabs/Buildings/SM_Bld_Skylight_02.prefab using Guid(ac01a4302d2c64340be03ca628724179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a7307b9e263afb8faf3071bde5c1f84') in 0.017446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/PolygonTown/Models/CollisionConvex/SM_Bld_Skylight_02_Convex.asset
+  artifactKey: Guid(0b685299078dbac4f8823510863007e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonTown/Models/CollisionConvex/SM_Bld_Skylight_02_Convex.asset using Guid(0b685299078dbac4f8823510863007e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '881e80749f6becb6f5e94e060b8d309e') in 0.014000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/PolygonShops/Models/Convex/SM_Bld_Skylight_Corner_01_Convex 1.asset
+  artifactKey: Guid(8e776f55337cc1248a411f7e7481260b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonShops/Models/Convex/SM_Bld_Skylight_Corner_01_Convex 1.asset using Guid(8e776f55337cc1248a411f7e7481260b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '306f3cd3a6dd9c9a19c81e0b8ce76d3a') in 0.019759 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006229 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.58 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.004 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1005ms)
+		BeginReloadAssembly (121ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (829ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (281ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (303ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (200ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.30 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3527 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.6 MB.
+System memory in use after: 183.9 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4296.
+Total: 3.836300 ms (FindLiveObjects: 0.363100 ms CreateObjectMapping: 0.084700 ms MarkObjects: 3.362000 ms  DeleteObjects: 0.025700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
