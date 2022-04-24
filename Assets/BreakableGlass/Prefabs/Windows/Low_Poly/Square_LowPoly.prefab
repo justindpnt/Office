@@ -28,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127958}
-  m_LocalRotation: {x: -4.32978e-17, y: 0.7071067, z: 0.7071068, w: -4.3297806e-17}
+  m_LocalRotation: {x: -0, y: -0.7069834, z: -0.7072302, w: 0}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: -180}
 --- !u!114 &11401110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52,11 +52,11 @@ MonoBehaviour:
   - {fileID: 105864, guid: ae8fd9b7719c8a243af0f5ac548a64ad, type: 3}
   - {fileID: 111500, guid: e58c0b2bedcc64e429cdc4b364fece56, type: 3}
   BreakOnCollision: 1
-  SpeedRequiredToBreak: 0
-  CleanUpShards: 1
+  SpeedRequiredToBreak: 10
+  CleanUpShards: 0
   MinShardLife: 8
   MaxShardLife: 10
-  Repair: 1
+  Repair: 0
   RepairTime: 11
   replaceMaterialOnBreak: 0
   ReplacementMaterial: {fileID: 2100000, guid: 2e39d8a8163aa3545a6d62bf3ea64dcf, type: 2}
@@ -64,7 +64,7 @@ MonoBehaviour:
   CrackBeforeShattering: 0
   PlaySound: 1
   ShatterSoundClips:
-  - {fileID: 8300000, guid: 2c2da1c25a62c9c47968f8748db76182, type: 3}
+  - {fileID: 8300000, guid: a3c732635afbb1b47b49fb3c9fba2d56, type: 3}
   - {fileID: 8300000, guid: f0de69fe7299151439da49df3edf688d, type: 3}
   - {fileID: 8300000, guid: 1f41d6f832a5e324b8680672a2e221fb, type: 3}
   - {fileID: 8300000, guid: 67f70ddaf13330247a99ca579c05a5ea, type: 3}
@@ -155,7 +155,8 @@ AudioSource:
   m_GameObject: {fileID: 127958}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3359986898073312607, guid: d0b2012b47d6e71478061929e1b85cca,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 2c2da1c25a62c9c47968f8748db76182, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -202,7 +203,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
