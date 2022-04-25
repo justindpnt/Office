@@ -10,10 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0de965f2e710c1c489ead8e62cd25da0, type: 3}
+<<<<<<<< HEAD:Assets/Physics Hulls/SM_Prop_Coffee_Tray_01 (4) Painting Data.asset
   m_Name: SM_Prop_Coffee_Tray_01 (4) Painting Data
   m_EditorClassIdentifier: 
   hullData: {fileID: 11400000, guid: 2ca5a7122fd52104086f32b0ed020285, type: 2}
   sourceMesh: {fileID: 4300000, guid: e4d0973980ecac64c86406c7fac395f1, type: 3}
+========
+  m_Name: SM_Bld_Wall_Trim_Door_Large_01 Painting Data
+  m_EditorClassIdentifier: 
+  hullData: {fileID: 11400000, guid: 127839dba4ed031499c1426377a65747, type: 2}
+  sourceMesh: {fileID: 4300000, guid: f03bbdf2030322d4fa6ba9ee11e73321, type: 3}
+>>>>>>>> Unity2020Version:Assets/Physics Hulls/SM_Bld_Wall_Trim_Door_Large_01 Painting Data.asset
   activeHull: 0
   faceThickness: 0.1
   hulls:
@@ -27,15 +34,16 @@ MonoBehaviour:
     boxFitMethod: 1
     isTrigger: 0
     isChildCollider: 0
-    selectedFaces: 
-    collisionMesh: {fileID: 0}
+    selectedFaces: 450000004700000042000000430000003e0000003f0000003c0000003d000000
+    collisionMesh: {fileID: 2576836242718930508, guid: 127839dba4ed031499c1426377a65747,
+      type: 2}
     faceCollisionMesh: {fileID: 0}
     faceBoxCenter: {x: 0, y: 0, z: 0}
     faceBoxSize: {x: 0, y: 0, z: 0}
     faceAsBoxRotation: {x: 0, y: 0, z: 0, w: 0}
     autoMeshes: []
     hasColliderError: 0
-    numColliderFaces: 0
+    numColliderFaces: 14
     noInputError: 0
   autoHullPreset: 1
   vhacdParams:

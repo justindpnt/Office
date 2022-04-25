@@ -10,16 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0de965f2e710c1c489ead8e62cd25da0, type: 3}
+<<<<<<<< HEAD:Assets/Physics Hulls/SM_Prop_Coffee_Tray_01 (4) Painting Data.asset
+  m_Name: SM_Prop_Coffee_Tray_01 (4) Painting Data
+  m_EditorClassIdentifier: 
+  hullData: {fileID: 11400000, guid: 2ca5a7122fd52104086f32b0ed020285, type: 2}
+  sourceMesh: {fileID: 4300000, guid: e4d0973980ecac64c86406c7fac395f1, type: 3}
+========
   m_Name: SM_Bld_Wall_Trim_Door_Large_01 Painting Data
   m_EditorClassIdentifier: 
-  hullData: {fileID: 11400000, guid: 7b2d8ac2e7f1313448390d41e506837c, type: 2}
+  hullData: {fileID: 11400000, guid: 127839dba4ed031499c1426377a65747, type: 2}
   sourceMesh: {fileID: 4300000, guid: f03bbdf2030322d4fa6ba9ee11e73321, type: 3}
-  activeHull: 1
+>>>>>>>> Unity2020Version:Assets/Physics Hulls/SM_Bld_Wall_Trim_Door_Large_01 Painting Data.asset
+  activeHull: 0
   faceThickness: 0.1
   hulls:
   - name: Hull 1
     isVisible: 1
-    type: 0
+    type: 1
     colour: {r: 0, g: 1, b: 1, a: 0.7}
     material: {fileID: 0}
     enableInflation: 0
@@ -27,8 +34,8 @@ MonoBehaviour:
     boxFitMethod: 1
     isTrigger: 0
     isChildCollider: 0
-    selectedFaces: 4400000048000000490000003b0000003a000000470000004500000046000000420000003e0000003f00000040000000410000003c0000003d0000004300000031000000320000003700000038000000390000003400000030000000350000002f0000002e0000003300000036000000
-    collisionMesh: {fileID: 2603609715931498933, guid: 7b2d8ac2e7f1313448390d41e506837c,
+    selectedFaces: 450000004700000042000000430000003e0000003f0000003c0000003d000000
+    collisionMesh: {fileID: 2576836242718930508, guid: 127839dba4ed031499c1426377a65747,
       type: 2}
     faceCollisionMesh: {fileID: 0}
     faceBoxCenter: {x: 0, y: 0, z: 0}
@@ -36,28 +43,7 @@ MonoBehaviour:
     faceAsBoxRotation: {x: 0, y: 0, z: 0, w: 0}
     autoMeshes: []
     hasColliderError: 0
-    numColliderFaces: 20
-    noInputError: 0
-  - name: Hull 2
-    isVisible: 1
-    type: 0
-    colour: {r: 1, g: 0, b: 1, a: 0.7}
-    material: {fileID: 0}
-    enableInflation: 0
-    inflationAmount: 0.01
-    boxFitMethod: 1
-    isTrigger: 0
-    isChildCollider: 0
-    selectedFaces: 1f0000002c0000002d00000029000000280000002a0000001e0000002b000000700000006f000000990000009a0000006b00000022000000230000002400000021000000200000001a0000001d000000140000001c0000001500000016000000170000001b0000001900000018000000cf0000002700000025000000ce000000260000001300000012000000
-    collisionMesh: {fileID: 5585964589159716437, guid: 7b2d8ac2e7f1313448390d41e506837c,
-      type: 2}
-    faceCollisionMesh: {fileID: 0}
-    faceBoxCenter: {x: 0, y: 0, z: 0}
-    faceBoxSize: {x: 0, y: 0, z: 0}
-    faceAsBoxRotation: {x: 0, y: 0, z: 0, w: 0}
-    autoMeshes: []
-    hasColliderError: 0
-    numColliderFaces: 22
+    numColliderFaces: 14
     noInputError: 0
   autoHullPreset: 1
   vhacdParams:
