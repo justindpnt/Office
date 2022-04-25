@@ -52,7 +52,7 @@ MonoBehaviour:
   - {fileID: 105864, guid: ae8fd9b7719c8a243af0f5ac548a64ad, type: 3}
   - {fileID: 111500, guid: e58c0b2bedcc64e429cdc4b364fece56, type: 3}
   BreakOnCollision: 1
-  SpeedRequiredToBreak: 10
+  SpeedRequiredToBreak: 20
   CleanUpShards: 0
   MinShardLife: 8
   MaxShardLife: 10

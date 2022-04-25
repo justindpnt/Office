@@ -13,6 +13,8 @@ public class SoundableItem : MonoBehaviour
     float effectRadius = 20f; //Change this to increase/decrease vibration radius
     float soundDampFactor = 60f; //Decrease this number to increase sound volume
 
+    float minimumCollisionVelocityToMakeSound = 10f;
+
     //Sound type
     public enum CollisionSound {lightObject, mediumObject, heavyObject };
 
@@ -66,7 +68,7 @@ public class SoundableItem : MonoBehaviour
     {
         bool playSoundandVibrate = false;
 
-        if (collision.relativeVelocity.magnitude > .5f)
+        if (collision.relativeVelocity.magnitude > minimumCollisionVelocityToMakeSound)
         {
             //if the object has a parent (which means it is a collider object)
             if (collision.collider.transform.parent != null)
