@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Glass
+  - BreakableGlass
+  - ShatteredGlass
+  - GlassShard
   layers:
   - Default
   - TransparentFX

@@ -274,7 +274,10 @@ public class GrabSystem : MonoBehaviour
         item.Rb.useGravity = false;
         item.Rb.velocity = Vector3.zero;
         item.Rb.angularVelocity = Vector3.zero;
-        
+
+        // Reset glass counter
+        item.hasAGlassPaneBeenHit = false;
+
         // Set object and all children parts to being the status of picked up
         item.gameObject.layer = LayerMask.NameToLayer("PickedUp");
         foreach(Transform child in item.transform)

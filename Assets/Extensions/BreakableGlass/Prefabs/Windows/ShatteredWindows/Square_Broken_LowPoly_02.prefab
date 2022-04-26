@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5473658}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.012
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 5463154}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.009
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 5487624}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.011
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 5496502}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.013
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -518,7 +518,7 @@ GameObject:
   - component: {fileID: 5404676}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.008
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -630,7 +630,7 @@ GameObject:
   - component: {fileID: 5446826}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.002
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -742,7 +742,7 @@ GameObject:
   - component: {fileID: 5424536}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.015
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -854,7 +854,7 @@ GameObject:
   - component: {fileID: 5468046}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.010
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -966,7 +966,7 @@ GameObject:
   - component: {fileID: 5420112}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.021
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1078,7 +1078,7 @@ GameObject:
   - component: {fileID: 5477254}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.017
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1190,7 +1190,7 @@ GameObject:
   - component: {fileID: 5425270}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.019
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1302,7 +1302,7 @@ GameObject:
   - component: {fileID: 5482100}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.014
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1414,7 +1414,7 @@ GameObject:
   - component: {fileID: 5425944}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.003
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1526,7 +1526,7 @@ GameObject:
   - component: {fileID: 5480816}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.006
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1638,7 +1638,7 @@ GameObject:
   - component: {fileID: 5473544}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.023
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1750,7 +1750,7 @@ GameObject:
   - component: {fileID: 5483894}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1862,7 +1862,7 @@ GameObject:
   - component: {fileID: 5464960}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.005
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1974,7 +1974,7 @@ GameObject:
   - component: {fileID: 5485328}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.020
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2086,7 +2086,7 @@ GameObject:
   - component: {fileID: 5441844}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.024
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2198,7 +2198,7 @@ GameObject:
   - component: {fileID: 5442318}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.016
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2310,7 +2310,7 @@ GameObject:
   - component: {fileID: 5467212}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.007
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2422,7 +2422,7 @@ GameObject:
   - component: {fileID: 5460814}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.004
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2534,7 +2534,7 @@ GameObject:
   - component: {fileID: 5408454}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.022
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2646,7 +2646,7 @@ GameObject:
   - component: {fileID: 5407646}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.001
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2758,7 +2758,7 @@ GameObject:
   - component: {fileID: 5463164}
   m_Layer: 0
   m_Name: Square_Broken_LowPoly_02_Shard.018
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

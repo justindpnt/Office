@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5459238}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.006
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 5440926}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.009
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 5457498}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.011
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 5494454}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.015
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -518,7 +518,7 @@ GameObject:
   - component: {fileID: 5431942}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.008
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -630,7 +630,7 @@ GameObject:
   - component: {fileID: 5412484}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.012
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -742,7 +742,7 @@ GameObject:
   - component: {fileID: 5404192}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.003
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -854,7 +854,7 @@ GameObject:
   - component: {fileID: 5446070}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.007
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -966,7 +966,7 @@ GameObject:
   - component: {fileID: 5421694}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1078,7 +1078,7 @@ GameObject:
   - component: {fileID: 5472238}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.016
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1190,7 +1190,7 @@ GameObject:
   - component: {fileID: 5495912}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.014
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1302,7 +1302,7 @@ GameObject:
   - component: {fileID: 5482028}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.019
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1414,7 +1414,7 @@ GameObject:
   - component: {fileID: 5401064}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.010
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1526,7 +1526,7 @@ GameObject:
   - component: {fileID: 5440638}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.002
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1638,7 +1638,7 @@ GameObject:
   - component: {fileID: 5473750}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.022
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1750,7 +1750,7 @@ GameObject:
   - component: {fileID: 5494678}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.005
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1862,7 +1862,7 @@ GameObject:
   - component: {fileID: 5469402}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.020
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1974,7 +1974,7 @@ GameObject:
   - component: {fileID: 5484892}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.001
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2086,7 +2086,7 @@ GameObject:
   - component: {fileID: 5459680}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.021
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2198,7 +2198,7 @@ GameObject:
   - component: {fileID: 5448194}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.013
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2310,7 +2310,7 @@ GameObject:
   - component: {fileID: 5426440}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.017
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2422,7 +2422,7 @@ GameObject:
   - component: {fileID: 5461686}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.018
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2534,7 +2534,7 @@ GameObject:
   - component: {fileID: 5454664}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.023
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2646,7 +2646,7 @@ GameObject:
   - component: {fileID: 5432192}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.004
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2758,7 +2758,7 @@ GameObject:
   - component: {fileID: 5434024}
   m_Layer: 0
   m_Name: Square_Borken_LowPoly_03_Shard.024
-  m_TagString: Untagged
+  m_TagString: GlassShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

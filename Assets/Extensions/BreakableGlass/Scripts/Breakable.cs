@@ -164,7 +164,13 @@ public class Breakable : MonoBehaviour {
 
 			if (CombinedSpeed >= SpeedRequiredToBreak) {
 
-				BreakFunction ();
+				// If a glass pane has not already been hit this throw and the item is not being picking up
+				if((other.gameObject.GetComponent<PickableItem>().hasAGlassPaneBeenHit) == false 
+					&& !other.gameObject.GetComponent<Rigidbody>().useGravity == false)
+                {
+					BreakFunction();
+					other.gameObject.GetComponent<PickableItem>().hasAGlassPaneBeenHit = true;
+				}				
 			}
 		}
 	}

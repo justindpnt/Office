@@ -70,10 +70,14 @@ public class SoundableItem : MonoBehaviour
 
         if (collision.relativeVelocity.magnitude > minimumCollisionVelocityToMakeSound)
         {
+            /* 
+            //Commented out code here is using the old model structure where the colliders were not on the base level
+            //of object and we had to acess the parent to get the sound
             //if the object has a parent (which means it is a collider object)
-            if (collision.collider.transform.parent != null)
-            {
-                //if that object has a soundable item
+            //
+            //if (collision.collider.transform.parent != null)
+            //{
+                //if the object we are hitting also has a soundable object as well
                 if (collision.collider.transform.parent.gameObject.GetComponent<SoundableItem>())
                 {
                     //Only the faster moving object in a collsiion should make a sound
@@ -86,10 +90,37 @@ public class SoundableItem : MonoBehaviour
                 {
                     playSoundandVibrate = true;
                 }
-            }
-            else
+            //}
+            //else
+            //{
+            //    playSoundandVibrate = true;
+            //}
+            */
+
+            //tags where the object should NOT make a sound during collision
+            if (!(collision.collider.tag.Contains("BreakableGlass")
+                || collision.collider.tag.Contains("ShatteredGlass")
+                || collision.collider.tag.Contains("GlassShard")))
             {
-                playSoundandVibrate = true;
+                Debug.Log(collision.collider.tag);
+                Debug.Log(collision.collider.name);
+
+                if (!(objectRB.useGravity == false))
+                {
+                    //if the object we are hitting also has a soundable object as well
+                    if (collision.collider.gameObject.GetComponent<SoundableItem>())
+                    {
+                        //Only the faster moving object in a collsiion should make a sound
+                        if (objectRB.velocity.magnitude > collision.collider.gameObject.GetComponent<Rigidbody>().velocity.magnitude)
+                        {
+                            playSoundandVibrate = true;
+                        }
+                    }
+                    else
+                    {
+                        playSoundandVibrate = true;
+                    }
+                }
             }
 
             if (playSoundandVibrate)
