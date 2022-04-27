@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 127958}
   m_LocalRotation: {x: -0, y: -0.7069834, z: -0.7072302, w: 0}
   m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1.18, y: 1, z: 0.66}
+  m_LocalScale: {x: 1.1503347, y: 1, z: 0.48062545}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
   - {fileID: 105864, guid: ae8fd9b7719c8a243af0f5ac548a64ad, type: 3}
   - {fileID: 111500, guid: e58c0b2bedcc64e429cdc4b364fece56, type: 3}
   BreakOnCollision: 1
-  SpeedRequiredToBreak: 12
+  SpeedRequiredToBreak: 6
   CleanUpShards: 0
   MinShardLife: 8
   MaxShardLife: 10
@@ -60,7 +60,7 @@ MonoBehaviour:
   RepairTime: 11
   replaceMaterialOnBreak: 0
   ReplacementMaterial: {fileID: 2100000, guid: 2e39d8a8163aa3545a6d62bf3ea64dcf, type: 2}
-  ShardMassChangesWithScale: 1
+  ShardMassChangesWithScale: 0
   CrackBeforeShattering: 0
   PlaySound: 1
   ShatterSoundClips:
