@@ -102,8 +102,6 @@ public class SoundableItem : MonoBehaviour
                 || collision.collider.tag.Contains("ShatteredGlass")
                 || collision.collider.tag.Contains("GlassShard")))
             {
-                Debug.Log(collision.collider.tag);
-                Debug.Log(collision.collider.name);
 
                 if (!(objectRB.useGravity == false))
                 {

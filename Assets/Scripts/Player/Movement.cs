@@ -20,6 +20,7 @@ public class Movement : MonoBehaviour
     //Movement variables
     [SerializeField] float walkSpeed = 6f;
     [SerializeField] float crouchSpeed = 3f;
+    public float moveMultiplier = 1f;    // KJWNDIKUJAWBNDJHABWDLKAJWBDlkJAWBD
     float moveSpeed;
     public bool canMove { get; set; }
     public bool shouldUseAcceleration = false;
@@ -246,9 +247,14 @@ public class Movement : MonoBehaviour
                 }
             }
         }
+
+        // Movement without acceleration code
         else
         {
             rb.velocity = transform.rotation * new Vector3(targetDir.x * moveSpeed, rb.velocity.y, targetDir.y * moveSpeed);
+            //Vector3 moveDirection = targetDir.y * transform.forward + targetDir.x * transform.right;
+            //Debug.Log(moveDirection);
+            //rb.AddForce(moveDirection * moveMultiplier, ForceMode.Acceleration);
             lastKnownTargetDir = targetDir;
         }
 
