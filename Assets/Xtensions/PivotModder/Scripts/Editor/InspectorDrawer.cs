@@ -771,7 +771,7 @@ namespace BrainFailProductions.PivotModder
 
                 if (prev == false && allowPivotMod == true)
                 {
-                    if (PrefabUtility.IsPartOfPrefabInstance(Selection.activeGameObject) && UnityEditor.Experimental.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage() == null)
+                    if (PrefabUtility.IsPartOfPrefabInstance(Selection.activeGameObject) && UnityEditor.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage() == null)
                     {
                         allowPivotMod = false;
                         EditorUtility.DisplayDialog("Prefab Mode Required", "Changes to prefabs must be made through the prefab mode. Please open the selected object or it's top most parent object in prefab mode and then apply changes to the pivot.", "ok");
@@ -1077,13 +1077,13 @@ namespace BrainFailProductions.PivotModder
 
 #if UNITY_2018_3_OR_NEWER
 
-                    if (PrefabUtility.IsPartOfPrefabInstance(Selection.activeGameObject) && UnityEditor.Experimental.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage() == null)
+                    if (PrefabUtility.IsPartOfPrefabInstance(Selection.activeGameObject) && UnityEditor.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage() == null)
                     {
                         EditorUtility.DisplayDialog("Prefab Mode Required", "Changes to prefabs must be made through the prefab mode. Please open the selected object or it's top most parent object in prefab mode and then apply changes to the pivot.", "ok");
                         GUIUtility.ExitGUI();
                     }
 
-                    else if(!isMeshlessObject && UnityEditor.Experimental.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage() != null)
+                    else if(!isMeshlessObject && UnityEditor.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage() != null)
                     {
 
                         m = Selection.activeTransform.GetComponent<MeshFilter>().sharedMesh;
