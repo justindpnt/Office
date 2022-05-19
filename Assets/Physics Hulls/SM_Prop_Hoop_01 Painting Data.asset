@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hullData: {fileID: 11400000, guid: 146736bf0d6bb464488efe76d319a94e, type: 2}
   sourceMesh: {fileID: 4300000, guid: 50a61501acf30514a9f0639751895e10, type: 3}
-  activeHull: 0
+  activeHull: 1
   faceThickness: 0.1
   hulls:
   - name: Hull 1
