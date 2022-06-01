@@ -139,7 +139,9 @@ public class SoundableItem : MonoBehaviour
                         //HapticPatterns.PresetType type = HapticPatterns.PresetType.Selection;
                         //HapticPatterns.PlayPreset(type);
                         //HapticPatterns.PlayConstant(Mathf.Clamp01(collision.relativeVelocity.magnitude / 40), 0.0f, .1f);
-                        HapticPatterns.PlayEmphasis(Mathf.Clamp01(collision.relativeVelocity.magnitude / 20), 0.0f);
+
+                        //This one is the one I was using most recently
+                        //HapticPatterns.PlayEmphasis(Mathf.Clamp01(collision.relativeVelocity.magnitude / 20), 0.0f);
                     }
                 }
             }
